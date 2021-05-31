@@ -1,21 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
-using UnityEngine;
+﻿using Verse;
 
 namespace Gradual_Romance
 {
     public class GRBodyTypeExtension : DefModExtension
     {
-
-        public string bodyCategory = "Humanoid";
+        public Gender attractiveForGender;
 
         public float attractivenessFactor = 1.0f;
 
-        public Gender attractiveForGender;
-
+        public string bodyCategory = "Humanoid";
     }
 }

@@ -16,6 +16,14 @@ namespace Gradual_Romance
 
         public static PawnRelationDef ExLovefriend;
 
+        public static PawnRelationDef Steady;
+
+        public static PawnRelationDef Suitor;
+
+        public static PawnRelationDef Flame;
+
+        public static PawnRelationDef Darling;
+
         public static PawnRelationDef Paramour;
 
         static PawnRelationDefOfGR()

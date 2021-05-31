@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
-using Psychology;
+﻿using Verse;
 
 namespace Gradual_Romance
 {
@@ -12,14 +6,16 @@ namespace Gradual_Romance
     {
         public override bool Check(Pawn observer, Pawn assessed)
         {
-            return (assessed.gender == Gender.Male) ;
+            return assessed.gender == Gender.Male;
         }
+
         public override float Calculate(Pawn observer, Pawn assessed)
         {
             if (AttractionUtility.IsWeaklyAndrophilic(observer) || AttractionUtility.IsExclusivelyGynephilic(observer))
             {
                 return 0f;
             }
+
             if (AttractionUtility.IsOccasionallyAndrophilic(observer))
             {
                 return 0.5f;

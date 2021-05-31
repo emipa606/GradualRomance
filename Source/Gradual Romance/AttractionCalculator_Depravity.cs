@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Psychology;
 using RimWorld;
 using Verse;
-using Psychology;
 
 namespace Gradual_Romance
 {
@@ -16,23 +12,28 @@ namespace Gradual_Romance
             {
                 return false;
             }
+
             return true;
         }
+
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            float depravityFactor = 1f;
+            var depravityFactor = 1f;
             if (assessed.story.traits.HasTrait(TraitDefOf.Cannibal))
             {
                 depravityFactor *= 0.8f;
             }
+
             if (assessed.story.traits.HasTrait(TraitDefOf.Bloodlust))
             {
                 depravityFactor *= 0.8f;
             }
+
             if (assessed.story.traits.HasTrait(TraitDefOfPsychology.Lecher))
             {
                 depravityFactor *= 0.8f;
             }
+
             return depravityFactor;
         }
     }

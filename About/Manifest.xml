@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>GradualRomance</identifier>
+  <version>1.0.1.0</version>
+  <dependencies />
+  <incompatibleWith />
+  <loadBefore />
+  <loadAfter />
+  <manifestUri>https://raw.githubusercontent.com/emipa606/GradualRomance/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/emipa606/GradualRomance/releases</downloadUri>
+</Manifest>
+
+

@@ -10,9 +10,13 @@ namespace Gradual_Romance
 {
     public class AttractionCalculator_AgeDifference : AttractionCalculator
     {
+        public override bool Check(Pawn observer, Pawn assessed)
+        {
+            return false;
+        }
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            
+            /*
             XenoRomanceExtension observerExtension = observer.def.GetModExtension<XenoRomanceExtension>();
             XenoRomanceExtension assessedExtension = assessed.def.GetModExtension<XenoRomanceExtension>();
             float assessedMaturityPct = Mathf.Clamp01(Mathf.InverseLerp(assessedExtension.youngAdultAge, assessed.RaceProps.lifeExpectancy,assessed.ageTracker.AgeBiologicalYearsFloat));
@@ -21,6 +25,8 @@ namespace Gradual_Romance
             float ageTolerancePct = ( observerAgeTolerance / observer.RaceProps.lifeExpectancy);
             float ageDifference = Mathf.Abs(observerMaturityPct - assessedMaturityPct);
             return Mathf.Clamp01(Mathf.Pow(ageTolerancePct / ageDifference, ageDeviationDampener));
+            */
+
 
             //People are generally attracted to members of their own age group.
             //For young pawns, this is very significant.
@@ -47,6 +53,7 @@ namespace Gradual_Romance
                 }
             }
             */
+            return 1f;
         }
         public const float ageDeviationDampener = 0.5f;
     }

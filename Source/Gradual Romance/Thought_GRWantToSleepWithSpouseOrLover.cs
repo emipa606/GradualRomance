@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
+﻿using RimWorld;
 using UnityEngine;
+using Verse;
 
 namespace Gradual_Romance
 {
@@ -14,8 +10,8 @@ namespace Gradual_Romance
         {
             get
             {
-                DirectPawnRelation directPawnRelation = GRPawnRelationUtility.MostLikedBedSharingRelationship(this.pawn, false);
-                return string.Format(base.CurStage.label, directPawnRelation.otherPawn.LabelShort).CapitalizeFirst();
+                var directPawnRelation = RelationshipUtility.MostLikedBedSharingRelationship(pawn, false);
+                return string.Format(CurStage.label, directPawnRelation.otherPawn.LabelShort).CapitalizeFirst();
             }
         }
 
@@ -25,7 +21,9 @@ namespace Gradual_Romance
         {
             get
             {
-                float a = -0.05f * (float)this.pawn.relations.OpinionOf(GRPawnRelationUtility.MostLikedBedSharingRelationship(this.pawn, false).otherPawn);
+                var a = -0.05f *
+                        pawn.relations.OpinionOf(RelationshipUtility.MostLikedBedSharingRelationship(pawn, false)
+                            .otherPawn);
                 return Mathf.Min(a, -1f);
             }
         }

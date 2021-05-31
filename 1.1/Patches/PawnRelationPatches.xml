@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/PawnRelationDefs/PawnRelations_FamilyByChoice[defName="Spouse"]</xpath>
+    <value>
+      <li Class="GradualRomance.GRPawnRelationExtension">
+        <isRomantic>true</isRomantic>
+        <affairReluctance>0.3</affairReluctance>
+        <relationshipPriority>1000</relationshipPriority>
+      </li>
+    </value>
+  </Operation>
+
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>Defs/PawnRelationDefs/PawnRelations_FamilyByChoice[defName="Fiance"]</xpath>
+    <value>
+      <li Class="GradualRomance.GRPawnRelationExtension">
+        <isRomantic>true</isRomantic>
+        <affairReluctance>0.1</affairReluctance>
+        <relationshipPriority>900</relationshipPriority>
+      </li>
+    </value>
+  </Operation>-->
+</Patch>

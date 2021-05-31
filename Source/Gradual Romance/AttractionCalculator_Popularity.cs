@@ -1,28 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
+﻿using UnityEngine;
 using Verse;
-using UnityEngine;
 
 namespace Gradual_Romance
 {
     public class AttractionCalculator_Popularity : AttractionCalculator
     {
+        private const float FriendAttractionDampener = 0.4f;
+
         public override bool Check(Pawn observer, Pawn assessed)
         {
             if (!observer.IsColonist || !assessed.IsColonist)
             {
                 return false;
             }
+
             return true;
         }
+
         public override float Calculate(Pawn observer, Pawn assessed)
         {
             //List<Pawn> allPawns = assessed.MapHeld.mapPawns.AllPawnsSpawned;
-            float numOfAssessedFriends = 0f;
-            float numOfObservedFriends = 0f;
             /*
             if (cachedValues)
             {
@@ -30,14 +27,16 @@ namespace Gradual_Romance
                 numOfObservedFriends = GRHelper.GRPawnComp(observerPawn).cachedNumberOfColonyFriends;
             }
             */
-            numOfAssessedFriends = GRPawnRelationUtility.NumberOfFriends(assessed);
-            numOfObservedFriends = GRPawnRelationUtility.NumberOfFriends(observer);
-       
-            float friendDifference = numOfAssessedFriends - numOfObservedFriends;
-            if (friendDifference == 0f) { return 1f; }
-            return Mathf.Pow(((numOfAssessedFriends + 1f) / (numOfObservedFriends + 1f)), FriendAttractionDampener);
-        }
+            float numOfAssessedFriends = RelationshipUtility.NumberOfFriends(assessed);
+            float numOfObservedFriends = RelationshipUtility.NumberOfFriends(observer);
 
-        private const float FriendAttractionDampener = 0.4f;
+            var friendDifference = numOfAssessedFriends - numOfObservedFriends;
+            if (friendDifference == 0f)
+            {
+                return 1f;
+            }
+
+            return Mathf.Pow((numOfAssessedFriends + 1f) / (numOfObservedFriends + 1f), FriendAttractionDampener);
+        }
     }
 }

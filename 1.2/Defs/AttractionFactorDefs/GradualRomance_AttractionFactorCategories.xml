@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Gradual_Romance.AttractionFactorCategoryDef>
+    <defName>Physical</defName>
+  </Gradual_Romance.AttractionFactorCategoryDef>
+  <Gradual_Romance.AttractionFactorCategoryDef>
+    <defName>Romantic</defName>
+  </Gradual_Romance.AttractionFactorCategoryDef>
+  <Gradual_Romance.AttractionFactorCategoryDef>
+    <defName>Social</defName>
+  </Gradual_Romance.AttractionFactorCategoryDef>
+  <Gradual_Romance.AttractionFactorCategoryDef>
+    <defName>Circumstance</defName>
+    <chanceOnly>true</chanceOnly>
+    <alwaysRecalculate>true</alwaysRecalculate>
+  </Gradual_Romance.AttractionFactorCategoryDef>
+  <Gradual_Romance.AttractionFactorCategoryDef>
+    <defName>Relationship</defName>
+    <chanceOnly>true</chanceOnly>
+    <onlyForRomance>true</onlyForRomance>
+  </Gradual_Romance.AttractionFactorCategoryDef>
+</Defs>

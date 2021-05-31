@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
-using UnityEngine;
+﻿using Verse;
 
 namespace Gradual_Romance
 {
@@ -12,13 +6,15 @@ namespace Gradual_Romance
     {
         public override bool Check(Pawn observer, Pawn assessed)
         {
-            return (GRPawnRelationUtility.GetAllPawnsRomanticWith(observer).Count() >= GradualRomanceMod.numberOfRelationships && !GRPawnRelationUtility.GetAllPawnsRomanticWith(observer).Contains(assessed));
+            return RelationshipUtility.GetAllPawnsRomanticWith(observer).Count >=
+                   GradualRomanceMod.numberOfRelationships &&
+                   !RelationshipUtility.GetAllPawnsRomanticWith(observer).Contains(assessed);
         }
+
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            return (GradualRomanceMod.numberOfRelationships / (GRPawnRelationUtility.GetAllPawnsRomanticWith(observer).Count() + 1));
+            return GradualRomanceMod.numberOfRelationships /
+                   (RelationshipUtility.GetAllPawnsRomanticWith(observer).Count + 1);
         }
-
-
     }
 }

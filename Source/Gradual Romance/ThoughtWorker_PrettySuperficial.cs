@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
-using UnityEngine;
 
 namespace Gradual_Romance
 {
@@ -16,42 +11,39 @@ namespace Gradual_Romance
             {
                 return false;
             }
-            else if (pawn.def.GetModExtension<XenoRomanceExtension>().faceCategory != pawn.def.GetModExtension<XenoRomanceExtension>().faceCategory)
-            {
-                return false;
-            }
-            else if (RelationsUtility.IsDisfigured(other))
-            {
-                return false;
-            }
-            else if (!pawn.health.capacities.CapableOf(PawnCapacityDefOf.Sight))
-            {
-                return false;
-            }
-            else
-            {
-                int num = other.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
-                if (num == 1)
-                {
-                    return ThoughtState.ActiveAtStage(0);
-                }
-                else if (num == 2)
-                {
-                    return ThoughtState.ActiveAtStage(1);
-                }
-                else if (num == 3)
-                {
-                    return ThoughtState.ActiveAtStage(2);
-                }
-                else if (num == 4)
-                {
-                    return ThoughtState.ActiveAtStage(3);
-                }
-                else { return false; }
 
+            if (RelationsUtility.IsDisfigured(other))
+            {
+                return false;
             }
+
+            if (!pawn.health.capacities.CapableOf(PawnCapacityDefOf.Sight))
+            {
+                return false;
+            }
+
+            var num = other.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
+            if (num == 1)
+            {
+                return ThoughtState.ActiveAtStage(0);
+            }
+
+            if (num == 2)
+            {
+                return ThoughtState.ActiveAtStage(1);
+            }
+
+            if (num == 3)
+            {
+                return ThoughtState.ActiveAtStage(2);
+            }
+
+            if (num == 4)
+            {
+                return ThoughtState.ActiveAtStage(3);
+            }
+
+            return false;
         }
-
     }
-
 }

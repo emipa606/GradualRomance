@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <AttractionCalculationSetting_title>Attraction Calculation Mode</AttractionCalculationSetting_title>
   <AttractionCalculationSetting_desc>Change how attraction is calculated. 'Complex' is default, allows for the most sophisticated behavior, but can hurt performance. 'Simplified' is similar to 'complex' but uses simpler calculations. 'Vanilla' approximates vanilla attraction and is the least resource intensive.</AttractionCalculationSetting_desc>
@@ -69,4 +68,3 @@
   <MinAttraction_title>Minimum Attraction for Seduction Attempt</MinAttraction_title>
   <MinAttraction_desc>This is the minimum a pawn needs to be attracted to a given pawn for a seduction attempt, if the pawn isn't already in a relationship with another pawn.</MinAttraction_desc>
 </LanguageData>
-

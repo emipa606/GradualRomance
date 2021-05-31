@@ -55,6 +55,8 @@ namespace Gradual_Romance
         public string reasonLow;
         public string reasonVeryLow;
         public bool hidden = false;
+        public bool needsSight = false;
+        public bool needsHearing = false;
         private Type calculatorClass = typeof(AttractionCalculator);
         [Unsaved]
         private AttractionCalculator calcInt;

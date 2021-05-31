@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <NewSweetheartsLabel>New Sweethearts</NewSweetheartsLabel>
   <NewSweetheartsText>{PAWN1_nameDef} and {PAWN2_nameDef} are now sweethearts! This is a platonic, semi-romantic friendship that has the potential to bloom into a full romance.</NewSweetheartsText>

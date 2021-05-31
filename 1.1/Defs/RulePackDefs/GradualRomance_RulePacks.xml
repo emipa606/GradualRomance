@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>GRGlobal</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>crudefemalebodypart-&gt;tits</li>
+        <li>crudefemalebodypart-&gt;breasts</li>
+        <li>crudefemalebodypart-&gt;ass</li>
+        <li>crudefemalebodypart-&gt;legs</li>
+        <li>crudefemalebodypart-&gt;thighs</li>
+        <li>crudefemalebodypart-&gt;hips</li>
+        <li>crudemalebodypart-&gt;abs</li>
+        <li>crudemalebodypart-&gt;chest</li>
+        <li>crudemalebodypart-&gt;crotch</li>
+        <li>crudemalebodypart-&gt;package</li>
+        <li>crudemalebodypart-&gt;ass</li>
+        <li>crudemalebodypart-&gt;glutes</li>
+        <li>crudemalebodypart-&gt;biceps</li>
+        <li>insultfemale-&gt;bitch</li>
+        <li>insultfemale-&gt;witch</li>
+        <li>insultfemale-&gt;slut</li>
+        <li>insultfemale-&gt;harlot</li>
+        <li>insultfemale-&gt;battleaxe</li>
+        <li>insultfemale-&gt;shrew</li>
+        <li>insultfemale-&gt;prude</li>
+        <li>insultfemale-&gt;hag</li>
+        <li>insultfemale-&gt;tramp</li>
+        <li>insultfemale-&gt;bint</li>
+        <li>insultfemale-&gt;trollop</li>
+        <li>insultmale-&gt;cock</li>
+        <li>insultmale-&gt;dick</li>
+        <li>insultmale-&gt;wanker</li>
+        <li>insultmale-&gt;douche</li>
+        <li>insultmale-&gt;douchebag</li>
+        <li>insultmale-&gt;pansy</li>
+        <li>insultmale-&gt;ponce</li>
+        <li>insultmale-&gt;pussy</li>
+        <li>insultmale-&gt;bitch</li>
+        <li>insultmale-&gt;dog</li>
+        <li>lovelybodypart-&gt;eyes</li>
+        <li>lovelybodypart-&gt;hair</li>
+        <li>lovelybodypart-&gt;smile</li>
+      </rulesStrings>
+      <!--
+    <rulesRaw>
+      <li Class="Rule_File">
+        <keyword>crudefemalebodypart</keyword>
+        <path>Words/Nouns/Crude_Female</path>
+      </li>
+      <li Class="Rule_File">
+        <keyword>crudemalebodypart</keyword>
+        <path>Words/Nouns/Crude_Male</path>
+      </li>
+      <li Class="Rule_File">
+        <keyword>insultfemale</keyword>
+        <path>Words/Nouns/Insult_Female</path>
+      </li>
+      <li Class="Rule_File">
+        <keyword>insultmale</keyword>
+        <path>Words/Nouns/Insult_Male</path>
+      </li>
+      <li Class="Rule_File">
+        <keyword>lovelybodypart</keyword>
+        <path>Words/Nouns/Lovely_BodyPart</path>
+      </li>
+      
+    </rulesRaw>
+    -->
+    </rulePack>
+  </RulePackDef>
+</Defs>

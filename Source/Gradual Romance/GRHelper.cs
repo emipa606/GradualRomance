@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using RimWorld;
 using Verse;
-using RimWorld;
 
 namespace Gradual_Romance
 {
@@ -11,23 +7,32 @@ namespace Gradual_Romance
     {
         public static bool ShouldApplyFemaleDifference(Gender testedGender = Gender.Female)
         {
-            return ((GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Vanilla && testedGender == Gender.Female) || (GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Inverse && testedGender == Gender.Male));
+            return GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Vanilla &&
+                   testedGender == Gender.Female ||
+                   GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Inverse &&
+                   testedGender == Gender.Male;
         }
+
         public static bool ShouldApplyMaleDifference(Gender testedGender = Gender.Male)
         {
-            return ((GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Vanilla && testedGender == Gender.Male) || (GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Inverse && testedGender == Gender.Female));
+            return GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Vanilla &&
+                   testedGender == Gender.Male ||
+                   GradualRomanceMod.genderMode == GradualRomanceMod.GenderModeSetting.Inverse &&
+                   testedGender == Gender.Female;
         }
+
         public static GRPawnComp GRPawnComp(Pawn pawn)
         {
             return pawn.GetComp<GRPawnComp>();
         }
+
         public static GRBodyTypeExtension BodyTypeExtension(BodyTypeDef bodyType)
         {
             try
             {
                 return bodyType.GetModExtension<GRBodyTypeExtension>();
             }
-            catch (NullReferenceException)
+            catch
             {
                 return null;
             }
@@ -39,7 +44,7 @@ namespace Gradual_Romance
             {
                 return thing.GetModExtension<XenoRomanceExtension>();
             }
-            catch (NullReferenceException)
+            catch
             {
                 return null;
             }
@@ -51,11 +56,10 @@ namespace Gradual_Romance
             {
                 return relation.GetModExtension<RomanticRelationExtension>();
             }
-            catch (NullReferenceException)
+            catch
             {
                 return null;
             }
         }
-
     }
 }

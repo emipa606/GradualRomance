@@ -1,44 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
+﻿using UnityEngine;
 using Verse;
-using UnityEngine;
 
 namespace Gradual_Romance
 {
     public class AttractionFactor_AffairReluctance : AttractionCalculator
     {
+        private Pawn assessedCuckold;
+        private Pawn observerCuckold;
+
         public override bool Check(Pawn observer, Pawn assessed)
         {
-            if (GRPawnRelationUtility.IsAnAffair(observer, assessed, out Pawn cuck1, out Pawn cuck2))
+            if (!RelationshipUtility.IsAnAffair(observer, assessed, out var cuck1, out var cuck2))
             {
-                observerCuckold = cuck1;
-                assessedCuckold = cuck2;
-                return true;
+                return false;
             }
 
-            return false;
-
+            observerCuckold = cuck1;
+            assessedCuckold = cuck2;
+            return true;
         }
+
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            float affairReluctance = 1f;
-            float affairReluctance2 = 1f;
+            var affairReluctance = 1f;
+            var affairReluctance2 = 1f;
             if (observerCuckold != null)
             {
-                affairReluctance = GRPawnRelationUtility.AffairReluctance(GRPawnRelationUtility.MostAdvancedRelationshipBetween(observer, observerCuckold));
-                affairReluctance *= Mathf.Pow(Mathf.InverseLerp(-100f, 5f, observer.relations.OpinionOf(observerCuckold)), -0.33f);
+                affairReluctance =
+                    RelationshipUtility.AffairReluctance(
+                        RelationshipUtility.MostAdvancedRelationshipBetween(observer, observerCuckold));
+                affairReluctance *=
+                    Mathf.Pow(Mathf.InverseLerp(-100f, 5f, observer.relations.OpinionOf(observerCuckold)), -0.33f);
             }
-            if (assessedCuckold != null)
+
+            if (assessedCuckold == null)
             {
-                affairReluctance2 = GRPawnRelationUtility.AffairReluctance(GRPawnRelationUtility.MostAdvancedRelationshipBetween(assessed, assessedCuckold));
-                affairReluctance2 *= Mathf.Pow(Mathf.InverseLerp(-100f, 5f, observer.relations.OpinionOf(assessedCuckold)), -0.33f);
+                return Mathf.Min(affairReluctance, affairReluctance2);
             }
-            return Mathf.Min(affairReluctance,affairReluctance2);
+
+            affairReluctance2 =
+                RelationshipUtility.AffairReluctance(
+                    RelationshipUtility.MostAdvancedRelationshipBetween(assessed, assessedCuckold));
+            affairReluctance2 *=
+                Mathf.Pow(Mathf.InverseLerp(-100f, 5f, observer.relations.OpinionOf(assessedCuckold)), -0.33f);
+
+            return Mathf.Min(affairReluctance, affairReluctance2);
         }
-        private Pawn observerCuckold = null;
-        private Pawn assessedCuckold = null;
     }
 }

@@ -12,7 +12,7 @@ namespace Gradual_Romance
     {
         public override bool Check(Pawn observer, Pawn assessed)
         {
-            return (ModHooks.UsingDubsHygiene());
+            return (ModHooks.UsingDubsHygiene() && assessed.needs.AllNeeds.Any<Need>(x => x.def.defName == "Hygiene"));
         }
         public override float Calculate(Pawn observer, Pawn assessed)
         {

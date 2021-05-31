@@ -27,6 +27,12 @@ namespace Gradual_Romance
         public static ThoughtDef CheatedOnMeHighOpinion;
 
         public static ThoughtDef LoversLover;
+
+        public static ThoughtDef CaughtFlirting;
+
+        public static ThoughtDef CaughtFlirtingWithLover;
+
+        public static ThoughtDef FeelingNeglected;
         static ThoughtDefOfGR()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThoughtDefOfGR));

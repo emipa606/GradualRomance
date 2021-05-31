@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using RimWorld;
 using Verse;
-using RimWorld;
-using Psychology;
 
 namespace Gradual_Romance
 {
@@ -12,21 +7,16 @@ namespace Gradual_Romance
     {
         public override bool Check(Pawn observer, Pawn assessed)
         {
-            return (observer.def.GetModExtension<XenoRomanceExtension>().faceCategory == assessed.def.GetModExtension<XenoRomanceExtension>().faceCategory);
-
+            return observer.def.GetModExtension<XenoRomanceExtension>().faceCategory ==
+                   assessed.def.GetModExtension<XenoRomanceExtension>().faceCategory;
         }
-
 
 
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            int beauty = 0;
             float beautyFactor;
-            if (assessed.RaceProps.Humanlike)
-            {
-                beauty = assessed.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
-            }
-            beauty = 0;
+            var beauty = assessed.RaceProps.Humanlike ? assessed.story.traits.DegreeOfTrait(TraitDefOf.Beauty) : 0;
+
 
             switch (beauty)
             {
@@ -57,10 +47,9 @@ namespace Gradual_Romance
                 default:
                     beautyFactor = 1f;
                     break;
-
             }
-            return beautyFactor;
 
+            return beautyFactor;
         }
     }
 }

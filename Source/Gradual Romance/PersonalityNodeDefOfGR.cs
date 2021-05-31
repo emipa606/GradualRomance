@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Psychology;
+﻿using Psychology;
 using RimWorld;
-using Verse;
 
 //includes the missing personality defs from Psychology.
 

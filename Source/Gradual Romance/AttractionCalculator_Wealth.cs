@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
+﻿using UnityEngine;
 using Verse;
-using UnityEngine;
 
 namespace Gradual_Romance
 {
@@ -12,13 +7,13 @@ namespace Gradual_Romance
     {
         public override bool Check(Pawn observer, Pawn assessed)
         {
-            return (assessed.IsColonist && observer.IsColonist);
+            return assessed.IsColonist && observer.IsColonist;
         }
+
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            return Mathf.InverseLerp(0f, AttractionUtility.GetObjectiveWealthAttractiveness(observer), AttractionUtility.GetObjectiveWealthAttractiveness(assessed));
+            return Mathf.InverseLerp(0f, AttractionUtility.GetObjectiveWealthAttractiveness(observer),
+                AttractionUtility.GetObjectiveWealthAttractiveness(assessed));
         }
     }
 }
-
-

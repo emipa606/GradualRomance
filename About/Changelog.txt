@@ -1,0 +1,4 @@
+# Changelog for GradualRomance
+
+1.0.1.0 - Updated to 1.2
+

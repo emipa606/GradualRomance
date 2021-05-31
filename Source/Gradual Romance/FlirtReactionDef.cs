@@ -35,6 +35,7 @@ namespace Gradual_Romance
         public float awkwardReaction;
         public float riskyReaction;
         public float obscureReaction;
+        public bool provokesJealousy;
         public List<ThoughtDef> givesTension = new List<ThoughtDef>() { };
         public float sweetheartModifier = 1f;
 

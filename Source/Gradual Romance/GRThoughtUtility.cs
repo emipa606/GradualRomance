@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
+﻿using RimWorld;
 using Verse;
-
 
 namespace Gradual_Romance
 {
@@ -12,19 +7,22 @@ namespace Gradual_Romance
     {
         public static bool IsTensionMemory(ThoughtDef thought)
         {
-            return (thought == ThoughtDefOfGR.SexualTension || thought == ThoughtDefOfGR.RomanticTension || thought == ThoughtDefOfGR.LogicalTension);
+            return thought == ThoughtDefOfGR.SexualTension || thought == ThoughtDefOfGR.RomanticTension ||
+                   thought == ThoughtDefOfGR.LogicalTension;
         }
+
         public static int NumOfMemoriesOfDefWhereOtherPawnIs(Pawn pawn, Pawn other, ThoughtDef thought)
         {
-            List<Thought_Memory> memories = pawn.needs.mood.thoughts.memories.Memories;
-            int count = 0;
-            for (int i = 0; i < memories.Count(); i++)
+            var memories = pawn.needs.mood.thoughts.memories.Memories;
+            var count = 0;
+            foreach (var thoughtMemory in memories)
             {
-                if (memories[i].def == thought && memories[i].otherPawn == other)
+                if (thoughtMemory.def == thought && thoughtMemory.otherPawn == other)
                 {
                     count++;
                 }
             }
+
             return count;
         }
     }

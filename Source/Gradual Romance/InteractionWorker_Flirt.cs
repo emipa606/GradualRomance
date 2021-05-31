@@ -1,39 +1,50 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using UnityEngine;
-using RimWorld;
-using Verse;
-using Psychology;
+﻿using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
-using HugsLib;
-using Verse.Grammar;
+using Psychology;
+using RimWorld;
+using UnityEngine;
+using Verse;
 
 namespace Gradual_Romance
 {
     public class InteractionWorker_Flirt : InteractionWorker
     {
-        private float recipientPhysicalAttraction;
-        private float recipientSocialAttraction;
-        private float recipientRomanticAttraction;
+        //List<InteractionDef> allDefsListForReading = DefDatabase<InteractionDef>.AllDefsListForReading;
+        //allDefsListForReading.TryRandomElementByWeight((InteractionDef x) => x.Worker.RandomSelectionWeight(this.pawn, p), out intDef)
+        private const float MinAttractionForRomanceAttempt = 0.25f;
+
+        private const int MinOpinionForRomanceAttempt = 5;
+
+        private const float BaseSuccessChance = 1f;
+
+        private const float BaseFlirtWeight = 0.4f;
+
+        private const float GoodFlirtBonus = 1.5f;
+
+        private const float BadFlirtPenalty = 0.6f;
+
+        private const float FamiliarityFactor = 0.5f;
+
+        private static float pressureCache;
+        private readonly List<AttractionFactorDef> highRecipientReasons = new List<AttractionFactorDef>();
+        private readonly List<AttractionFactorDef> lowRecipientReasons = new List<AttractionFactorDef>();
+        private readonly List<AttractionFactorDef> veryHighRecipientReasons = new List<AttractionFactorDef>();
+        private readonly List<AttractionFactorDef> veryLowRecipientReasons = new List<AttractionFactorDef>();
+        private List<AttractionFactorDef> highInitiatorReasons = new List<AttractionFactorDef>();
         private float initiatorPhysicalAttraction;
-        private float initiatorSocialAttraction;
         private float initiatorRomanticAttraction;
-        private float initiatorCircumstances;
+        private float initiatorSocialAttraction;
+        private Pawn lastInitiator;
+        private Pawn lastRecipient;
+        private List<AttractionFactorDef> lowInitiatorReasons = new List<AttractionFactorDef>();
         private float recipientCircumstances;
-        private List<AttractionFactorDef> veryHighInitiatorReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> highInitiatorReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> lowInitiatorReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> veryLowInitiatorReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> veryHighRecipientReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> highRecipientReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> lowRecipientReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> veryLowRecipientReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> intiatorFailureReasons = new List<AttractionFactorDef>() { };
-        private List<AttractionFactorDef> recipientFailureReasons = new List<AttractionFactorDef>() { };
-        private Pawn lastInitiator = null;
-        private Pawn lastRecipient = null;
-        private bool successImpossible = false;
+        private float recipientPhysicalAttraction;
+        private float recipientRomanticAttraction;
+        private float recipientSocialAttraction;
+        private bool successImpossible;
+        private List<AttractionFactorDef> veryHighInitiatorReasons = new List<AttractionFactorDef>();
+        private List<AttractionFactorDef> veryLowInitiatorReasons = new List<AttractionFactorDef>();
 
 
         private void EmptyReasons()
@@ -46,20 +57,20 @@ namespace Gradual_Romance
             highRecipientReasons.Clear();
             lowRecipientReasons.Clear();
             veryLowRecipientReasons.Clear();
-            intiatorFailureReasons.Clear();
-            recipientFailureReasons.Clear();
         }
 
-        private float CalculateAndSort(AttractionFactorCategoryDef category, Pawn observer, Pawn assessed, bool observerIsInitiator = true)
+        private float CalculateAndSort(AttractionFactorCategoryDef category, Pawn observer, Pawn assessed,
+            bool observerIsInitiator = true)
         {
-            float result = AttractionUtility.CalculateAttractionCategory(category, observer, assessed, out List<AttractionFactorDef> veryLowFactors, out List<AttractionFactorDef> lowFactors, out List<AttractionFactorDef> hightFactors, out List<AttractionFactorDef> veryHighFactors, out AttractionFactorDef reasonForInstantFailure);
+            var result = AttractionUtility.CalculateAttractionCategory(category, observer, assessed,
+                out var veryLowFactors, out var lowFactors, out var hightFactors, out var veryHighFactors,
+                out _);
             if (observerIsInitiator)
             {
                 veryHighInitiatorReasons.AddRange(veryHighFactors);
                 highInitiatorReasons.AddRange(hightFactors);
                 lowInitiatorReasons.AddRange(lowFactors);
                 veryLowInitiatorReasons.AddRange(veryLowFactors);
-                intiatorFailureReasons.Add(reasonForInstantFailure);
             }
             else
             {
@@ -67,51 +78,56 @@ namespace Gradual_Romance
                 highRecipientReasons.AddRange(hightFactors);
                 lowRecipientReasons.AddRange(lowFactors);
                 veryLowRecipientReasons.AddRange(veryLowFactors);
-                recipientFailureReasons.Add(reasonForInstantFailure);
             }
+
             return result;
         }
 
         /// <summary>
-        /// 
         /// </summary>
         /// <param name="initiator"></param>
         /// <param name="recipient"></param>
         /// <returns></returns>
         public override float RandomSelectionWeight(Pawn initiator, Pawn recipient)
         {
-
             if (!AttractionUtility.QuickCheck(initiator, recipient))
             {
                 return 0f;
             }
+
             EmptyReasons();
-            recipientPhysicalAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Physical, initiator, recipient);
-            recipientRomanticAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Romantic, initiator, recipient);
-            recipientSocialAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Social, initiator, recipient);
-            initiatorCircumstances = CalculateAndSort(AttractionFactorCategoryDefOf.Circumstance, initiator, recipient);
+            var currentAttraction = AttractionUtility.CalculateAttraction(initiator, recipient, false, false,
+                out veryLowInitiatorReasons, out lowInitiatorReasons, out highInitiatorReasons,
+                out veryHighInitiatorReasons, out _);
+            recipientPhysicalAttraction = GRHelper.GRPawnComp(initiator)
+                .RetrieveAttractionForCategory(recipient, AttractionFactorCategoryDefOf.Physical);
+            recipientRomanticAttraction = GRHelper.GRPawnComp(initiator)
+                .RetrieveAttractionForCategory(recipient, AttractionFactorCategoryDefOf.Romantic);
+            recipientSocialAttraction = GRHelper.GRPawnComp(initiator)
+                .RetrieveAttractionForCategory(recipient, AttractionFactorCategoryDefOf.Social);
+
+            //initiatorCircumstances = CalculateAndSort(AttractionFactorCategoryDefOf.Circumstance, initiator, recipient);
             //if (intiatorFailureReasons.Count() > 0)
             //{
             //    EmptyReasons();
             //    return 0f;
             //}
-            float romanceChance = recipientPhysicalAttraction * recipientRomanticAttraction * recipientRomanticAttraction * initiatorCircumstances;
-            float flirtFactor = 0.5f;
+            var flirtFactor = 0.5f;
 
-            List<Thought_Memory> memoryList = initiator.needs.mood.thoughts.memories.Memories;
+            var memoryList = initiator.needs.mood.thoughts.memories.Memories;
 
-            for (int i = 0; i < memoryList.Count; i++)
+            foreach (var curMemory in memoryList)
             {
-                Thought_Memory curMemory = memoryList[i];
                 if (curMemory.def == ThoughtDefOfGR.RomanticDisinterest && curMemory.otherPawn == recipient)
                 {
                     flirtFactor = flirtFactor * BadFlirtPenalty;
                 }
             }
+
             flirtFactor = Mathf.Max(flirtFactor, 0.05f);
             lastInitiator = initiator;
             lastRecipient = recipient;
-            return GradualRomanceMod.BaseFlirtChance * romanceChance * flirtFactor * BaseFlirtWeight;
+            return GradualRomanceMod.BaseFlirtChance * currentAttraction * flirtFactor * BaseFlirtWeight;
         }
         /*
         public float SuccessChance(Pawn initiator, Pawn recipient)
@@ -123,26 +139,43 @@ namespace Gradual_Romance
         //
         //allDefsListForReading.TryRandomElementByWeight((InteractionDef x) => x.Worker.RandomSelectionWeight(this.pawn, p), out intDef)
 
-        public override void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks, out string letterText, out string letterLabel, out LetterDef letterDef)
+        public override void Interacted(Pawn initiator, Pawn recipient, List<RulePackDef> extraSentencePacks,
+            out string letterText, out string letterLabel, out LetterDef letterDef, out LookTargets lookTargets)
         {
+            lookTargets = null;
             if (lastInitiator != initiator || lastRecipient != recipient)
             {
-                EmptyReasons(); 
-                recipientPhysicalAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Physical, initiator, recipient);
-                recipientRomanticAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Romantic, initiator, recipient);
-                recipientSocialAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Social, initiator, recipient);
-                initiatorCircumstances = CalculateAndSort(AttractionFactorCategoryDefOf.Circumstance, initiator, recipient);
+                EmptyReasons();
+                recipientPhysicalAttraction =
+                    CalculateAndSort(AttractionFactorCategoryDefOf.Physical, initiator, recipient);
+                recipientRomanticAttraction =
+                    CalculateAndSort(AttractionFactorCategoryDefOf.Romantic, initiator, recipient);
+                recipientSocialAttraction =
+                    CalculateAndSort(AttractionFactorCategoryDefOf.Social, initiator, recipient);
             }
+
+            /*
             initiatorPhysicalAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Physical, recipient, initiator, false);
             initiatorRomanticAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Romantic, recipient, initiator, false);
             initiatorSocialAttraction = CalculateAndSort(AttractionFactorCategoryDefOf.Social, recipient, initiator, false);
             recipientCircumstances = CalculateAndSort(AttractionFactorCategoryDefOf.Circumstance, recipient, initiator, false);
-            float totalAttraction = recipientPhysicalAttraction * recipientRomanticAttraction * recipientSocialAttraction;
-            LogFlirt(initiator.Name.ToStringShort + "=>" + recipient.Name.ToStringShort + " attraction: physical " + recipientPhysicalAttraction.ToString() + ", romantic " + recipientRomanticAttraction.ToString() + ", social " + recipientSocialAttraction.ToString() + ".");
-            List<FlirtStyleDef> allDefsListForReading = DefDatabase<FlirtStyleDef>.AllDefsListForReading;
-            FlirtStyleDef flirtStyle;
+            */
+            recipientCircumstances =
+                AttractionUtility.CalculateAttractionCategory(AttractionFactorCategoryDefOf.Circumstance, recipient,
+                    initiator);
+            initiatorPhysicalAttraction = GRHelper.GRPawnComp(recipient)
+                .RetrieveAttractionForCategory(initiator, AttractionFactorCategoryDefOf.Physical);
+            initiatorRomanticAttraction = GRHelper.GRPawnComp(recipient)
+                .RetrieveAttractionForCategory(initiator, AttractionFactorCategoryDefOf.Romantic);
+            initiatorSocialAttraction = GRHelper.GRPawnComp(recipient)
+                .RetrieveAttractionForCategory(initiator, AttractionFactorCategoryDefOf.Social);
+            LogFlirt(initiator.Name.ToStringShort + "=>" + recipient.Name.ToStringShort + " attraction: physical " +
+                     recipientPhysicalAttraction + ", romantic " + recipientRomanticAttraction + ", social " +
+                     recipientSocialAttraction + ".");
+            var allDefsListForReading = DefDatabase<FlirtStyleDef>.AllDefsListForReading;
             pressureCache = AttractionUtility.RelationshipStress(initiator, recipient);
-            allDefsListForReading.TryRandomElementByWeight((FlirtStyleDef x) => CalculateFlirtStyleWeight(x, initiator, recipient), out flirtStyle);
+            allDefsListForReading.TryRandomElementByWeight(x => CalculateFlirtStyleWeight(x, initiator, recipient),
+                out var flirtStyle);
             if (flirtStyle == null)
             {
                 Log.Error("FailedToFindFlirt_error".Translate());
@@ -151,28 +184,35 @@ namespace Gradual_Romance
                 letterDef = null;
                 return;
             }
-            if (veryHighInitiatorReasons.Count() > 0)
+
+            if (veryHighInitiatorReasons.Count > 0)
             {
-                AttractionFactorDef reason = veryHighInitiatorReasons.RandomElement<AttractionFactorDef>();
+                var reason = veryHighInitiatorReasons.RandomElement();
                 extraSentencePacks.Add(reason.intriguedByText);
             }
-            else if (highInitiatorReasons.Count() > 0)
+            else if (highInitiatorReasons.Count > 0)
             {
-                AttractionFactorDef reason = highInitiatorReasons.RandomElement<AttractionFactorDef>();
+                var reason = highInitiatorReasons.RandomElement();
                 extraSentencePacks.Add(reason.intriguedByText);
             }
+
             if (recipient.gender == Gender.Male)
             {
                 extraSentencePacks.Add(flirtStyle.rulePackMale);
             }
+
             if (recipient.gender == Gender.Female)
             {
                 extraSentencePacks.Add(flirtStyle.rulePackFemale);
             }
+
             LogFlirt("Flirt chosen: " + flirtStyle.defName + ".");
-            LogFlirt(recipient.Name.ToStringShort + "=>" + initiator.Name.ToStringShort + " attraction: physical " + initiatorPhysicalAttraction.ToString() + ", romantic " + initiatorRomanticAttraction.ToString() + ", social " + initiatorSocialAttraction.ToString() + ".");
-            
-            if (initiatorPhysicalAttraction == 0f||initiatorRomanticAttraction == 0f||initiatorSocialAttraction == 0f)
+            LogFlirt(recipient.Name.ToStringShort + "=>" + initiator.Name.ToStringShort + " attraction: physical " +
+                     initiatorPhysicalAttraction + ", romantic " + initiatorRomanticAttraction + ", social " +
+                     initiatorSocialAttraction + ".");
+
+            if (initiatorPhysicalAttraction == 0f || initiatorRomanticAttraction == 0f ||
+                initiatorSocialAttraction == 0f)
             {
                 successImpossible = true;
             }
@@ -180,18 +220,18 @@ namespace Gradual_Romance
             {
                 successImpossible = false;
             }
-            FlirtReactionDef flirtReaction = null;
-            IEnumerable<FlirtReactionDef> successfulFlirtReactions = (from reaction in DefDatabase<FlirtReactionDef>.AllDefsListForReading
-                                                               where reaction.successful
-                                                               select reaction);
-            IEnumerable<FlirtReactionDef> unsuccessfulFlirtReactions = (from reaction in DefDatabase<FlirtReactionDef>.AllDefsListForReading
-                                                                      where !reaction.successful
-                                                                      select reaction);
-            List < FlirtReactionDef > allFlirtReactions = DefDatabase<FlirtReactionDef>.AllDefsListForReading;
-            FlirtReactionDef successfulFlirt;
-            FlirtReactionDef unsuccessfulFlirt;
-            successfulFlirtReactions.TryRandomElementByWeight((FlirtReactionDef x) => CalculateFlirtReactionWeight(flirtStyle, x, initiator, recipient), out successfulFlirt);
-            unsuccessfulFlirtReactions.TryRandomElementByWeight((FlirtReactionDef x) => CalculateFlirtReactionWeight(flirtStyle,x,initiator,recipient), out unsuccessfulFlirt);
+
+            FlirtReactionDef flirtReaction;
+            var successfulFlirtReactions = from reaction in DefDatabase<FlirtReactionDef>.AllDefsListForReading
+                where reaction.successful
+                select reaction;
+            var unsuccessfulFlirtReactions = from reaction in DefDatabase<FlirtReactionDef>.AllDefsListForReading
+                where !reaction.successful
+                select reaction;
+            successfulFlirtReactions.TryRandomElementByWeight(
+                x => CalculateFlirtReactionWeight(flirtStyle, x, initiator, recipient), out var successfulFlirt);
+            unsuccessfulFlirtReactions.TryRandomElementByWeight(
+                x => CalculateFlirtReactionWeight(flirtStyle, x, initiator, recipient), out var unsuccessfulFlirt);
             if (successImpossible)
             {
                 flirtReaction = unsuccessfulFlirt;
@@ -199,18 +239,19 @@ namespace Gradual_Romance
             else
             {
                 //revise to include flirt type
-                float chance = Mathf.Clamp01(GradualRomanceMod.RomanticSuccessRate * Mathf.Pow(initiatorPhysicalAttraction, flirtStyle.baseSexiness) * Mathf.Pow(initiatorRomanticAttraction, flirtStyle.baseRomance) * Mathf.Pow(initiatorSocialAttraction, flirtStyle.baseLogic) * recipientCircumstances * 0.65f);
-                if (Rand.Value < chance)
-                {
-                    flirtReaction = successfulFlirt;
-                }
-                else
-                {
-                    flirtReaction = unsuccessfulFlirt;
-                }
-                LogFlirt(recipient.Name.ToStringShort + " chose reaction " + flirtReaction.defName + " from Successful: " + successfulFlirt.defName + "; Unsuccessful: " + unsuccessfulFlirt.defName + ".");
+                var chance = Mathf.Clamp01(GradualRomanceMod.RomanticSuccessRate *
+                                           Mathf.Pow(initiatorPhysicalAttraction, flirtStyle.baseSexiness) *
+                                           Mathf.Pow(initiatorRomanticAttraction, flirtStyle.baseRomance) *
+                                           Mathf.Pow(initiatorSocialAttraction, flirtStyle.baseLogic) *
+                                           recipientCircumstances * 0.65f);
+                Log.Message("Romance success chance: " + chance);
+                flirtReaction = Rand.Value < chance ? successfulFlirt : unsuccessfulFlirt;
+
+                LogFlirt(recipient.Name.ToStringShort + " chose reaction " + flirtReaction.defName +
+                         " from Successful: " + successfulFlirt.defName + "; Unsuccessful: " +
+                         unsuccessfulFlirt.defName + ".");
             }
-            
+
 
             if (flirtReaction == null)
             {
@@ -225,67 +266,115 @@ namespace Gradual_Romance
             {
                 extraSentencePacks.Add(flirtReaction.maleRulePack);
             }
+
             if (initiator.gender == Gender.Female)
             {
                 extraSentencePacks.Add(flirtReaction.femaleRulePack);
             }
+
             if (flirtReaction != FlirtReactionDefOf.Ignorant)
             {
                 if (flirtReaction.successful)
                 {
-                    if (veryHighRecipientReasons.Count() > 0)
+                    if (veryHighRecipientReasons.Count > 0)
                     {
-                        AttractionFactorDef reason = veryHighRecipientReasons.RandomElement<AttractionFactorDef>();
+                        var reason = veryHighRecipientReasons.RandomElement();
                         extraSentencePacks.Add(reason.reactionPositiveText);
                     }
-                    else if (highRecipientReasons.Count() > 0)
+                    else if (highRecipientReasons.Count > 0)
                     {
-                        AttractionFactorDef reason = highRecipientReasons.RandomElement<AttractionFactorDef>();
+                        var reason = highRecipientReasons.RandomElement();
                         extraSentencePacks.Add(reason.reactionPositiveText);
                     }
                 }
                 else
                 {
-                    if (veryLowRecipientReasons.Count() > 0)
+                    if (veryLowRecipientReasons.Count > 0)
                     {
-                        AttractionFactorDef reason = veryLowRecipientReasons.RandomElement<AttractionFactorDef>();
+                        var reason = veryLowRecipientReasons.RandomElement();
                         extraSentencePacks.Add(reason.reactionNegativeText);
                     }
-                    else if (lowRecipientReasons.Count() > 0)
+                    else if (lowRecipientReasons.Count > 0)
                     {
-                        AttractionFactorDef reason = lowRecipientReasons.RandomElement<AttractionFactorDef>();
+                        var reason = lowRecipientReasons.RandomElement();
                         extraSentencePacks.Add(reason.reactionNegativeText);
                     }
                 }
             }
 
-            flirtReaction.worker.GiveThoughts(initiator, recipient, out List<RulePackDef> yetMoreSentencePacks);
-            
+            flirtReaction.worker.GiveThoughts(initiator, recipient, out var yetMoreSentencePacks);
+
             extraSentencePacks.AddRange(yetMoreSentencePacks);
 
             letterText = null;
             letterLabel = null;
             letterDef = null;
 
-            if (flirtReaction.successful)
+            var loversInSight = RelationshipUtility.PotentiallyJealousPawnsInLineOfSight(initiator);
+            var loversInSight2 = RelationshipUtility.PotentiallyJealousPawnsInLineOfSight(recipient);
+
+            foreach (var observer in loversInSight)
             {
-
-                GRPawnRelationUtility.AdvanceInformalRelationship(initiator, recipient, out PawnRelationDef newRelation, (flirtStyle.baseSweetheartChance * flirtReaction.sweetheartModifier));
-                    
-                if (newRelation != null && (PawnUtility.ShouldSendNotificationAbout(initiator) || PawnUtility.ShouldSendNotificationAbout(recipient)))
+                if (!BreakupUtility.ShouldBeJealous(observer, initiator, recipient))
                 {
+                    continue;
+                }
 
-                    string initiatorParagraph = AttractionUtility.WriteReasonsParagraph(initiator, recipient, veryHighInitiatorReasons, highInitiatorReasons, lowInitiatorReasons, veryLowInitiatorReasons);
-                    string recipientParagraph = AttractionUtility.WriteReasonsParagraph(recipient, initiator, veryHighRecipientReasons, highRecipientReasons, lowRecipientReasons, veryLowRecipientReasons);
-                    letterDef = LetterDefOf.PositiveEvent;
-                    letterLabel = newRelation.GetModExtension<RomanticRelationExtension>().newRelationshipTitleText.Translate();
-                    letterText = newRelation.GetModExtension<RomanticRelationExtension>().newRelationshipLetterText.Translate(initiator.Named("PAWN1"), recipient.Named("PAWN2"));
+                observer.needs.mood.thoughts.memories
+                    .TryGainMemory(ThoughtDefOfGR.CaughtFlirting, initiator);
+                if (flirtReaction.successful)
+                {
+                    observer.needs.mood.thoughts.memories
+                        .TryGainMemory(ThoughtDefOfGR.CaughtFlirtingWithLover, recipient);
+                }
+            }
+
+            if (!flirtReaction.successful)
+            {
+                return;
+            }
+
+            if (flirtReaction.provokesJealousy)
+            {
+                foreach (var observer in loversInSight2)
+                {
+                    if (!BreakupUtility.ShouldBeJealous(observer, initiator, recipient))
+                    {
+                        continue;
+                    }
+
+                    observer.needs.mood.thoughts.memories
+                        .TryGainMemory(ThoughtDefOfGR.CaughtFlirting, recipient);
+                    observer.needs.mood.thoughts.memories
+                        .TryGainMemory(ThoughtDefOfGR.CaughtFlirtingWithLover, initiator);
+                }
+            }
 
 
-                    letterText += initiatorParagraph;
-                    letterText += recipientParagraph;
+            RelationshipUtility.AdvanceInformalRelationship(initiator, recipient, out var newRelation,
+                flirtStyle.baseSweetheartChance * flirtReaction.sweetheartModifier);
 
-                    /*    if (newRelation == PawnRelationDefOfGR.Sweetheart)
+            if (newRelation == null || !PawnUtility.ShouldSendNotificationAbout(initiator) &&
+                !PawnUtility.ShouldSendNotificationAbout(recipient))
+            {
+                return;
+            }
+
+            var initiatorParagraph = AttractionUtility.WriteReasonsParagraph(initiator, recipient,
+                veryHighInitiatorReasons, highInitiatorReasons, lowInitiatorReasons, veryLowInitiatorReasons);
+            var recipientParagraph = AttractionUtility.WriteReasonsParagraph(recipient, initiator,
+                veryHighRecipientReasons, highRecipientReasons, lowRecipientReasons, veryLowRecipientReasons);
+            letterDef = LetterDefOf.PositiveEvent;
+            letterLabel = newRelation.GetModExtension<RomanticRelationExtension>().newRelationshipTitleText
+                .Translate();
+            letterText = newRelation.GetModExtension<RomanticRelationExtension>().newRelationshipLetterText
+                .Translate(initiator.Named("PAWN1"), recipient.Named("PAWN2"));
+
+
+            letterText += initiatorParagraph;
+            letterText += recipientParagraph;
+
+            /*    if (newRelation == PawnRelationDefOfGR.Sweetheart)
                         {
                             letterDef = LetterDefOf.PositiveEvent;
                             letterLabel = "NewSweetheartsLabel".Translate();
@@ -299,7 +388,7 @@ namespace Gradual_Romance
                         }
                         if (newRelation == PawnRelationDefOfGR.Paramour)
                         {
-                            if (GRPawnRelationUtility.IsAnAffair(initiator, recipient, out Pawn initiatorSO, out Pawn recipientSO))
+                            if (RelationshipUtility.IsAnAffair(initiator, recipient, out Pawn initiatorSO, out Pawn recipientSO))
                             {
                                 letterDef = LetterDefOf.NegativeEvent;
                                 letterLabel = "ParamoursAffairLabel".Translate();
@@ -323,35 +412,33 @@ namespace Gradual_Romance
                                 letterText = "NewParamoursText".Translate(initiator.Named("PAWN1"), recipient.Named("PAWN2"));
                             }
                         }*/
-
-
-                }
-                
-            }
-
         }
-
 
 
         private float CalculateFlirtStyleWeight(FlirtStyleDef flirtStyle, Pawn pawn, Pawn other)
         {
-            string flirtLog = pawn.Name.ToStringShort + " => " + other.Name.ToStringShort + " considers " + flirtStyle.defName + ": ";
+            var flirtLog = pawn.Name.ToStringShort + " => " + other.Name.ToStringShort + " considers " +
+                           flirtStyle.defName + ": ";
             //if a pawn has a canceling trait, we abort immediately
-            for (int i = 0; i < flirtStyle.cancelingTraits.Count(); i++)
+            foreach (var traitDef in flirtStyle.cancelingTraits)
             {
-                if (pawn.story.traits.HasTrait(flirtStyle.cancelingTraits[i]))
+                if (!pawn.story.traits.HasTrait(traitDef))
                 {
-                    flirtLog += "canceled by " + flirtStyle.cancelingTraits[i].defName + ".";
-                    LogFlirt(flirtLog);
-                    return 0f;
+                    continue;
                 }
+
+                flirtLog += "canceled by " + traitDef.defName + ".";
+                LogFlirt(flirtLog);
+                return 0f;
             }
+
             //we start with base weight chance
-            float weight = flirtStyle.baseChance;
-            
+            var weight = flirtStyle.baseChance;
+
             //add relationship factor
-            weight *= RelationshipFactorForFlirtStyle(GRPawnRelationUtility.MostAdvancedRomanceOrExStage(pawn, other),flirtStyle);
-            flirtLog += "base " + weight.ToString() + " ";
+            weight *= RelationshipFactorForFlirtStyle(RelationshipUtility.MostAdvancedRomanceOrExStage(pawn, other),
+                flirtStyle);
+            flirtLog += "base " + weight + " ";
             //calculate attraction factors
             /*
             weight *= recipientPhysicalAttraction * flirtStyle.baseSexiness;
@@ -364,115 +451,143 @@ namespace Gradual_Romance
 
 
             //calculate promoting traits
-            for (int i = 0; i < flirtStyle.traitModifiers.Count(); i++)
+            foreach (var traitModifier in flirtStyle.traitModifiers)
             {
-                if (pawn.story.traits.HasTrait(flirtStyle.traitModifiers[i].trait))
+                if (!pawn.story.traits.HasTrait(traitModifier.trait))
                 {
-                    weight = weight * flirtStyle.traitModifiers[i].modifier;
-                    flirtLog += flirtStyle.traitModifiers[i].trait.defName + ": " + weight.ToString() + " ";
+                    continue;
                 }
+
+                weight = weight * traitModifier.modifier;
+                flirtLog += traitModifier.trait.defName + ": " + weight + " ";
             }
-            if (PsycheHelper.PsychologyEnabled(pawn) && GradualRomanceMod.AttractionCalculation == GradualRomanceMod.AttractionCalculationSetting.Complex)
+
+            if (PsycheHelper.PsychologyEnabled(pawn) && GradualRomanceMod.AttractionCalculation ==
+                GradualRomanceMod.AttractionCalculationSetting.Complex)
             {
                 //calculate contributing personality traits
-                for (int i = 0; i < flirtStyle.moreLikelyPersonalities.Count(); i++)
+                foreach (var currentModifier in flirtStyle.moreLikelyPersonalities)
                 {
-                    PersonalityNodeModifier currentModifier = flirtStyle.moreLikelyPersonalities[i];
-                    weight = weight * Mathf.Pow(Mathf.Lerp(0.5f, 1.5f, PsycheHelper.Comp(pawn).Psyche.GetPersonalityRating(currentModifier.personalityNode)), currentModifier.modifier);
-                    flirtLog += currentModifier.personalityNode.defName + "+: " + weight.ToString() + " ";
+                    weight = weight *
+                             Mathf.Pow(
+                                 Mathf.Lerp(0.5f, 1.5f,
+                                     PsycheHelper.Comp(pawn).Psyche
+                                         .GetPersonalityRating(currentModifier.personalityNode)),
+                                 currentModifier.modifier);
+                    flirtLog += currentModifier.personalityNode.defName + "+: " + weight + " ";
                 }
-                for (int i = 0; i < flirtStyle.lessLikelyPersonalities.Count(); i++)
+
+                foreach (var currentModifier in flirtStyle.lessLikelyPersonalities)
                 {
-                    PersonalityNodeModifier currentModifier = flirtStyle.lessLikelyPersonalities[i];
-                    weight = weight * Mathf.Pow(Mathf.Lerp(0.5f, 1.5f, Mathf.Abs(1 - PsycheHelper.Comp(pawn).Psyche.GetPersonalityRating(currentModifier.personalityNode))), currentModifier.modifier);
-                    flirtLog += currentModifier.personalityNode.defName + "-: " + weight.ToString() + " ";
+                    weight = weight *
+                             Mathf.Pow(
+                                 Mathf.Lerp(0.5f, 1.5f,
+                                     Mathf.Abs(1 - PsycheHelper.Comp(pawn).Psyche
+                                         .GetPersonalityRating(currentModifier.personalityNode))),
+                                 currentModifier.modifier);
+                    flirtLog += currentModifier.personalityNode.defName + "-: " + weight + " ";
                 }
             }
+
             if (flirtStyle.incompetent)
             {
                 weight *= pressureCache;
-                flirtLog += "pressure: " + weight.ToString() + " ";
+                flirtLog += "pressure: " + weight + " ";
             }
 
             flirtLog += "end.";
             LogFlirt(flirtLog);
             return weight;
         }
-        
-        private float CalculateFlirtReactionWeight(FlirtStyleDef flirtStyle, FlirtReactionDef flirtReaction, Pawn initiator, Pawn recipient)
-        {
 
-            float chance = GradualRomanceMod.RomanticSuccessRate * flirtReaction.baseChance;
-            string log = "Reaction " + flirtReaction.defName + ": base chance " + chance.ToString();
+        private float CalculateFlirtReactionWeight(FlirtStyleDef flirtStyle, FlirtReactionDef flirtReaction,
+            Pawn initiator, Pawn recipient)
+        {
+            var chance = GradualRomanceMod.RomanticSuccessRate * flirtReaction.baseChance;
+            var log = "Reaction " + flirtReaction.defName + ": base chance " + chance;
 
             if (successImpossible && flirtReaction.successful)
             {
-                log  += ". Canceled, success impossible.";
+                log += ". Canceled, success impossible.";
                 LogFlirt(log);
                 return 0f;
             }
+
             if (successImpossible == false)
             {
                 chance *= Mathf.Pow(flirtReaction.sexyReaction * initiatorPhysicalAttraction, flirtStyle.baseSexiness);
-                log += " sexiness " + chance.ToString();
-                chance *= Mathf.Pow(flirtReaction.romanticReaction * initiatorRomanticAttraction, flirtStyle.baseRomance);
-                log += " romance " + chance.ToString();
+                log += " sexiness " + chance;
+                chance *= Mathf.Pow(flirtReaction.romanticReaction * initiatorRomanticAttraction,
+                    flirtStyle.baseRomance);
+                log += " romance " + chance;
                 chance *= Mathf.Pow(flirtReaction.logicalReaction * initiatorSocialAttraction, flirtStyle.baseLogic);
-                log += " logic " + chance.ToString();
+                log += " logic " + chance;
             }
+
             chance *= Mathf.Pow(flirtReaction.obscureReaction, flirtStyle.baseObscurity);
-            log += " obscurity " + chance.ToString();
+            log += " obscurity " + chance;
             //risky flirts are less risky if the two pawns are familiar with each other.
-            if (GRPawnRelationUtility.MostAdvancedRelationshipBetween(initiator,recipient) == null)
+            if (RelationshipUtility.MostAdvancedRelationshipBetween(initiator, recipient) == null)
             {
                 chance *= Mathf.Pow(flirtReaction.riskyReaction, flirtStyle.baseRiskiness);
             }
             else
             {
-                chance *= Mathf.Pow(Mathf.Pow(flirtReaction.riskyReaction, flirtStyle.baseRiskiness), FamiliarityFactor);
+                chance *= Mathf.Pow(Mathf.Pow(flirtReaction.riskyReaction, flirtStyle.baseRiskiness),
+                    FamiliarityFactor);
             }
+
             chance *= Mathf.Pow(flirtReaction.riskyReaction, flirtStyle.baseRiskiness);
-            log += " riskiness " + chance.ToString();
+            log += " riskiness " + chance;
             chance *= Mathf.Pow(flirtReaction.awkwardReaction, flirtStyle.baseAwkwardness);
-            log += " awkward " + chance.ToString() + "; ";
+            log += " awkward " + chance + "; ";
 
             if (GradualRomanceMod.AttractionCalculation == GradualRomanceMod.AttractionCalculationSetting.Complex)
             {
-                for (int i = 0; i < flirtReaction.personalityModifiers.Count(); i++)
+                foreach (var node in flirtReaction.personalityModifiers)
                 {
-                    PersonalityNodeModifier node = flirtReaction.personalityModifiers[i];
                     if (node.modifier >= 0)
                     {
-                        chance = chance * Mathf.Pow(Mathf.Lerp(0.5f, 1.5f, PsycheHelper.Comp(recipient).Psyche.GetPersonalityRating(node.personalityNode)), node.modifier);
-                        log += node.personalityNode.defName + "+: " + chance.ToString() + ", ";
+                        chance = chance *
+                                 Mathf.Pow(
+                                     Mathf.Lerp(0.5f, 1.5f,
+                                         PsycheHelper.Comp(recipient).Psyche
+                                             .GetPersonalityRating(node.personalityNode)), node.modifier);
+                        log += node.personalityNode.defName + "+: " + chance + ", ";
                     }
                     else
                     {
-                        chance = chance * Mathf.Pow(Mathf.Lerp(0.5f, 1.5f, Mathf.Abs(1 - PsycheHelper.Comp(recipient).Psyche.GetPersonalityRating(node.personalityNode))), Mathf.Abs(node.modifier));
-                        log += node.personalityNode.defName + "-: " + chance.ToString() + ", ";
+                        chance = chance *
+                                 Mathf.Pow(
+                                     Mathf.Lerp(0.5f, 1.5f,
+                                         Mathf.Abs(1 - PsycheHelper.Comp(recipient).Psyche
+                                             .GetPersonalityRating(node.personalityNode))), Mathf.Abs(node.modifier));
+                        log += node.personalityNode.defName + "-: " + chance + ", ";
                     }
+                }
+            }
 
-                }
-            }
-            for (int i = 0; i < flirtReaction.traitModifiers.Count(); i++)
+            foreach (var traitModifier in flirtReaction.traitModifiers)
             {
-                if (recipient.story.traits.HasTrait(flirtReaction.traitModifiers[i].trait))
+                if (!recipient.story.traits.HasTrait(traitModifier.trait))
                 {
-                    chance *= flirtReaction.traitModifiers[i].modifier;
-                    log += flirtReaction.traitModifiers[i].trait.defName + " " + chance.ToString() + ", ";
+                    continue;
                 }
+
+                chance *= traitModifier.modifier;
+                log += traitModifier.trait.defName + " " + chance + ", ";
             }
-            
+
+            /*
             if (flirtReaction.successful == true)
             {
                 chance *= initiator.GetStatValue(StatDefOf.SocialImpact);
                 log += "social impact: " + chance.ToString() + ", ";
-                chance *= recipientCircumstances;
-            }
+                //chance *= recipientCircumstances;
+            }*/
             log += "end.";
             LogFlirt(log);
             return chance;
-           
         }
 
 
@@ -482,49 +597,44 @@ namespace Gradual_Romance
             {
                 return flirtStyle.spouseFactor;
             }
-            if (relation == PawnRelationDefOf.Fiance || relation == PawnRelationDefOf.Lover || relation == PawnRelationDefOf.ExLover)
+
+            if (relation == PawnRelationDefOf.Fiance || relation == PawnRelationDefOf.Lover ||
+                relation == PawnRelationDefOf.ExLover)
             {
                 return flirtStyle.loverFactor;
             }
-            if (relation == PawnRelationDefOfGR.Lovefriend || relation == PawnRelationDefOfGR.ExLovefriend || relation == PawnRelationDefOfGR.Paramour)
+
+            if (relation == PawnRelationDefOfGR.Lovefriend || relation == PawnRelationDefOfGR.ExLovefriend ||
+                relation == PawnRelationDefOfGR.Paramour)
             {
                 return flirtStyle.lovefriendFactor;
             }
+
             if (relation == PawnRelationDefOfGR.Lovebuddy)
             {
                 return flirtStyle.loveBuddyFactor;
             }
+
             if (relation == PawnRelationDefOfGR.Sweetheart)
             {
                 return flirtStyle.sweetheartFactor;
             }
+
             return flirtStyle.acquaitanceFactor;
         }
+
         private static void LogFlirt(string message)
         {
-            if (GradualRomanceMod.detailedDebugLogs == true)
+            if (GradualRomanceMod.detailedDebugLogs)
             {
                 Log.Message(message);
             }
         }
 
-        private static float pressureCache;
-
-        //List<InteractionDef> allDefsListForReading = DefDatabase<InteractionDef>.AllDefsListForReading;
-        //allDefsListForReading.TryRandomElementByWeight((InteractionDef x) => x.Worker.RandomSelectionWeight(this.pawn, p), out intDef)
-        private const float MinAttractionForRomanceAttempt = 0.25f;
-
-        private const int MinOpinionForRomanceAttempt = 5;
-
-        private const float BaseSuccessChance = 1f;
-
-        private const float BaseFlirtWeight = 0.4f;
-
-        private const float GoodFlirtBonus = 1.5f;
-
-        private const float BadFlirtPenalty = 0.6f;
-
-        private const float FamiliarityFactor = 0.5f;
-
+        [ContractInvariantMethod]
+        private void ObjectInvariant()
+        {
+            Contract.Invariant(veryHighRecipientReasons.All(item => item != null));
+        }
     }
 }

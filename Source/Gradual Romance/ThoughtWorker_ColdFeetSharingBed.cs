@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Linq;
 using RimWorld;
 using Verse;
-using UnityEngine;
 
 namespace Gradual_Romance
 {
@@ -16,19 +12,17 @@ namespace Gradual_Romance
             {
                 return ThoughtState.Inactive;
             }
-            IEnumerable<Pawn> bedPartners = from partner in pawn.ownership.OwnedBed.AssignedPawns
-                                     where partner != pawn && GRPawnRelationUtility.MostAdvancedRelationshipBetween(pawn, partner) != null && GRPawnRelationUtility.ShouldShareBed(pawn, partner) == false
-                                     select partner;
-            if (bedPartners.Count() == 0)
+
+            var bedPartners = from partner in pawn.ownership.OwnedBed.OwnersForReading
+                where partner != pawn && RelationshipUtility.MostAdvancedRelationshipBetween(pawn, partner) != null &&
+                      RelationshipUtility.ShouldShareBed(pawn, partner) == false
+                select partner;
+            if (!bedPartners.Any())
             {
                 return ThoughtState.Inactive;
             }
-            else
-            {
-                return ThoughtState.ActiveAtStage(0);
-            }
 
+            return ThoughtState.ActiveAtStage(0);
         }
     }
-
 }

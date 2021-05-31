@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using RimWorld;
-using Verse;
+﻿using System.Linq;
 using Psychology;
+using RimWorld;
 using UnityEngine;
+using Verse;
 
 namespace Gradual_Romance
 {
@@ -17,8 +14,10 @@ namespace Gradual_Romance
             {
                 return false;
             }
+
             //psychopathic lechers don't care at all
-            if (observer.story.traits.HasTrait(TraitDefOfPsychology.Lecher) && observer.story.traits.HasTrait(TraitDefOf.Psychopath))
+            if (observer.story.traits.HasTrait(TraitDefOfPsychology.Lecher) &&
+                observer.story.traits.HasTrait(TraitDefOf.Psychopath))
             {
                 return false;
             }
@@ -28,18 +27,17 @@ namespace Gradual_Romance
 
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-
-            float incestFactor = 1f;
-            List<PawnRelationDef> relations = PawnRelationUtility.GetRelations(observer, assessed).ToList();
-            PawnRelationDef relation = relations[0];
-            for (int i = 0; i < relations.Count(); i++)
+            var relations = observer.GetRelations(assessed).ToList();
+            var relation = relations[0];
+            foreach (var relationDef in relations)
             {
-                if (relations[i].incestOpinionOffset > relation.incestOpinionOffset)
+                if (relationDef.incestOpinionOffset > relation.incestOpinionOffset)
                 {
-                    relation = relations[i];
+                    relation = relationDef;
                 }
             }
-            incestFactor = 1f / (Mathf.Abs(relation.incestOpinionOffset) + 1);
+
+            var incestFactor = 1f / (Mathf.Abs(relation.incestOpinionOffset) + 1);
 
             return incestFactor;
         }
