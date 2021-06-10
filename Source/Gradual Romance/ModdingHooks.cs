@@ -19,12 +19,12 @@ namespace Gradual_Romance
 
         public static bool IsXenophile(Pawn pawn)
         {
-            return pawn.story.traits.allTraits.Any(x => x.def.defName == "Xenophobia" && x.Degree > 0);
+            return pawn.story.traits.allTraits.Any(x => x.def.defName == "Xenophobia" && x.Degree < 0);
         }
 
         public static bool IsXenophobe(Pawn pawn)
         {
-            return pawn.story.traits.allTraits.Any(x => x.def.defName == "Xenophobia" && x.Degree < 0);
+            return pawn.story.traits.allTraits.Any(x => x.def.defName == "Xenophobia" && x.Degree > 0);
         }
 
         //DUBS BAD HYGIENE       

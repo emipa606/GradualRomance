@@ -1,6 +1,5 @@
 # GradualRomance
-
-
+
 ![Image](https://i.imgur.com/WAEzk68.png)
 
 Update of Nationalitys mod
@@ -10,6 +9,15 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
+
+[table]
+    [tr]
+        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
+[/td]
+        [td]https://github.com/emipa606/GradualRomance]![Image](https://i.imgur.com/kTkpTOE.png)
+[/td]
+    [/tr]
+[/table]
 	
 ![Image](https://i.imgur.com/NOW7jU1.png)
 
@@ -75,8 +83,7 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
     === MOD INCOMPATIBILITY ===
     
     Gradual Romance is incompatible with most other relationship mods, especially Rational Romance, but should be compatible with most anything else.
-    
-
+   
 
 ![Image](https://i.imgur.com/Rs6T6cr.png)
 
