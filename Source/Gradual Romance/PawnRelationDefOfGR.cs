@@ -1,5 +1,4 @@
-﻿using System;
-using RimWorld;
+﻿using RimWorld;
 
 namespace Gradual_Romance
 {
@@ -31,5 +30,4 @@ namespace Gradual_Romance
             DefOfHelper.EnsureInitializedInCtor(typeof(PawnRelationDefOfGR));
         }
     }
-    
 }

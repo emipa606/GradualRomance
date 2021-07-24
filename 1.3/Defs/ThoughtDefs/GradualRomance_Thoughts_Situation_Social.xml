@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>Homophobic</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Gradual_Romance.ThoughtWorker_Homophobic</workerClass>
+    <requiredTraits>
+      <li>Homophobic</li>
+    </requiredTraits>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>homosexual</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>DisfiguredSuperficial</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ThoughtWorker_Disfigured</workerClass>
+    <requiredTraits>
+      <li>Superficial</li>
+    </requiredTraits>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>disfigured</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AnnoyingVoiceSuperficial</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ThoughtWorker_AnnoyingVoice</workerClass>
+    <requiredTraits>
+      <li>Superficial</li>
+    </requiredTraits>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>annoying voice</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>CreepyBreathingSuperficial</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ThoughtWorker_CreepyBreathing</workerClass>
+    <requiredTraits>
+      <li>Superficial</li>
+    </requiredTraits>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>creepy breathing</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>PrettySuperficial</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Gradual_Romance.ThoughtWorker_PrettySuperficial</workerClass>
+    <requiredTraits>
+      <li>Superficial</li>
+    </requiredTraits>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>attractive</label>
+        <baseOpinionOffset>20</baseOpinionOffset>
+      </li>
+      <li>
+        <label>comely</label>
+        <baseOpinionOffset>40</baseOpinionOffset>
+      </li>
+      <li>
+        <label>beautiful</label>
+        <baseOpinionOffset>60</baseOpinionOffset>
+      </li>
+      <li>
+        <label>ethereal beauty</label>
+        <baseOpinionOffset>80</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>UglySuperficial</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Gradual_Romance.ThoughtWorker_UglySuperficial</workerClass>
+    <requiredTraits>
+      <li>Superficial</li>
+    </requiredTraits>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>unattractive</label>
+        <baseOpinionOffset>-20</baseOpinionOffset>
+      </li>
+      <li>
+        <label>homely</label>
+        <baseOpinionOffset>-40</baseOpinionOffset>
+      </li>
+      <li>
+        <label>ugly</label>
+        <baseOpinionOffset>-60</baseOpinionOffset>
+      </li>
+      <li>
+        <label>staggeringly ugly</label>
+        <baseOpinionOffset>-80</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>FeelingNeglected</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>Gradual_Romance.ThoughtWorker_FeelingNeglected</workerClass>
+    <validWhileDespawned>false</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Aromantic</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>feeling neglected</label>
+        <description>My lover pays no attention to me.</description>
+        <baseOpinionOffset>-5</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!-- affecting opinion 
+
+  <ThoughtDef>
+    <defName>AromanticRelationship</defName>
+    <thoughtClass>Thought_SituationalSocial</thoughtClass>
+    <workerClass>ThoughtWorker_AromanticRelationship</workerClass>
+    <stages>
+      <li>
+        <label>aromantic with a sweetheart</label>
+        <description>Someone is getting a bit too close for comfort. I had better end things before it gets too serious.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>aromantic with a relationship</label>
+        <description>I'm better on my own, yet I'm not. What's happening to me?</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>aromantic with a lover</label>
+        <description>Yikes! I feel the chains tightening around me!</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>aromantic with a spouse</label>
+        <description>My life has come to an end.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+-->
+</Defs>

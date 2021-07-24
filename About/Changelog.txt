@@ -1,5 +1,8 @@
 # Changelog for GradualRomance
 
+1.0.3.0 - Updated for 1.3
+
+
 1.0.2.0 - Fixed mixed up Xenophobia-check
 
 

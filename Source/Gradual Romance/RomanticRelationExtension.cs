@@ -22,10 +22,4 @@ namespace Gradual_Romance
         public int relationshipLevel;
         public bool sharesBed;
     }
-
-    public class ThoughtCondition
-    {
-        public int numberRequired;
-        public ThoughtDef thought;
-    }
 }

@@ -163,8 +163,10 @@ namespace Gradual_Romance
         {
             if (intensity > 0f && PsycheHelper.PsychologyEnabled(lover) && PsycheHelper.PsychologyEnabled(ex))
             {
-                var loverIntensity = Mathf.Clamp(Mathf.Round(intensity * (relation.opinionOffset / 5)), 0f, 10f);
-                var exIntensity = Mathf.Clamp(Mathf.Round(intensity * (relation.opinionOffset / 5) / 3), 0f, 10f);
+                var loverIntensity =
+                    Mathf.Clamp(Mathf.Round(intensity * ((float) relation.opinionOffset / 5)), 0f, 10f);
+                var exIntensity = Mathf.Clamp(Mathf.Round(intensity * ((float) relation.opinionOffset / 5) / 3), 0f,
+                    10f);
                 AddBrokeUpMood(lover, ex, loverIntensity);
                 AddBrokeUpMood(ex, lover, exIntensity);
                 AddBrokeUpOpinion(ex, lover, exIntensity);
@@ -176,10 +178,13 @@ namespace Gradual_Romance
         //Modified directly from Psychology.
         private static void AddBrokeUpOpinion(Pawn lover, Pawn ex, float intensity = 1f)
         {
-            var brokeUpDef = new ThoughtDef {defName = "BrokeUpWithMe" + lover.LabelShort + Find.TickManager.TicksGame};
-            brokeUpDef.durationDays = intensity < 1f ? 10f : 40f;
+            var brokeUpDef = new ThoughtDef
+            {
+                defName = "BrokeUpWithMe" + lover.LabelShort + Find.TickManager.TicksGame,
+                durationDays = intensity < 1f ? 10f : 40f,
+                thoughtClass = typeof(Thought_MemorySocialDynamic)
+            };
 
-            brokeUpDef.thoughtClass = typeof(Thought_MemorySocialDynamic);
             var brokeUpStage = new ThoughtStage
             {
                 label = "broke up with me",
@@ -197,13 +202,13 @@ namespace Gradual_Romance
         {
             var brokeUpMoodDef = new ThoughtDef
             {
-                defName = "BrokeUpWithMeMood" + lover.LabelShort + Find.TickManager.TicksGame
+                defName = "BrokeUpWithMeMood" + lover.LabelShort + Find.TickManager.TicksGame,
+                durationDays = intensity < 1f ? 10f : 40f,
+                thoughtClass = typeof(Thought_MemoryDynamic),
+                stackedEffectMultiplier = 1f,
+                stackLimit = 999
             };
-            brokeUpMoodDef.durationDays = intensity < 1f ? 10f : 40f;
 
-            brokeUpMoodDef.thoughtClass = typeof(Thought_MemoryDynamic);
-            brokeUpMoodDef.stackedEffectMultiplier = 1f;
-            brokeUpMoodDef.stackLimit = 999;
             var brokeUpStage = new ThoughtStage
             {
                 label = "Broke up with {0}",
@@ -265,7 +270,7 @@ namespace Gradual_Romance
             }
 
             var chance = Mathf.InverseLerp(80, -20, AttractionUtility.GetRelationshipUnmodifiedOpinion(pawn, other));
-            chance *= relation.GetModExtension<RomanticRelationExtension>().relationshipLevel /
+            chance *= (float) relation.GetModExtension<RomanticRelationExtension>().relationshipLevel /
                       (relation.GetModExtension<RomanticRelationExtension>().relationshipLevel + 1);
             if (PsycheHelper.PsychologyEnabled(pawn))
             {

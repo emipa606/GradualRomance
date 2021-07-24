@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <InteractionDef>
+    <defName>Flirt</defName>
+    <label>flirt</label>
+    <workerClass>Gradual_Romance.InteractionWorker_Flirt</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry-&gt;[INITIATOR_nameDef] tried to flirt with [RECIPIENT_nameDef].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  <InteractionDef>
+    <defName>AskToMoveIn</defName>
+    <label>ask to move in</label>
+    <workerClass>Gradual_Romance.InteractionWorker_AskToMoveIn</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry-&gt;[INITIATOR_nameDef] asked [RECIPIENT_nameDef] to move in with [INITIATOR_objective].</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtAttemptAccepted</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] seemed responsive to [INITIATOR_nameDef].</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] flirted back with [INITIATOR_nameDef].</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] smiled at [INITIATOR_nameDef]'s flirt.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] returned [INITIATOR_nameDef]'s flirt.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtAttemptRejectedNeutral</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] wasn't responsive.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] didn't respond.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] ignored [INITIATOR_nameDef].</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] gave a minimal response.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] turned [INITIATOR_objective] down.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtAttemptRejectedOffended</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] responded with irritation.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] told [INITIATOR_nameDef] not to talk to [RECIPIENT_objective] again.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] interrupted [INITIATOR_nameDef] abruptly and declared [RECIPIENT_objective] wasn't interested.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtAttemptRejectedPolite</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] muttered something noncommittal.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] politely said [RECIPIENT_pronoun] wasn't interested.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] listened patiently but said nothing.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] worded a very long, very complicated, very polite rejection.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] pretended [RECIPIENT_pronoun] didn't understand.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtAttemptOblivious</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] didn't understand what [INITIATOR_nameDef] was saying.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] was oblivious.</li>
+        <li>sent-&gt;It went over [RECIPIENT_nameDef]'s head.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] responded politely, unaware of [INITIATOR_nameDef]'s attentions.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <!--
+<InteractionDef>
+    <defName>EscalateRelationship</defName>
+    <label>escalate relationship</label>
+    <workerClass>Gradual_Romance.InteractionWorker_EscalateRelationship</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [flirted] [RECIPIENT_nameDef] by [wootactic].</li>
+
+        <li>flirted->flirted casually with</li>
+        <li>flirted->flirted with</li>
+
+        <li>wootactic(p=4)->[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]</li>
+        <li>wootactic->telling a story about [TalkTopicAny]</li>
+        <li>wootactic->telling a tale about [TalkTopicAny]</li>
+        <li>wootactic->joking about [TalkTopicAny]</li>
+        <li>wootactic->making an observation about [TalkTopicAny]</li>
+        <li>wootactic(p=2)->[boasting] [INITIATOR_possessive] own [PersonalCharacteristic]</li>
+        <li>wootactic->comparing [RECIPIENT_objective] to a [romantic_adj] [romantic_noun]</li>
+        <li>wootactic->describing [RECIPIENT_objective] as a [romantic_adj] [romantic_noun]</li>
+
+        <li>boasting->boasting about</li>
+        <li>boasting->mentioning</li>
+        <li>boasting->implying good things about</li>
+        <li>boasting->exaggerating</li>
+        <li>boasting->talking about</li>
+        <li>boasting->drawing attention to</li>
+
+        <li>complimenting(p=3)->complimenting</li>
+        <li>complimenting->subtly complimenting</li>
+        <li>complimenting->lauding</li>
+        <li>complimenting->commending</li>
+        <li>complimenting->saying good things about</li>
+        <li>complimenting(p=2)->playfully making fun of</li>
+        <li>complimenting->jokingly poking at</li>
+        <li>complimenting->jokingly half-complimenting</li>
+        <li>complimenting->impishly questioning</li>
+        <li>complimenting->cheerfully making fun of</li>
+
+        <li>romantic_adj->beautiful</li>
+        <li>romantic_adj->shining</li>
+        <li>romantic_adj->glimmering</li>
+        <li>romantic_adj->heavenly</li>
+        <li>romantic_adj->golden</li>
+        <li>romantic_adj->bright</li>
+        <li>romantic_adj->breathtaking</li>
+        <li>romantic_adj->charming</li>
+        <li>romantic_adj->dazzling</li>
+        <li>romantic_adj->delicate</li>
+        <li>romantic_adj->fine</li>
+        <li>romantic_adj->magnificent</li>
+        <li>romantic_adj->lovely</li>
+        <li>romantic_adj->wonderful</li>
+        <li>romantic_adj(p=3)->[AdjectiveBadass]</li>
+
+        <li>romantic_noun->flower</li>
+        <li>romantic_noun->spring</li>
+        <li>romantic_noun->river</li>
+        <li>romantic_noun->star</li>
+        <li>romantic_noun->moon</li>
+        <li>romantic_noun->sun</li>
+        <li>romantic_noun->house</li>
+        <li>romantic_noun->aurora</li>
+        <li>romantic_noun->[TreeType] tree</li>
+        <li>romantic_noun(p=2)->[TerrainFeature]</li>
+        <li>romantic_noun(p=2)->[NaturalObject]</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+  
+  <InteractionDef>
+    <defName>ProposeLovebuddies</defName>
+    <label>propose lovebuddy relationship</label>
+    <workerClass>Gradual_Romance.InteractionWorker_ProposeLovebuddies</workerClass>
+    <symbol>Things/Mote/SpeechSymbols/Romance</symbol>
+    <logRulesInitiator>
+      <rulesStrings>
+        <li>r_logentry->[INITIATOR_nameDef] [flirted] [RECIPIENT_nameDef] by [wootactic].</li>
+
+        <li>flirted->flirted casually with</li>
+        <li>flirted->flirted with</li>
+
+        <li>wootactic(p=4)->[complimenting] [RECIPIENT_possessive] [PersonalCharacteristic]</li>
+        <li>wootactic->telling a story about [TalkTopicAny]</li>
+        <li>wootactic->telling a tale about [TalkTopicAny]</li>
+        <li>wootactic->joking about [TalkTopicAny]</li>
+        <li>wootactic->making an observation about [TalkTopicAny]</li>
+        <li>wootactic(p=2)->[boasting] [INITIATOR_possessive] own [PersonalCharacteristic]</li>
+        <li>wootactic->comparing [RECIPIENT_objective] to a [romantic_adj] [romantic_noun]</li>
+        <li>wootactic->describing [RECIPIENT_objective] as a [romantic_adj] [romantic_noun]</li>
+
+        <li>boasting->boasting about</li>
+        <li>boasting->mentioning</li>
+        <li>boasting->implying good things about</li>
+        <li>boasting->exaggerating</li>
+        <li>boasting->talking about</li>
+        <li>boasting->drawing attention to</li>
+
+        <li>complimenting(p=3)->complimenting</li>
+        <li>complimenting->subtly complimenting</li>
+        <li>complimenting->lauding</li>
+        <li>complimenting->commending</li>
+        <li>complimenting->saying good things about</li>
+        <li>complimenting(p=2)->playfully making fun of</li>
+        <li>complimenting->jokingly poking at</li>
+        <li>complimenting->jokingly half-complimenting</li>
+        <li>complimenting->impishly questioning</li>
+        <li>complimenting->cheerfully making fun of</li>
+
+        <li>romantic_adj->beautiful</li>
+        <li>romantic_adj->shining</li>
+        <li>romantic_adj->glimmering</li>
+        <li>romantic_adj->heavenly</li>
+        <li>romantic_adj->golden</li>
+        <li>romantic_adj->bright</li>
+        <li>romantic_adj->breathtaking</li>
+        <li>romantic_adj->charming</li>
+        <li>romantic_adj->dazzling</li>
+        <li>romantic_adj->delicate</li>
+        <li>romantic_adj->fine</li>
+        <li>romantic_adj->magnificent</li>
+        <li>romantic_adj->lovely</li>
+        <li>romantic_adj->wonderful</li>
+        <li>romantic_adj(p=3)->[AdjectiveBadass]</li>
+
+        <li>romantic_noun->flower</li>
+        <li>romantic_noun->spring</li>
+        <li>romantic_noun->river</li>
+        <li>romantic_noun->star</li>
+        <li>romantic_noun->moon</li>
+        <li>romantic_noun->sun</li>
+        <li>romantic_noun->house</li>
+        <li>romantic_noun->aurora</li>
+        <li>romantic_noun->[TreeType] tree</li>
+        <li>romantic_noun(p=2)->[TerrainFeature]</li>
+        <li>romantic_noun(p=2)->[NaturalObject]</li>
+      </rulesStrings>
+    </logRulesInitiator>
+  </InteractionDef>
+-->
+</Defs>

@@ -99,7 +99,12 @@ namespace Gradual_Romance
 
         public override int GetHashCode()
         {
-            return defName.GetHashCode();
+            if (defName != null)
+            {
+                return defName.GetHashCode();
+            }
+
+            return 0;
         }
     }
 }

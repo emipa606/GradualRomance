@@ -1,5 +1,4 @@
-﻿using System;
-using RimWorld;
+﻿using RimWorld;
 
 namespace Gradual_Romance
 {
@@ -33,10 +32,10 @@ namespace Gradual_Romance
         public static ThoughtDef CaughtFlirtingWithLover;
 
         public static ThoughtDef FeelingNeglected;
+
         static ThoughtDefOfGR()
         {
             DefOfHelper.EnsureInitializedInCtor(typeof(ThoughtDefOfGR));
         }
     }
-
 }

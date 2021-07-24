@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using RimWorld;
 using Verse;
 
@@ -324,21 +323,6 @@ namespace Gradual_Romance
                           ", but category is set to AlwaysRecalculate and is never stored.");
                 return 1f;
             }
-        }
-    }
-
-    public class GRPawnComp_Properties : CompProperties
-    {
-        public float facialAttractiveness;
-
-        public GRPawnComp_Properties()
-        {
-            compClass = typeof(GRPawnComp);
-        }
-
-        public GRPawnComp_Properties(Type compClass) : base(compClass)
-        {
-            this.compClass = compClass;
         }
     }
 }

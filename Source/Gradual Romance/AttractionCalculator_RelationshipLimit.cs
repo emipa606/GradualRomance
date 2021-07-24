@@ -13,7 +13,7 @@ namespace Gradual_Romance
 
         public override float Calculate(Pawn observer, Pawn assessed)
         {
-            return GradualRomanceMod.numberOfRelationships /
+            return (float) GradualRomanceMod.numberOfRelationships /
                    (RelationshipUtility.GetAllPawnsRomanticWith(observer).Count + 1);
         }
     }

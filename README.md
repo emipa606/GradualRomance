@@ -31,7 +31,7 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
 
     BUGGY AF
 
-    ONLY SUBSCRIBE IF YOU'RE WILLING TO TEST
+    ONLY SUBSCRIBE IF YOU&apos;RE WILLING TO TEST
 
     REQUIREMENTS: Hugslib and Psychology
 
@@ -57,24 +57,24 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
     
     === NEW ROMANCE STAGES ===
 
-    There are four new romance stages, Lovebuddies, Sweethearts, Paramour and Boyfriend/Girlfriend (or "Lovefriend").
+    There are four new romance stages, Lovebuddies, Sweethearts, Paramour and Boyfriend/Girlfriend (or &quot;Lovefriend&quot;).
 
     Pawns start off as either Lovebuddies or Sweethearts. These are both relationships that form naturally as pawns flirt.
-    Lovebuddies have a purely physical relationship, without any of that complicated romantic stuff. Sweethearts go out on dates, but aren't ready for lovin'.
-    Paramours both do lovin' and go out on dates, but they aren't formally "dating", and there isn't an expectation of exclusivity.
-    Only after a pawn asks a pawn out do they become boyfriend/girlfriend. This is more serious than being paramours, but not quite as serious as being lovers. They do all the things lovers do, but they aren't ready to live together.
+    Lovebuddies have a purely physical relationship, without any of that complicated romantic stuff. Sweethearts go out on dates, but aren&apos;t ready for lovin&apos;.
+    Paramours both do lovin&apos; and go out on dates, but they aren&apos;t formally &quot;dating&quot;, and there isn&apos;t an expectation of exclusivity.
+    Only after a pawn asks a pawn out do they become boyfriend/girlfriend. This is more serious than being paramours, but not quite as serious as being lovers. They do all the things lovers do, but they aren&apos;t ready to live together.
     Only after a pawn asks another pawn to move in do they become lovers.
     
     === TOTALLY OVERHAULED ATTRACTION CALCULATION ===
     
     Gradual Romance changes everything about attraction calculations, too many to list here. But now Pawns will consider a lot more than just physical appearance.
-    Greedy pawns go after the "wealthiest" pawns (e.g. the ones with the nicest rooms). Ambitious, socialite pawns value popular partners with a lot of friends. Colonists with bloodlust look for those with similar outlook.
-    As pawns flirt and make romance attempts, you'll be told what factors contributed the most.
+    Greedy pawns go after the &quot;wealthiest&quot; pawns (e.g. the ones with the nicest rooms). Ambitious, socialite pawns value popular partners with a lot of friends. Colonists with bloodlust look for those with similar outlook.
+    As pawns flirt and make romance attempts, you&apos;ll be told what factors contributed the most.
     A lot of these factors are configurable in the Defs, and it is reasonably easy to add your own.
     
     === ALIEN INTEGRATION ===
     
-    Gradual Romance auto-patches humanoid aliens, if they don't already have an author-configured patch. Gradual Romance does its best to make educated guesses on which values it should assign.
+    Gradual Romance auto-patches humanoid aliens, if they don&apos;t already have an author-configured patch. Gradual Romance does its best to make educated guesses on which values it should assign.
     
     === LOAD ORDER ===
     

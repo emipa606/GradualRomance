@@ -371,7 +371,7 @@ namespace Gradual_Romance
             }
 
             var kinsey = PsycheHelper.Comp(pawn).Sexuality.kinseyRating;
-            if (kinsey > 0 && kinsey < 6)
+            if (kinsey is > 0 and < 6)
             {
                 return true;
             }
@@ -387,7 +387,7 @@ namespace Gradual_Romance
             }
 
             var kinsey = PsycheHelper.Comp(pawn).Sexuality.kinseyRating;
-            if (kinsey > 1 && kinsey < 5)
+            if (kinsey is > 1 and < 5)
             {
                 return true;
             }

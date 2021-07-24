@@ -240,13 +240,13 @@ namespace Gradual_Romance
             List<Pawn> recipientOldLoversAndFiances, out string letterText, out string letterLabel,
             out LetterDef letterDef)
         {
-            var flag = false;
-            if (initiator.GetSpouse() != null && !initiator.GetSpouse().Dead ||
-                recipient.GetSpouse() != null && !recipient.GetSpouse().Dead)
+            var unfaithful = false;
+            if (initiator.GetFirstSpouse() != null && !initiator.GetFirstSpouse().Dead ||
+                recipient.GetFirstSpouse() != null && !recipient.GetFirstSpouse().Dead)
             {
                 letterLabel = "LetterLabelAffair".Translate();
                 letterDef = LetterDefOf.NegativeEvent;
-                flag = true;
+                unfaithful = true;
             }
             else
             {
@@ -257,16 +257,16 @@ namespace Gradual_Romance
             var stringBuilder = new StringBuilder();
             stringBuilder.AppendLine("LetterNewLovers".Translate(initiator.Named("PAWN1"), recipient.Named("PAWN2")));
             stringBuilder.AppendLine();
-            if (flag)
+            if (unfaithful)
             {
-                if (initiator.GetSpouse() != null)
+                if (initiator.GetFirstSpouse() != null)
                 {
                     stringBuilder.AppendLine("LetterAffair".Translate(initiator.LabelShort,
-                        initiator.GetSpouse().LabelShort, recipient.LabelShort, initiator.Named("PAWN1"),
-                        recipient.Named("PAWN2"), initiator.GetSpouse().Named("SPOUSE")));
+                        initiator.GetFirstSpouse().LabelShort, recipient.LabelShort, initiator.Named("PAWN1"),
+                        recipient.Named("PAWN2"), initiator.GetFirstSpouse().Named("SPOUSE")));
                 }
 
-                if (recipient.GetSpouse() != null)
+                if (recipient.GetFirstSpouse() != null)
                 {
                     if (stringBuilder.Length != 0)
                     {
@@ -274,8 +274,8 @@ namespace Gradual_Romance
                     }
 
                     stringBuilder.AppendLine("LetterAffair".Translate(recipient.LabelShort,
-                        recipient.GetSpouse().LabelShort, initiator.LabelShort, recipient.Named("PAWN1"),
-                        recipient.GetSpouse().Named("SPOUSE"), initiator.Named("PAWN2")));
+                        recipient.GetFirstSpouse().LabelShort, initiator.LabelShort, recipient.Named("PAWN1"),
+                        recipient.GetFirstSpouse().Named("SPOUSE"), initiator.Named("PAWN2")));
                 }
             }
 

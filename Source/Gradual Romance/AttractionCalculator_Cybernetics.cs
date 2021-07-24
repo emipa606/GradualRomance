@@ -36,9 +36,9 @@ namespace Gradual_Romance
             var listOfAddedParts = new List<Hediff_AddedPart>();
             foreach (var hediff in assessed.health.hediffSet.hediffs)
             {
-                if (hediff is Hediff_AddedPart)
+                if (hediff is Hediff_AddedPart part)
                 {
-                    listOfAddedParts.Add(hediff as Hediff_AddedPart);
+                    listOfAddedParts.Add(part);
                 }
             }
 

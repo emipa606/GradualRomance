@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Aggressive</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionAggressiveMale</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionAggressiveFemale</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Aggressive</personalityNode>
+        <modifier>2</modifier>
+      </li>
+      <li>
+        <personalityNode>Pure</personalityNode>
+        <modifier>-2</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+    </givesTension>
+    <baseChance>1</baseChance>
+    <sexyReaction>3</sexyReaction>
+    <romanticReaction>0.25</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>0.25</awkwardReaction>
+    <riskyReaction>1.5</riskyReaction>
+    <obscureReaction>0.25</obscureReaction>
+    <sweetheartModifier>0.25</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Angry</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionAngryMale</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionAngryFemale</femaleRulePack>
+    <successful>false</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>LaidBack</personalityNode>
+        <modifier>-2</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>5</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Convinced</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionConvinced</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionConvinced</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Rational</personalityNode>
+        <modifier>2</modifier>
+      </li>
+    </personalityModifiers>
+    <givesTension>
+      <li>LogicalTension</li>
+    </givesTension>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>0.5</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>3</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>0.1</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <sweetheartModifier>1.5</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Charmed</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionCharmed</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionCharmed</femaleRulePack>
+    <successful>true</successful>
+    <traitModifiers>
+    </traitModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+      <li>RomanticTension</li>
+    </givesTension>
+    <baseChance>1</baseChance>
+    <sexyReaction>2</sexyReaction>
+    <romanticReaction>2</romanticReaction>
+    <logicalReaction>0.75</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>0.75</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Crude</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionCrudeMale</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionCrudeFemale</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Pure</personalityNode>
+        <modifier>-2</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+    </givesTension>
+    <baseChance>1</baseChance>
+    <sexyReaction>3</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>0.5</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>1</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <sweetheartModifier>0.25</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Enraged</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionEnraged</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionEnraged</femaleRulePack>
+    <successful>false</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Aggressive</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>0.1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>5</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Embarrassed</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker_Embarrassed</workerClass>
+    <maleRulePack>Sentence_FlirtReactionEmbarrassed</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionEmbarrassed</femaleRulePack>
+    <successful>false</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Empathetic</personalityNode>
+        <modifier>1</modifier>
+      </li>
+      <li>
+        <personalityNode>Emotional</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>3</awkwardReaction>
+    <riskyReaction>1</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Ignorant</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker_Ignorant</workerClass>
+    <maleRulePack>Sentence_FlirtReactionIgnorant</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionIgnorant</femaleRulePack>
+    <successful>false</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Pure</personalityNode>
+        <modifier>2</modifier>
+      </li>
+      <li>
+        <personalityNode>Empathetic</personalityNode>
+        <modifier>-2</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>1</riskyReaction>
+    <obscureReaction>5</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Impressed</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionImpressed</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionImpressed</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Spontaneous</personalityNode>
+        <modifier>3</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+      <li>RomanticTension</li>
+    </givesTension>
+    <baseChance>1</baseChance>
+    <sexyReaction>3</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>0.5</logicalReaction>
+    <awkwardReaction>0.25</awkwardReaction>
+    <riskyReaction>3</riskyReaction>
+    <obscureReaction>0.1</obscureReaction>
+    <sweetheartModifier>0.6</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Laughter</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker_Laughter</workerClass>
+    <maleRulePack>Sentence_FlirtReactionLaughter</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionLaughter</femaleRulePack>
+    <successful>false</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Empathetic</personalityNode>
+        <modifier>-2</modifier>
+      </li>
+      <li>
+        <personalityNode>LaidBack</personalityNode>
+        <modifier>1</modifier>
+      </li>
+      <li>
+        <personalityNode>Spontaneous</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>5</awkwardReaction>
+    <riskyReaction>0.25</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Neutral</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionNeutral</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionNeutral</femaleRulePack>
+    <successful>false</successful>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>1</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Polite</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionPolite</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionPolite</femaleRulePack>
+    <successful>false</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Polite</personalityNode>
+        <modifier>3</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>2</awkwardReaction>
+    <riskyReaction>0.25</riskyReaction>
+    <obscureReaction>2</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Romantic</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionRomantic</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionRomantic</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Romantic</personalityNode>
+        <modifier>2</modifier>
+      </li>
+    </personalityModifiers>
+    <givesTension>
+      <li>RomanticTension</li>
+    </givesTension>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1</sexyReaction>
+    <romanticReaction>3</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>0.25</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <sweetheartModifier>3</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Shy</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker_Shy</workerClass>
+    <maleRulePack>Sentence_FlirtReactionShy</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionShy</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Extroverted</personalityNode>
+        <modifier>-2</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>1.5</sexyReaction>
+    <romanticReaction>1.5</romanticReaction>
+    <logicalReaction>0.5</logicalReaction>
+    <awkwardReaction>2</awkwardReaction>
+    <riskyReaction>0.25</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <provokesJealousy>false</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Suave</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionSuave</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionSuave</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Confident</personalityNode>
+        <modifier>2</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+      <li>RomanticTension</li>
+    </givesTension>
+    <baseChance>1</baseChance>
+    <sexyReaction>3</sexyReaction>
+    <romanticReaction>2</romanticReaction>
+    <logicalReaction>1</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>0.5</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <sweetheartModifier>0.9</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Subtle</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionSubtle</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionSubtle</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Extroverted</personalityNode>
+        <modifier>-1</modifier>
+      </li>
+    </personalityModifiers>
+    <traitModifiers>
+    </traitModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+      <li>RomanticTension</li>
+    </givesTension>
+    <baseChance>1</baseChance>
+    <sexyReaction>2</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>0.5</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>0.1</riskyReaction>
+    <obscureReaction>3</obscureReaction>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <Gradual_Romance.FlirtReactionDef>
+    <defName>Tease</defName>
+    <workerClass>Gradual_Romance.FlirtReactionWorker</workerClass>
+    <maleRulePack>Sentence_FlirtReactionTease</maleRulePack>
+    <femaleRulePack>Sentence_FlirtReactionTease</femaleRulePack>
+    <successful>true</successful>
+    <personalityModifiers>
+      <li>
+        <personalityNode>Friendly</personalityNode>
+        <modifier>1</modifier>
+      </li>
+      <li>
+        <personalityNode>Spontaneous</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityModifiers>
+    <givesTension>
+      <li>SexualTension</li>
+    </givesTension>
+    <traitModifiers>
+    </traitModifiers>
+    <baseChance>1</baseChance>
+    <sexyReaction>3</sexyReaction>
+    <romanticReaction>1</romanticReaction>
+    <logicalReaction>0.5</logicalReaction>
+    <awkwardReaction>1</awkwardReaction>
+    <riskyReaction>2</riskyReaction>
+    <obscureReaction>1</obscureReaction>
+    <sweetheartModifier>0.9</sweetheartModifier>
+    <provokesJealousy>true</provokesJealousy>
+  </Gradual_Romance.FlirtReactionDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionAggressiveFemale</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;In response, [RECIPIENT_nameDef] [harrassed] [INITIATOR_possessive] [crudefemalebodypart].</li>
+        <li>harrassed-&gt;pinched</li>
+        <li>harrassed-&gt;stroked</li>
+        <li>harrassed-&gt;slapped</li>
+        <li>harrassed-&gt;groped</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionAggressiveMale</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;In response, [RECIPIENT_nameDef] [harrassed] [INITIATOR_possessive] [crudemalebodypart].</li>
+        <li>harrassed-&gt;pinched</li>
+        <li>harrassed-&gt;stroked</li>
+        <li>harrassed-&gt;slapped</li>
+        <li>harrassed-&gt;groped</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionAngryFemale</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef], [angry], [called] a [insultfemale] in response.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef], [angry], told [INITIATOR_objective] to [piss_off].</li>
+        <li>called-&gt;called [INITIATOR_objective]</li>
+        <li>called-&gt;hissed at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+        <li>called-&gt;barked at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+        <li>angry-&gt;shaking with anger</li>
+        <li>angry-&gt;red with fury</li>
+        <li>angry-&gt;pissed</li>
+        <li>angry-&gt;extremely annoyed</li>
+        <li>piss_off-&gt;go away</li>
+        <li>piss_off-&gt;leave [RECIPIENT_objective] alone</li>
+        <li>piss_off-&gt;take a hike</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionAngryMale</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef], [angry], [called] a [insultmale] in response.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef], [angry], told [INITIATOR_objective] to [piss_off].</li>
+        <li>called-&gt;called [INITIATOR_objective]</li>
+        <li>called-&gt;hissed at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+        <li>called-&gt;barked at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+        <li>angry-&gt;shaking with anger</li>
+        <li>angry-&gt;red with fury</li>
+        <li>angry-&gt;pissed</li>
+        <li>angry-&gt;extremely annoyed</li>
+        <li>piss_off-&gt;go away</li>
+        <li>piss_off-&gt;leave [RECIPIENT_objective] alone</li>
+        <li>piss_off-&gt;take a hike</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionConvinced</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] found [INITIATOR_objective] [compelling].</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] [listened_closely].</li>
+        <li>compelling-&gt;compelling</li>
+        <li>compelling-&gt;agreeable</li>
+        <li>compelling-&gt;interesting</li>
+        <li>listened_closely-&gt;listened closely</li>
+        <li>listened_closely-&gt;looked thoughtful</li>
+        <li>listened_closely-&gt;seemed persuaded</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionCharmed</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] [smiled], [looking_charmed].</li>
+        <li>smiled-&gt;smiled</li>
+        <li>smiled-&gt;brightened</li>
+        <li>smiled-&gt;beamed</li>
+        <li>smiled-&gt;flushed</li>
+        <li>looking_charmed-&gt;looking charmed</li>
+        <li>looking_charmed-&gt;quite taken</li>
+        <li>looking_charmed-&gt;liking the attention</li>
+        <li>looking_charmed-&gt;enjoying [INITIATOR_nameDef]'s presence</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionCrudeMale</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef], [in_response], [complimented] [INITIATOR_nameDef]'s [crudemalebodypart].</li>
+        <li>in_response-&gt;in response</li>
+        <li>in_response-&gt;smirking</li>
+        <li>in_response-&gt;winking</li>
+        <li>in_response-&gt;blowing a kiss</li>
+        <li>in_response-&gt;wiggling an eyebrow</li>
+        <li>complimented-&gt;made a comment about</li>
+        <li>complimented-&gt;complimented</li>
+        <li>complimented-&gt;praised</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionCrudeFemale</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef], [in_response], [complimented] [INITIATOR_nameDef]'s [crudefemalebodypart].</li>
+        <li>in_response-&gt;in response</li>
+        <li>in_response-&gt;smirking</li>
+        <li>in_response-&gt;winking</li>
+        <li>in_response-&gt;blowing a kiss</li>
+        <li>in_response-&gt;wiggling an eyebrow</li>
+        <li>complimented-&gt;made a comment about</li>
+        <li>complimented-&gt;complimented</li>
+        <li>complimented-&gt;praised</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionEnraged</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] [flipped_out]!</li>
+        <li>flipped_out-&gt;went berserk</li>
+        <li>flipped_out-&gt;flew into a rage</li>
+        <li>flipped_out-&gt;went nuts</li>
+        <li>flipped_out-&gt;screamed unbelievable curses at [RECIPIENT_nameDef]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionEmbarrassed</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] [embarrassed] for [INITIATOR_objective] that [RECIPIENT_pronoun] [reaction].</li>
+        <li>embarrassed-&gt;was so embarrassed</li>
+        <li>embarrassed-&gt;felt so sorry for</li>
+        <li>reaction-&gt;couldn't say anything</li>
+        <li>reaction-&gt;turned red</li>
+        <li>reaction-&gt;turned away</li>
+        <li>reaction-&gt;was rendered speechless</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionIgnorant</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;The attempt went over [RECIPIENT_nameDef]'s head.</li>
+        <li>sent-&gt;[RECIPIENT_nameDef] [didnt_notice].</li>
+        <li>didnt_notice-&gt;didn't realize [INITIATOR_pronoun] was trying to flirt with [RECIPIENT_objective]</li>
+        <li>didnt_notice-&gt;was ignorant of [INITIATOR_possessive] advance</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionImpressed</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] [impressed_by] [INITIATOR_possessive] [boldness].</li>
+        <li>impressed_by-&gt;was turned on by</li>
+        <li>impressed_by-&gt;was impressed by</li>
+        <li>impressed_by-&gt;kinda loved</li>
+        <li>impressed_by-&gt;respected</li>
+        <li>impressed_by-&gt;smiled at</li>
+        <li>impressed_by-&gt;blushed at</li>
+        <li>boldness-&gt;boldness</li>
+        <li>boldness-&gt;confidence</li>
+        <li>boldness-&gt;chutzpah</li>
+        <li>boldness-&gt;moxie</li>
+        <li>boldness-&gt;cockiness</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionLaughter</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] [laughed_at] [INITIATOR_possessive] [pathetic] [attempt].</li>
+        <li>laughed_at-&gt;laughed at</li>
+        <li>laughed_at-&gt;burst out laughing at</li>
+        <li>laughed_at-&gt;mocked cruelly</li>
+        <li>laughed_at-&gt;laughed dismissively at</li>
+        <li>laughed_at-&gt;made fun of</li>
+        <li>pathetic-&gt;pathetic</li>
+        <li>pathetic-&gt;hopeless</li>
+        <li>pathetic-&gt;embarrassing</li>
+        <li>pathetic-&gt;humilating</li>
+        <li>pathetic-&gt;weak</li>
+        <li>attempt-&gt;attempt</li>
+        <li>attempt-&gt;advance</li>
+        <li>attempt-&gt;courtship</li>
+        <li>attempt-&gt;flirt</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionNeutral</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] [neutral_response].</li>
+        <li>neutral_response-&gt;paid no attention</li>
+        <li>neutral_response-&gt;was unimpressed</li>
+        <li>neutral_response-&gt;didn't react</li>
+        <li>neutral_response-&gt;gave a superficial response</li>
+        <li>neutral_response-&gt;did nothing</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionPolite</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] [explained] [RECIPIENT_pronoun] [not_interested].</li>
+        <li>explained-&gt;apologized and said [RECIPIENT_pronoun] wasn't interested</li>
+        <li>explained-&gt;explained</li>
+        <li>explained-&gt;told [INITIATOR_objective] at length</li>
+        <li>not_interested-&gt;wasn't interested</li>
+        <li>not_interested-&gt;wasn't ready for a relationship</li>
+        <li>not_interested-&gt;had someone else [RECIPIENT_pronoun] interested in</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionRomantic</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;In response, [RECIPIENT_nameDef] [told] [INITIATOR_objective] [RECIPIENT_possessive] [feelings] for [INITIATOR_objective].</li>
+        <li>told-&gt;told</li>
+        <li>told-&gt;admitted to</li>
+        <li>told-&gt;declared to</li>
+        <li>told-&gt;announced to</li>
+        <li>feelings-&gt;feelings</li>
+        <li>feelings-&gt;affections</li>
+        <li>feelings-&gt;love</li>
+        <li>feelings-&gt;emotions</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionShy</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] could barely get a word out [RECIPIENT_pronoun] was so shy!</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionSuave</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] made a flattering, seductive comment in response.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionSubtle</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] winked in response.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FlirtReactionTease</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_nameDef] teased [INITIATOR_nameDef] affectionately in response.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_InterpretFlirtPositively</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_nameDef] [believed_successful].</li>
+        <li>believed_successful-&gt;took this to mean [RECIPIENT_pronoun] [likes] [INITIATOR_objective]</li>
+        <li>believed_successful-&gt;took this as encouraging</li>
+        <li>believed_successful-&gt;believed [RECIPIENT_pronoun] was flirting back</li>
+        <li>believed_successful-&gt;definitely thinks [RECIPIENT_nameDef] [likes] [INITIATOR_objective]</li>
+        <li>likes-&gt;loves</li>
+        <li>likes-&gt;likes</li>
+        <li>likes-&gt;appreciates</li>
+        <li>likes-&gt;has the hots for</li>
+        <li>likes-&gt;has a crush on</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_InterpretFlirtNegatively</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_nameDef] [believed_failure].</li>
+        <li>believed_failure-&gt;was discouraged by [RECIPIENT_possessive] silence</li>
+        <li>believed_failure-&gt;was sure that [RECIPIENT_pronoun] didn't like it</li>
+        <li>believed_failure-&gt;believed [RECIPIENT_pronoun] was giving the cold shoulder</li>
+        <li>believed_failure-&gt;definitely thinks [RECIPIENT_nameDef] dislikes [INITIATOR_objective]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>Sentence_FeltShame</defName>
+    <include>
+      <li>GRGlobal</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_nameDef] [was_embarrassed].</li>
+        <li>was_embarrassed-&gt;realized [INITIATOR_pronoun] had made an ass of [INITIATOR_objective]self</li>
+        <li>was_embarrassed-&gt;went beet red and shrank away</li>
+        <li>was_embarrassed-&gt;covered [INITIATOR_possessive] face in embarrassment</li>
+        <li>was_embarrassed-&gt;immediately realized how stupid [INITIATOR_pronoun] sounded</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>
