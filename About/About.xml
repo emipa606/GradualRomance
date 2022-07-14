@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Gradual Romance (Continued)</name>
   <packageId>Mlie.GradualRomance</packageId>
@@ -34,22 +34,26 @@
     <li>UnlimitedHugs.HugsLib</li>
     <li>Community.Psychology.UnofficialUpdate</li>
   </loadAfter>
-  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of Nationalitys mod
 https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
 
 - Corrected a few things but not deep-tested it
 
-[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+[img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
     [tr]
         [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
         [td][url=https://github.com/emipa606/GradualRomance][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
     [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/XLUGyo4.png[/img][/td]
+        [td][img]https://i.imgur.com/6KqTKks.png[/img][/td]
+    [/tr]
 [/table]
 	
-[img]https://i.imgur.com/NOW7jU1.png[/img]
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
     Version: Alpha 1
 
     WORK IN PROGRESS
@@ -60,7 +64,7 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
 
     BUGGY AF
 
-    ONLY SUBSCRIBE IF YOU&apos;RE WILLING TO TEST
+    ONLY SUBSCRIBE IF YOU'RE WILLING TO TEST
 
     REQUIREMENTS: Hugslib and Psychology
 
@@ -86,24 +90,24 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
     
     === NEW ROMANCE STAGES ===
 
-    There are four new romance stages, Lovebuddies, Sweethearts, Paramour and Boyfriend/Girlfriend (or &quot;Lovefriend&quot;).
+    There are four new romance stages, Lovebuddies, Sweethearts, Paramour and Boyfriend/Girlfriend (or "Lovefriend").
 
     Pawns start off as either Lovebuddies or Sweethearts. These are both relationships that form naturally as pawns flirt.
-    Lovebuddies have a purely physical relationship, without any of that complicated romantic stuff. Sweethearts go out on dates, but aren&apos;t ready for lovin&apos;.
-    Paramours both do lovin&apos; and go out on dates, but they aren&apos;t formally &quot;dating&quot;, and there isn&apos;t an expectation of exclusivity.
-    Only after a pawn asks a pawn out do they become boyfriend/girlfriend. This is more serious than being paramours, but not quite as serious as being lovers. They do all the things lovers do, but they aren&apos;t ready to live together.
+    Lovebuddies have a purely physical relationship, without any of that complicated romantic stuff. Sweethearts go out on dates, but aren't ready for lovin'.
+    Paramours both do lovin' and go out on dates, but they aren't formally "dating", and there isn't an expectation of exclusivity.
+    Only after a pawn asks a pawn out do they become boyfriend/girlfriend. This is more serious than being paramours, but not quite as serious as being lovers. They do all the things lovers do, but they aren't ready to live together.
     Only after a pawn asks another pawn to move in do they become lovers.
     
     === TOTALLY OVERHAULED ATTRACTION CALCULATION ===
     
     Gradual Romance changes everything about attraction calculations, too many to list here. But now Pawns will consider a lot more than just physical appearance.
-    Greedy pawns go after the &quot;wealthiest&quot; pawns (e.g. the ones with the nicest rooms). Ambitious, socialite pawns value popular partners with a lot of friends. Colonists with bloodlust look for those with similar outlook.
-    As pawns flirt and make romance attempts, you&apos;ll be told what factors contributed the most.
+    Greedy pawns go after the "wealthiest" pawns (e.g. the ones with the nicest rooms). Ambitious, socialite pawns value popular partners with a lot of friends. Colonists with bloodlust look for those with similar outlook.
+    As pawns flirt and make romance attempts, you'll be told what factors contributed the most.
     A lot of these factors are configurable in the Defs, and it is reasonably easy to add your own.
     
     === ALIEN INTEGRATION ===
     
-    Gradual Romance auto-patches humanoid aliens, if they don&apos;t already have an author-configured patch. Gradual Romance does its best to make educated guesses on which values it should assign.
+    Gradual Romance auto-patches humanoid aliens, if they don't already have an author-configured patch. Gradual Romance does its best to make educated guesses on which values it should assign.
     
     === LOAD ORDER ===
     
@@ -114,7 +118,7 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
     Gradual Romance is incompatible with most other relationship mods, especially Rational Romance, but should be compatible with most anything else.
    
 
-[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[img]https://i.imgur.com/PwoNOj4.png[/img]
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
