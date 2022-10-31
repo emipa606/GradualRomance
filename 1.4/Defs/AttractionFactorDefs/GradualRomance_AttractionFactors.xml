@@ -1,0 +1,1438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!---
+  
+          public RulePack intriguedByText;
+        public RulePack reactionNegativeText;
+        public RulePack reactionPositiveText;
+          public bool needsSight = false;
+        public bool needsHearing = false;
+  
+  -->
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Beauty</defName>
+    <label>beauty</label>
+    <category>Physical</category>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Beauty</calculatorClass>
+    <needsSight>True</needsSight>
+    <intriguedByText>Intrigued_Beauty</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Beauty</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Beauty</reactionNegativeText>
+    <nullifyingTraits>
+      <li>OpenMinded</li>
+    </nullifyingTraits>
+    <traitImportanceModifiers>
+      <li>
+        <trait>Superficial</trait>
+        <modifier>2</modifier>
+      </li>
+    </traitImportanceModifiers>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Judgmental</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityImportanceModifiers>
+    <reasonVeryHigh>{PAWN2_possessive} stunning beauty</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} beauty</reasonHigh>
+    <reasonLow>{PAWN2_possessive} ugliness</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} hideousness</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Beauty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was captivated by [RECIPIENT_possessive] beauty.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Beauty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was taken by [INITIATOR_possessive] beauty.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Beauty</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] ugliness.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>AgeDifference</defName>
+    <label>age difference</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_AgeDifference</intriguedByText>
+    <reactionPositiveText>ReactionPositive_AgeDifference</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_AgeDifference</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_AgeDifference</calculatorClass>
+    <reasonVeryHigh>the proximity in age</reasonVeryHigh>
+    <reasonHigh>the proximity in age</reasonHigh>
+    <reasonLow>the difference in age</reasonLow>
+    <reasonVeryLow>the huge difference in age</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_AgeDifference</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was excited to interact with someone [INTIATOR_recipient] own age.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_AgeDifference</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] like that [INITIATOR_pronoun] was [RECIPIENT_possessive] own age.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_AgeDifference</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] thought their age difference was too great.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Youth</defName>
+    <label>youth</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Youth</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Youth</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Youth</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Youth</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} youth</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} youth</reasonHigh>
+    <reasonLow>{PAWN2_possessive} immaturity</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} immaturity</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Youth</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was intrigued by [RECIPIENT_possessive] youthful charm.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Youth</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was charmed by [INITIATOR_possessive] youth.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Youth</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] found [INITIATOR_objective] immature.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>OldAge</defName>
+    <label>old age</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_OldAge</intriguedByText>
+    <reactionPositiveText>ReactionPositive_OldAge</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_OldAge</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_OldAge</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} stately maturity</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} maturity</reasonHigh>
+    <reasonLow>{PAWN2_possessive} old age</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} decreptitude</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_OldAge</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was pulled in by [RECIPIENT_possessive] maturity.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_OldAge</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was mature and dignified.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_OldAge</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was too old.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Ability</defName>
+    <label>ability</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Ability</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Ability</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Ability</reactionNegativeText>
+    <nullifyingTraits>
+      <li>OpenMinded</li>
+    </nullifyingTraits>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Bloodlust</trait>
+        <modifier>3</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Independent</personalityNode>
+      </li>
+    </personalityImportanceModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Compassionate</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Ability</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} superhuman abilities</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} health and ability</reasonHigh>
+    <reasonLow>{PAWN2_possessive} disability</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} crippledness</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Ability</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] admired [RECIPIENT_possessive] power and ability.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Ability</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] admired [INITIATOR_possessive] powerful and ability.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Ability</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was unimpressed by [INITIATOR_possessive] weakness.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Scars</defName>
+    <label>scars</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Scars</intriguedByText>
+    <needsSight>True</needsSight>
+    <reactionPositiveText>ReactionPositive_Scars</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Scars</reactionNegativeText>
+    <highAttractionTraitModifiers>
+      <li>
+        <trait>Bloodlust</trait>
+        <modifier>2</modifier>
+      </li>
+    </highAttractionTraitModifiers>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Bloodlust</trait>
+        <modifier>0.25</modifier>
+      </li>
+      <li>
+        <trait>Superficial</trait>
+        <modifier>2</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <nullifyingTraits>
+      <li>OpenMinded</li>
+    </nullifyingTraits>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Scars</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} sexy scars</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} cool scars</reasonHigh>
+    <reasonLow>{PAWN2_possessive} scars</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} disfiguring scars</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Scars</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] found [RECIPIENT_possessive] scars mysterious and beautiful.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Scars</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] found [INITIATOR_possessive] scars mysterious and beautiful.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Scars</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] hideous scars.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Incest</defName>
+    <label>incest</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Incest</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Incest</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Incest</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Incest</calculatorClass>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Psychopath</trait>
+        <modifier>0.6</modifier>
+      </li>
+      <li>
+        <trait>Lecher</trait>
+        <modifier>0.7</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <reasonVeryHigh>{PAWN2_possessive} purest blood</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} pure blood</reasonHigh>
+    <reasonLow>{PAWN2_possessive} blood relation to {PAWN1_objective}</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} blood relation to {PAWN1_objective}</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Incest</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was one of the few with pure, clean blood.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Incest</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] commiserated with [INITIATOR_possessive] pure blood.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Incest</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] couldn't believe [INITIATOR_nameDef] would hit on a blood relative.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Body</defName>
+    <label>body</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Body</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Body</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Body</reactionNegativeText>
+    <nullifyingTraits>
+      <li>OpenMinded</li>
+    </nullifyingTraits>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Judgmental</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityImportanceModifiers>
+    <traitImportanceModifiers>
+      <li>
+        <trait>Superficial</trait>
+        <modifier>2.5</modifier>
+      </li>
+    </traitImportanceModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Body</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} gorgeous body</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} nice body</reasonHigh>
+    <reasonLow>{PAWN2_possessive} unattractive body</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} grotesque body</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Body</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] couldn't take [INITIATOR_possessive] eyes off [RECIPIENT_possessive] body.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Body</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was mostly intrigued by [INITIATOR_possessive] sexy body.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Body</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] unattractive body.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Xeno</defName>
+    <label>xeno</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Xeno</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Xeno</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Xeno</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Xeno</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} exotic alienness</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} alienness</reasonHigh>
+    <reasonLow>{PAWN2_possessive} alienness</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} repulsive alienness</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Xeno</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] loved that [RECIPIENT_pronoun] was a mysterious alien.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Xeno</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was curious about [INTIATOR_possessive] alieness.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Xeno</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] wouldn't consider an advance by such an alien.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Cybernetics</defName>
+    <label>cybernetics</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Cybernetics</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Cybernetics</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Cybernetics</reactionNegativeText>
+    <requiredTraits>
+      <li>Transhumanist</li>
+      <li>BodyPurist</li>
+    </requiredTraits>
+    <reversingTraits>
+      <li>BodyPurist</li>
+    </reversingTraits>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Cybernetics</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} transcendent cybernetics</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} cybernetics</reasonHigh>
+    <reasonLow>{PAWN2_possessive} cybernetics</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} abominable cybernetics</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Cybernetics</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] couldn't stop staring at [RECIPIENT_possessive] admirable technology.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Cybernetics</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] admired [INITIATOR_nameDef]'s tech.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Cybernetics</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] considered [INITIATOR_nameDef] a cyborg abomination!</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Maleness</defName>
+    <label>maleness</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Maleness</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Maleness</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Maleness</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Maleness</calculatorClass>
+    <reasonVeryHigh>that he is a man</reasonVeryHigh>
+    <reasonHigh>that he is a man</reasonHigh>
+    <reasonLow>that he is a man</reasonLow>
+    <reasonVeryLow>that he is a man</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Maleness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] really just wanted a man.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Maleness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a man.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Maleness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] wouldn't consider being with a man.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Femaleness</defName>
+    <label>femaleness</label>
+    <category>Physical</category>
+    <intriguedByText>Intrigued_Femaleness</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Femaleness</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Femaleness</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Femaleness</calculatorClass>
+    <reasonVeryHigh>that she is a woman</reasonVeryHigh>
+    <reasonHigh>that she is a woman</reasonHigh>
+    <reasonLow>that she is a woman</reasonLow>
+    <reasonVeryLow>that she is a woman</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Femaleness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] really just wanted a woman.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Femaleness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a woman.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Femaleness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] wouldn't consider being with a woman.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Skill</defName>
+    <label>skill</label>
+    <category>Social</category>
+    <intriguedByText>Intrigued_Skill</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Skill</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Skill</reactionNegativeText>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Independent</personalityNode>
+        <modifier>1</modifier>
+      </li>
+      <li>
+        <personalityNode>Logical</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityImportanceModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Skill</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} incredible aptitude</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} aptitude</reasonHigh>
+    <reasonLow>{PAWN2_possessive} ineptitude</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} clumsy ineptness</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Skill</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was impressed by [RECIPIENT_possessive] skill and aptitude.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Skill</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] liked that [INITIATOR_nameDef] was so skillful.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Skill</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] wasn't impressed by [INITIATOR_nameDef]'s lack of marketable skills.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Popularity</defName>
+    <label>popularity</label>
+    <category>Social</category>
+    <intriguedByText>Intrigued_Popularity</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Popularity</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Popularity</reactionNegativeText>
+    <nullifyingTraits>
+      <li>Shy</li>
+    </nullifyingTraits>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Ambitious</personalityNode>
+        <modifier>1</modifier>
+      </li>
+      <li>
+        <personalityNode>Extroverted</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityImportanceModifiers>
+    <traitImportanceModifiers>
+      <li>
+        <trait>Socialite</trait>
+        <modifier>2</modifier>
+      </li>
+      <li>
+        <trait>Chatty</trait>
+        <modifier>1.5</modifier>
+      </li>
+    </traitImportanceModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Popularity</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} wild popularity</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} popularity</reasonHigh>
+    <reasonLow>{PAWN2_possessive} unpopularity</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} infamy</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Popularity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was very popular.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Popularity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] liked [INITIATOR_possessive] popularity.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Popularity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] couldn't possibly get intimate with someone so unpopular.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Wealth</defName>
+    <label>wealth</label>
+    <category>Social</category>
+    <intriguedByText>Intrigued_Wealth</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Wealth</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Wealth</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Wealth</calculatorClass>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+    </nullifyingTraits>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Generous</personalityNode>
+        <modifier>1</modifier>
+        <reverse>true</reverse>
+      </li>
+      <li>
+        <personalityNode>Ambitious</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityImportanceModifiers>
+    <traitImportanceModifiers>
+      <li>
+        <trait>Greedy</trait>
+        <modifier>2</modifier>
+      </li>
+    </traitImportanceModifiers>
+    <reasonVeryHigh>{PAWN2_possessive} fabulous wealth</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} wealth</reasonHigh>
+    <reasonLow>{PAWN2_possessive} mediocre finances</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} poverty</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Wealth</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was after [RECIPIENT_possessive] wealth.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Wealth</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] considered carefully [INITIATOR_possessive] wealth before responding.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Wealth</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] didn't have time for paupers.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Opinion</defName>
+    <label>opinion</label>
+    <category>Romantic</category>
+    <intriguedByText>Intrigued_Opinion</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Opinion</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Opinion</reactionNegativeText>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <personalityImportanceModifiers>
+      <li>
+        <personalityNode>Romantic</personalityNode>
+        <modifier>1</modifier>
+      </li>
+    </personalityImportanceModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Opinion</calculatorClass>
+    <reasonVeryHigh>{PAWN1_nameDef}'s intense feelings for {PAWN2_objective}</reasonVeryHigh>
+    <reasonHigh>{PAWN1_nameDef}'s feelings for {PAWN2_objective}</reasonHigh>
+    <reasonLow>{PAWN1_nameDef}'s lack of feelings for {PAWN2_objective}</reasonLow>
+    <reasonVeryLow>{PAWN1_nameDef}'s personal distaste for {PAWN2_objective}</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Opinion</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was moved by [INITIATOR_possessive] deep feelings for [INITIATOR_objective].</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Opinion</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had deep feelings for [INITIATOR_objective], and responded accordingly.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Opinion</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had little regard for [INITIATOR_objective].</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Depravity</defName>
+    <label>depravity</label>
+    <category>Romantic</category>
+    <intriguedByText>Intrigued_Depravity</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Depravity</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Depravity</reactionNegativeText>
+    <nullifyingTraits>
+      <li>Psychopath</li>
+    </nullifyingTraits>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Cannibal</trait>
+        <modifier>0.25</modifier>
+      </li>
+      <li>
+        <trait>Kind</trait>
+        <modifier>2</modifier>
+      </li>
+      <li>
+        <trait>BleedingHeart</trait>
+        <modifier>3</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <highAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Aggressive</personalityNode>
+      </li>
+    </highAttractionPersonalityModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Aggressive</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Depravity</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} strength to force {PAWN2_possessive} will</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} willingness to force {PAWN2_possessive} will on others</reasonHigh>
+    <reasonLow>{PAWN2_possessive} cruelty and depravity</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} unparalleled depravity</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Depravity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] thought [RECIPIENT_pronoun] was a badass.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Depravity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had a weakness for bad guys.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Depravity</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so depraved.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Morality</defName>
+    <label>morality</label>
+    <category>Romantic</category>
+    <intriguedByText>Intrigued_Morality</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Morality</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Morality</reactionNegativeText>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Psychopath</trait>
+        <modifier>2</modifier>
+      </li>
+      <li>
+        <trait>Bloodlust</trait>
+        <modifier>2</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <highAttractionTraitModifiers>
+      <li>
+        <trait>Kind</trait>
+        <modifier>2</modifier>
+      </li>
+      <li>
+        <trait>BleedingHeart</trait>
+        <modifier>3</modifier>
+      </li>
+    </highAttractionTraitModifiers>
+    <highAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Aggressive</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </highAttractionPersonalityModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Aggressive</personalityNode>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Morality</calculatorClass>
+    <reasonVeryHigh>{PAWN2_possessive} radiant kindness and strength of character</reasonVeryHigh>
+    <reasonHigh>{PAWN2_possessive} kindness and character</reasonHigh>
+    <reasonLow>{PAWN2_possessive} lack of will</reasonLow>
+    <reasonVeryLow>{PAWN2_possessive} contemptible weakness and lack of will</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Morality</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] admired [RECIPIENT_possessive] moral fortitude and courage.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Morality</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had a weakness for good guys.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Morality</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so weak and sentimental.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>AffairReluctance</defName>
+    <label>affair reluctance</label>
+    <category>Circumstance</category>
+    <intriguedByText>Intrigued_AffairReluctance</intriguedByText>
+    <reactionPositiveText>ReactionPositive_AffairReluctance</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_AffairReluctance</reactionNegativeText>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Lecher</trait>
+        <modifier>0.4</modifier>
+      </li>
+      <li>
+        <trait>Psychopath</trait>
+        <modifier>0.7</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <highAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </highAttractionPersonalityModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <calculatorClass>Gradual_Romance.AttractionFactor_AffairReluctance</calculatorClass>
+    <reasonVeryHigh>{PAWN1_possessive} drive to commit adultery</reasonVeryHigh>
+    <reasonHigh>{PAWN1_possessive} desire to commit adultery</reasonHigh>
+    <reasonLow>{PAWN1_possessive} reluctance to commit adultery</reasonLow>
+    <reasonVeryLow>{PAWN1_possessive} aversion to commit adultery</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_AffairReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] mostly wanted to cheat on [INITIATOR_possessive] significant other.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_AffairReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] took this as an opportunity to spite [RECIPIENT_possessive] significant other.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_AffairReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] wasn't about to throw away [RECIPIENT_possessive] current relationship.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Options</defName>
+    <label>availability of other partners</label>
+    <category>Relationship</category>
+    <intriguedByText>Intrigued_Options</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Options</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Options</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Options</calculatorClass>
+    <reasonVeryHigh>the near total absence of other options</reasonVeryHigh>
+    <reasonHigh>the lack of other options</reasonHigh>
+    <reasonLow>the availability of better options</reasonLow>
+    <reasonVeryLow>the abundance of better options</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Options</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was driven to desperation by the lack of eligible partners.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Options</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] knew [RECIPIENT_pronoun] had few choices.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Options</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had better options.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Polygamist</defName>
+    <label>attitude toward polygamy</label>
+    <category>Relationship</category>
+    <intriguedByText>Intrigued_Polygamist</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Polygamist</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Polygamist</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Polygamy</calculatorClass>
+    <lowAttractionTraitModifiers>
+      <li>
+        <trait>Prude</trait>
+        <modifier>2</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <highAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </highAttractionPersonalityModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <reasonVeryHigh>that {PAWN2_pronoun} is a fellow polygamist</reasonVeryHigh>
+    <reasonHigh>that {PAWN2_pronoun} is a fellow polygamist</reasonHigh>
+    <reasonLow>that {PAWN2_pronoun} is a polygamist</reasonLow>
+    <reasonVeryLow>that {PAWN2_pronoun} is a filthy polygamist</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Polygamist</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was curious about [RECIPIENT_possessive] polygamist lifestyle.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Polygamist</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was curious about [INITIATOR_possessive] polygamist lifestyle.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Polygamist</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] didn't want to join [INITIATOR_possessive] harem.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>SexDrive</defName>
+    <label>sex drive</label>
+    <category>Circumstance</category>
+    <intriguedByText>Intrigued_SexDrive</intriguedByText>
+    <reactionPositiveText>ReactionPositive_SexDrive</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_SexDrive</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_SexDrive</calculatorClass>
+    <reasonVeryHigh>{PAWN1_nameDef}'s overactive sex drive</reasonVeryHigh>
+    <reasonHigh>{PAWN1_nameDef}'s strong sex drive</reasonHigh>
+    <reasonLow>{PAWN1_nameDef}'s weak sex drive</reasonLow>
+    <reasonVeryLow>{PAWN1_nameDef}'s near nonexistant sex drive</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_SexDrive</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was compelled by [INITIATOR_possessive] intense sex drive.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_SexDrive</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] basically wanted to have sex with someone... anyone.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_SexDrive</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] didn't really feel the need to get close to anyone.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>RomanticDrive</defName>
+    <label>romantic drive</label>
+    <category>Relationship</category>
+    <intriguedByText>Intrigued_RomanticDrive</intriguedByText>
+    <reactionPositiveText>ReactionPositive_RomanticDrive</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_RomanticDrive</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_RomanticDrive</calculatorClass>
+    <reasonVeryHigh>{PAWN1_nameDef}'s intense need for commitment</reasonVeryHigh>
+    <reasonHigh>{PAWN1_nameDef}'s strong need for commitment</reasonHigh>
+    <reasonLow>{PAWN1_nameDef}'s reluctance for commitment</reasonLow>
+    <reasonVeryLow>{PAWN1_nameDef}'s aversion to commitment</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_RomanticDrive</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was desperate for a connection and a partner.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_RomanticDrive</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a connection and a partner.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_RomanticDrive</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] wasn't ready for any messy romantic entanglements.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>MaleRelationshipReluctance</defName>
+    <label>reluctance to start a relationship with a man</label>
+    <category>Relationship</category>
+    <intriguedByText>Intrigued_MaleRelationshipReluctance</intriguedByText>
+    <reactionPositiveText>ReactionPositive_MaleRelationshipReluctance</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_MaleRelationshipReluctance</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_MaleRelationshipReluctance</calculatorClass>
+    <reasonVeryHigh>{PAWN1_nameDef}'s need to have a relationship with a man</reasonVeryHigh>
+    <reasonHigh>{PAWN1_nameDef}'s desire to have a relationship with a man</reasonHigh>
+    <reasonLow>{PAWN1_nameDef}'s reluctance to have a relationship with a man</reasonLow>
+    <reasonVeryLow>{PAWN1_nameDef}'s extreme reluctance to have a relationship with a man</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_MaleRelationshipReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was desperate for a connection with a man.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_MaleRelationshipReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a connection with a man.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_MaleRelationshipReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had little desire to be romantic with a man.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>FemaleRelationshipReluctance</defName>
+    <label>reluctance to start a relationship with a woman</label>
+    <category>Relationship</category>
+    <intriguedByText>Intrigued_FemaleRelationshipReluctance</intriguedByText>
+    <reactionPositiveText>ReactionPositive_FemaleRelationshipReluctance</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_FemaleRelationshipReluctance</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_FemaleRelationshipReluctance</calculatorClass>
+    <reasonVeryHigh>{PAWN1_nameDef}'s need to have a relationship with a woman</reasonVeryHigh>
+    <reasonHigh>{PAWN1_nameDef}'s desire to have a relationship with a woman</reasonHigh>
+    <reasonLow>{PAWN1_nameDef}'s reluctance to have a relationship with a woman</reasonLow>
+    <reasonVeryLow>{PAWN1_nameDef}'s extreme reluctance to have a relationship with a woman</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_FemaleRelationshipReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] was desperate for a connection with a woman.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_FemaleRelationshipReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a connection with a woman.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_FemaleRelationshipReluctance</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had little desire to be romantic with a woman.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>TooManyRelationships</defName>
+    <label>the limit to how many relationships someone can maintain</label>
+    <category>Circumstance</category>
+    <intriguedByText>Intrigued_TooManyRelationships</intriguedByText>
+    <reactionPositiveText>ReactionPositive_TooManyRelationships</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_TooManyRelationships</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_RelationshipLimit</calculatorClass>
+    <reasonVeryHigh>that {PAWN1_nameDef} has few commitments</reasonVeryHigh>
+    <reasonHigh>that {PAWN1_nameDef} has few commitments</reasonHigh>
+    <reasonLow>that {PAWN1_nameDef} is juggling too many relationships</reasonLow>
+    <reasonVeryLow>that {PAWN1_nameDef} is overburdened with relationships</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_TooManyRelationships</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] really wanted a few more commitments.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_TooManyRelationships</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] really wanted a few more commitments.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_TooManyRelationships</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was involved with too many people to add one more.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Foreigness</defName>
+    <label>foreigness</label>
+    <category>Circumstance</category>
+    <intriguedByText>Intrigued_Foreigness</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Foreigness</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Foreigness</reactionNegativeText>
+    <nullifyingTraits>
+      <li>Adventurous</li>
+    </nullifyingTraits>
+    <traitImportanceModifiers>
+      <li>
+        <trait>Domestic</trait>
+        <modifier>0</modifier>
+      </li>
+    </traitImportanceModifiers>
+    <lowAttractionTraitModifiers>
+      <!--<li>
+        <trait>Xenophile</trait>
+        <modifier>0.7</modifier>
+      </li>-->
+      <li>
+        <trait>OpenMinded</trait>
+        <modifier>0.7</modifier>
+      </li>
+    </lowAttractionTraitModifiers>
+    <highAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </highAttractionPersonalityModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Trusting</personalityNode>
+        <reverse>true</reverse>
+      </li>
+      <li>
+        <personalityNode>Adventurous</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Foreigness</calculatorClass>
+    <reasonVeryHigh>that {PAWN1_nameDef} is an exotic foreigner</reasonVeryHigh>
+    <reasonHigh>that {PAWN1_nameDef} is a mysterious foreigner</reasonHigh>
+    <reasonLow>that {PAWN1_nameDef} is a foreigner</reasonLow>
+    <reasonVeryLow>that {PAWN1_nameDef} is a dirty foreigner</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Foreigness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] wanted to get to know this strange foreigner better.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Foreigness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was drawn by [INITIATOR_possessive] foreign ways.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Foreigness</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] would never accept an advance from a foreigner.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Hygiene</defName>
+    <label>hygiene</label>
+    <category>Circumstance</category>
+    <intriguedByText>Intrigued_Hygiene</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Hygiene</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Hygiene</reactionNegativeText>
+    <highAttractionPersonalityModifiers>
+      <li>
+        <personalityNode>Moralistic</personalityNode>
+        <reverse>true</reverse>
+      </li>
+    </highAttractionPersonalityModifiers>
+    <lowAttractionPersonalityModifiers>
+      <li>
+        <!--I'll take a shower eventually.-->
+        <personalityNode>LaidBack</personalityNode>
+        <reverse>true</reverse>
+      </li>
+      <li>
+        <!--Big tough mountain men/women don't need showers.-->
+        <personalityNode>Independent</personalityNode>
+        <reverse>true</reverse>
+      </li>
+      <li>
+        <!--Stink is the sign that you go out and do stuff.-->
+        <personalityNode>Adventurous</personalityNode>
+        <reverse>true</reverse>
+      </li>
+      <li>
+        <!--You don't show up to galas without having rinsed thoroughly in cold-pressed soap.-->
+        <personalityNode>Cultured</personalityNode>
+      </li>
+    </lowAttractionPersonalityModifiers>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Hygiene</calculatorClass>
+    <reasonVeryHigh>{PAWN1_possessive} intoxicating musk</reasonVeryHigh>
+    <reasonHigh>{PAWN1_possessive} lovely musk</reasonHigh>
+    <reasonLow>{PAWN1_possessive} filthiness</reasonLow>
+    <reasonVeryLow>{PAWN1_nameDef}'s wretched state of filthiness</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Hygiene</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] breathed in deeply [RECIPIENT_possessive] wonderful musk.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Hygiene</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] could barely think with all that musk.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Hygiene</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] was shocked by [INITIATOR_possessive] lack of hygiene.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Voice</defName>
+    <label>voice</label>
+    <category>Physical</category>
+    <needsHearing>true</needsHearing>
+    <intriguedByText>Intrigued_Voice</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Voice</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Voice</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Voice</calculatorClass>
+    <reasonVeryHigh>{PAWN1_possessive} angelic voice</reasonVeryHigh>
+    <reasonHigh>{PAWN1_possessive} sing-song voice</reasonHigh>
+    <reasonLow>{PAWN1_possessive} annoying voice</reasonLow>
+    <reasonVeryLow>{PAWN1_possessive} grating voice</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Voice</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] just wanted to hear [RECIPIENT_possessive] rich, warm voice.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Voice</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had to obey [INITIATOR_possessive] musical voice.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Voice</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] couldn't listen to [INITIATOR_possessive] annoying voice any longer.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <Gradual_Romance.AttractionFactorDef>
+    <defName>Breathing</defName>
+    <label>breathing</label>
+    <category>Physical</category>
+    <needsHearing>true</needsHearing>
+    <intriguedByText>Intrigued_Breathing</intriguedByText>
+    <reactionPositiveText>ReactionPositive_Breathing</reactionPositiveText>
+    <reactionNegativeText>ReactionNegative_Breathing</reactionNegativeText>
+    <calculatorClass>Gradual_Romance.AttractionCalculator_Breathing</calculatorClass>
+    <reasonVeryHigh>{PAWN1_possessive} hearty breath</reasonVeryHigh>
+    <reasonHigh>{PAWN1_possessive} hale breath</reasonHigh>
+    <reasonLow>{PAWN1_possessive} creepy breathing</reasonLow>
+    <reasonVeryLow>{PAWN1_possessive} atrocious breathing</reasonVeryLow>
+  </Gradual_Romance.AttractionFactorDef>
+  <RulePackDef>
+    <defName>Intrigued_Breathing</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[INITIATOR_pronoun] basked in [RECIPIENT_possessive] powerful breath.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionPositive_Breathing</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] basked in [INTITIATOR_possessive] powerful breath.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  <RulePackDef>
+    <defName>ReactionNegative_Breathing</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>sent-&gt;[RECIPIENT_pronoun] had shivers down [RECIPIENT_possessive] spine listening to [INITIATOR_possessive] breath.</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+</Defs>

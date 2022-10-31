@@ -1,10 +1,9 @@
 ﻿using RimWorld;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+[DefOf]
+public static class FlirtReactionDefOf
 {
-    [DefOf]
-    public static class FlirtReactionDefOf
-    {
-        public static FlirtReactionDef Ignorant;
-    }
+    public static FlirtReactionDef Ignorant;
 }

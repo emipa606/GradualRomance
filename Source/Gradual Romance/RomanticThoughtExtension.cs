@@ -1,9 +1,8 @@
 ﻿using Verse;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public class RomanticThoughtExtension : DefModExtension
 {
-    public class RomanticThoughtExtension : DefModExtension
-    {
-        private bool isReasonForBreakup = false;
-    }
+    private bool isReasonForBreakup = false;
 }

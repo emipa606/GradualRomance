@@ -1,10 +1,9 @@
 ﻿using Verse;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public class GenderModifier
 {
-    public class GenderModifier
-    {
-        private Gender gender;
-        private float modifier;
-    }
+    private Gender gender;
+    private float modifier;
 }

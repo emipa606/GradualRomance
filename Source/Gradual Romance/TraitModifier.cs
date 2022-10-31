@@ -1,11 +1,10 @@
 ﻿using RimWorld;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public class TraitModifier
 {
-    public class TraitModifier
-    {
-        public int degree = 0;
-        public float modifier;
-        public TraitDef trait;
-    }
+    public int degree = 0;
+    public float modifier;
+    public TraitDef trait;
 }

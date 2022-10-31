@@ -1,40 +1,29 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public static class ThoughtDetector
 {
-    public static class ThoughtDetector
+    public static bool HasSituationalThought(Pawn pawn, ThoughtDef thought)
     {
-        public static bool HasSituationalThought(Pawn pawn, ThoughtDef thought)
+        if (!ThoughtUtility.CanGetThought(pawn, thought))
         {
-            if (!ThoughtUtility.CanGetThought(pawn, thought))
-            {
-                return false;
-            }
-
-            var thoughtState = thought.Worker.CurrentState(pawn);
-            if (thoughtState.Active)
-            {
-                return true;
-            }
-
             return false;
         }
 
-        public static bool HasSocialSituationalThought(Pawn pawn, Pawn other, ThoughtDef thought)
+        var thoughtState = thought.Worker.CurrentState(pawn);
+        return thoughtState.Active;
+    }
+
+    public static bool HasSocialSituationalThought(Pawn pawn, Pawn other, ThoughtDef thought)
+    {
+        if (!ThoughtUtility.CanGetThought(pawn, thought))
         {
-            if (!ThoughtUtility.CanGetThought(pawn, thought))
-            {
-                return false;
-            }
-
-            var thoughtState = thought.Worker.CurrentSocialState(pawn, other);
-            if (thoughtState.Active)
-            {
-                return true;
-            }
-
             return false;
         }
+
+        var thoughtState = thought.Worker.CurrentSocialState(pawn, other);
+        return thoughtState.Active;
     }
 }

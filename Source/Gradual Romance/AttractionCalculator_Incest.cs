@@ -4,42 +4,36 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public class AttractionCalculator_Incest : AttractionCalculator
 {
-    public class AttractionCalculator_Incest : AttractionCalculator
+    public override bool Check(Pawn observer, Pawn assessed)
     {
-        public override bool Check(Pawn observer, Pawn assessed)
+        if (!observer.relations.FamilyByBlood.Contains(assessed))
         {
-            if (!observer.relations.FamilyByBlood.Contains(assessed))
-            {
-                return false;
-            }
-
-            //psychopathic lechers don't care at all
-            if (observer.story.traits.HasTrait(TraitDefOfPsychology.Lecher) &&
-                observer.story.traits.HasTrait(TraitDefOf.Psychopath))
-            {
-                return false;
-            }
-
-            return true;
+            return false;
         }
 
-        public override float Calculate(Pawn observer, Pawn assessed)
+        //psychopathic lechers don't care at all
+        return !observer.story.traits.HasTrait(TraitDefOfPsychology.Lecher) ||
+               !observer.story.traits.HasTrait(TraitDefOf.Psychopath);
+    }
+
+    public override float Calculate(Pawn observer, Pawn assessed)
+    {
+        var relations = observer.GetRelations(assessed).ToList();
+        var relation = relations[0];
+        foreach (var relationDef in relations)
         {
-            var relations = observer.GetRelations(assessed).ToList();
-            var relation = relations[0];
-            foreach (var relationDef in relations)
+            if (relationDef.incestOpinionOffset > relation.incestOpinionOffset)
             {
-                if (relationDef.incestOpinionOffset > relation.incestOpinionOffset)
-                {
-                    relation = relationDef;
-                }
+                relation = relationDef;
             }
-
-            var incestFactor = 1f / (Mathf.Abs(relation.incestOpinionOffset) + 1);
-
-            return incestFactor;
         }
+
+        var incestFactor = 1f / (Mathf.Abs(relation.incestOpinionOffset) + 1);
+
+        return incestFactor;
     }
 }

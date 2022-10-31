@@ -1,29 +1,28 @@
 ﻿using RimWorld;
 using Verse;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public static class GRThoughtUtility
 {
-    public static class GRThoughtUtility
+    public static bool IsTensionMemory(ThoughtDef thought)
     {
-        public static bool IsTensionMemory(ThoughtDef thought)
-        {
-            return thought == ThoughtDefOfGR.SexualTension || thought == ThoughtDefOfGR.RomanticTension ||
-                   thought == ThoughtDefOfGR.LogicalTension;
-        }
+        return thought == ThoughtDefOfGR.SexualTension || thought == ThoughtDefOfGR.RomanticTension ||
+               thought == ThoughtDefOfGR.LogicalTension;
+    }
 
-        public static int NumOfMemoriesOfDefWhereOtherPawnIs(Pawn pawn, Pawn other, ThoughtDef thought)
+    public static int NumOfMemoriesOfDefWhereOtherPawnIs(Pawn pawn, Pawn other, ThoughtDef thought)
+    {
+        var memories = pawn.needs.mood.thoughts.memories.Memories;
+        var count = 0;
+        foreach (var thoughtMemory in memories)
         {
-            var memories = pawn.needs.mood.thoughts.memories.Memories;
-            var count = 0;
-            foreach (var thoughtMemory in memories)
+            if (thoughtMemory.def == thought && thoughtMemory.otherPawn == other)
             {
-                if (thoughtMemory.def == thought && thoughtMemory.otherPawn == other)
-                {
-                    count++;
-                }
+                count++;
             }
-
-            return count;
         }
+
+        return count;
     }
 }

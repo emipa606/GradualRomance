@@ -1,20 +1,19 @@
 ﻿using System;
 using Verse;
 
-namespace Gradual_Romance
+namespace Gradual_Romance;
+
+public class GRPawnComp_Properties : CompProperties
 {
-    public class GRPawnComp_Properties : CompProperties
+    public float facialAttractiveness;
+
+    public GRPawnComp_Properties()
     {
-        public float facialAttractiveness;
+        compClass = typeof(GRPawnComp);
+    }
 
-        public GRPawnComp_Properties()
-        {
-            compClass = typeof(GRPawnComp);
-        }
-
-        public GRPawnComp_Properties(Type compClass) : base(compClass)
-        {
-            this.compClass = compClass;
-        }
+    public GRPawnComp_Properties(Type compClass) : base(compClass)
+    {
+        this.compClass = compClass;
     }
 }
