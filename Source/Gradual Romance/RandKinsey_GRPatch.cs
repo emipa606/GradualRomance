@@ -10,7 +10,7 @@ namespace Gradual_Romance.Harmony;
 public class RandKinsey_GRPatch
 {
     [HarmonyPrefix]
-    public static bool GRRandKinsey(ref int __result, ref Pawn_SexualityTracker __instance, ref Pawn ___pawn)
+    public static bool GRRandKinsey(ref int __result, ref Pawn ___pawn)
     {
         int averageKinsey;
         var pawnGender = ___pawn.gender;

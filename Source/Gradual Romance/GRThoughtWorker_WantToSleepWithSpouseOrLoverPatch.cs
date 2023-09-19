@@ -1,6 +1,5 @@
 ﻿using HarmonyLib;
 using RimWorld;
-using Verse;
 
 namespace Gradual_Romance.Harmony;
 
@@ -10,7 +9,7 @@ public class GRThoughtWorker_WantToSleepWithSpouseOrLoverPatch
 {
     [HarmonyPostfix]
     [HarmonyPriority(Priority.Low)]
-    public static void GRNewThoughtState(ref ThoughtState __result, Pawn p)
+    public static void GRNewThoughtState(ref ThoughtState __result)
     {
         __result = ThoughtState.Inactive;
     }

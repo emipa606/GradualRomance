@@ -9,8 +9,7 @@ public static class GRSecondaryLovinChanceFactorPatch
 {
     [HarmonyPostfix]
     [HarmonyPriority(Priority.VeryHigh)]
-    public static void GRSecondaryLovinChanceFactor(Pawn_RelationsTracker __instance, ref float __result,
-        ref Pawn ___pawn, Pawn otherPawn)
+    public static void GRSecondaryLovinChanceFactor(ref float __result, ref Pawn ___pawn, Pawn otherPawn)
     {
         __result = AttractionUtility.CalculateAttraction(___pawn, otherPawn, true, false);
     }

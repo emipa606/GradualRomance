@@ -26,13 +26,18 @@ public class GRPawnComp : ThingComp
     public override void CompTick()
     {
         var pawn = parent as Pawn;
-        var gameTicks = Find.TickManager.TicksGame;
-        if (pawn != null && gameTicks % recachePerTick == 0 && pawn.Spawned && !pawn.Dead)
+        if (pawn is { Spawned: false, Dead: true })
+        {
+            return;
+        }
+
+        if (pawn.IsHashIntervalTick(recachePerTick))
         {
             refreshCache();
         }
 
-        if (pawn != null && (gameTicks % GenDate.TicksPerDay != 0 || !pawn.Spawned || pawn.Dead))
+
+        if (!pawn.IsHashIntervalTick(GenDate.TicksPerDay))
         {
             return;
         }
@@ -99,12 +104,18 @@ public class GRPawnComp : ThingComp
     private void CleanAttractionRecords()
     {
         IEnumerable<Pawn> keys = AttractionRecords.Keys;
+        var recordsToRemove = new List<Pawn>();
         foreach (var p in keys)
         {
             if (!IsPawnAttractionRelevant(p))
             {
-                AttractionRecords.Remove(p);
+                recordsToRemove.Add(p);
             }
+        }
+
+        foreach (var pawn in recordsToRemove)
+        {
+            AttractionRecords.Remove(pawn);
         }
     }
 

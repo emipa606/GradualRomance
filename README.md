@@ -89,4 +89,5 @@ https://github.com/NationalityNZ/Gradual_Romance-Rimworld-mod
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2503845409]![Image](https://img.shields.io/github/v/release/emipa606/GradualRomance?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
 
