@@ -126,8 +126,8 @@ public class GRPawnComp : ThingComp
         {
             AttractionRecords.Add(other, new AttractionRecord(p, other));
         }
-        else if (noUpdate == false && Find.TickManager.TicksGame - AttractionRecords[other].lastRefreshedGameTick >
-                 recalculateAttractionPerTick)
+        else if (noUpdate == false &&
+            Find.TickManager.TicksGame - AttractionRecords[other].lastRefreshedGameTick > recalculateAttractionPerTick)
         {
             AttractionRecords[other].Update(p, other);
         }
@@ -167,40 +167,19 @@ public class GRPawnComp : ThingComp
             return;
         }
 
-        {
-            veryHighFactors.RemoveAll(x => x.category.chanceOnly);
-            highFactors.RemoveAll(x => x.category.chanceOnly);
-            lowFactors.RemoveAll(x => x.category.chanceOnly);
-            veryLowFactors.RemoveAll(x => x.category.chanceOnly);
-        }
+        veryHighFactors.RemoveAll(x => x.category.chanceOnly);
+        highFactors.RemoveAll(x => x.category.chanceOnly);
+        lowFactors.RemoveAll(x => x.category.chanceOnly);
+        veryLowFactors.RemoveAll(x => x.category.chanceOnly);
     }
 
     public float RetrieveAttractionAndFactors(Pawn other, out List<AttractionFactorDef> veryLowFactors,
         out List<AttractionFactorDef> lowFactors, out List<AttractionFactorDef> highFactors,
         out List<AttractionFactorDef> veryHighFactors, bool romantic = false, bool chanceOnly = false)
     {
-        var record = PullRecord(other);
-        record.RetrieveFactors(out veryLowFactors, out lowFactors, out highFactors, out veryHighFactors);
-        if (!romantic)
-        {
-            veryHighFactors.RemoveAll(x => x.category.onlyForRomance);
-            highFactors.RemoveAll(x => x.category.onlyForRomance);
-            lowFactors.RemoveAll(x => x.category.onlyForRomance);
-            veryLowFactors.RemoveAll(x => x.category.onlyForRomance);
-        }
-
-        if (chanceOnly)
-        {
-            return record.RetrieveAttraction(romantic, true);
-        }
-
-        {
-            veryHighFactors.RemoveAll(x => x.category.chanceOnly);
-            highFactors.RemoveAll(x => x.category.chanceOnly);
-            lowFactors.RemoveAll(x => x.category.chanceOnly);
-            veryLowFactors.RemoveAll(x => x.category.chanceOnly);
-        }
-
+        RetrieveFactors(
+            other, out veryLowFactors, out lowFactors, out highFactors, out veryHighFactors, romantic, chanceOnly);
+        var record = PullRecord(other, /*noUpdate=*/true);
         return record.RetrieveAttraction(romantic);
     }
 }

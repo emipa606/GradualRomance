@@ -6,10 +6,10 @@ namespace Gradual_Romance;
 public class AttractionRecord
 {
     private readonly Dictionary<AttractionFactorCategoryDef, float> categoryCalculations;
-    private readonly List<AttractionFactorDef> highFactors = new List<AttractionFactorDef>();
-    private readonly List<AttractionFactorDef> lowFactors = new List<AttractionFactorDef>();
-    private readonly List<AttractionFactorDef> veryHighFactors = new List<AttractionFactorDef>();
-    private readonly List<AttractionFactorDef> veryLowFactors = new List<AttractionFactorDef>();
+    private readonly List<AttractionFactorDef> highFactors = new();
+    private readonly List<AttractionFactorDef> lowFactors = new();
+    private readonly List<AttractionFactorDef> veryHighFactors = new();
+    private readonly List<AttractionFactorDef> veryLowFactors = new();
     public int lastRefreshedGameTick;
 
     public AttractionRecord(Pawn pawn, Pawn other)
@@ -24,8 +24,7 @@ public class AttractionRecord
         }
 
         //Log.Message("Going through categories.");
-        var allDefs = DefDatabase<AttractionFactorCategoryDef>.AllDefsListForReading;
-        foreach (var category in allDefs)
+        foreach (var category in DefDatabase<AttractionFactorCategoryDef>.AllDefsListForReading)
         {
             //Log.Message("Processing " + category.defName);
             if (category.alwaysRecalculate)
