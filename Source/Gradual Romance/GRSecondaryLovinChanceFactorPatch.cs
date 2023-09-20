@@ -11,7 +11,6 @@ public static class GRSecondaryLovinChanceFactorPatch
     [HarmonyPriority(Priority.VeryHigh)]
     public static void GRSecondaryLovinChanceFactor(ref float __result, ref Pawn ___pawn, Pawn otherPawn)
     {
-        if ((___pawn?.RaceProps?.Humanlike ?? false) && (otherPawn?.RaceProps?.Humanlike ?? false))
-            __result = AttractionUtility.CalculateAttraction(___pawn, otherPawn, true, false);
+        __result = AttractionUtility.CalculateAttraction(___pawn, otherPawn, true, false);
     }
 }

@@ -1,5 +1,8 @@
 # Changelog for GradualRomance
 
+1.4.3 - Added humanoid-check on attraction-calculations, thanks thailyn!
+
+
 1.4.2 - Some better caching methods and some bugfix, thanks to thailyn!
 
 

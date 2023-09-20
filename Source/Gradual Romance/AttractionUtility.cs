@@ -742,6 +742,12 @@ public static class AttractionUtility
         highFactors = new List<AttractionFactorDef>();
         veryHighFactors = new List<AttractionFactorDef>();
         reasonForInstantFailure = null;
+
+        if (observer.RaceProps?.Humanlike == false || assessed.RaceProps?.Humanlike == false)
+        {
+            return 0;
+        }
+
         var result = observer.GetComp<GRPawnComp>().RetrieveAttractionAndFactors(assessed, out veryLowFactors,
             out lowFactors, out highFactors, out veryHighFactors, formalRelationship, !attractionOnly);
 
