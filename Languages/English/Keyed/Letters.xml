@@ -21,7 +21,7 @@
   <NewSteadyLabel>New Steadies</NewSteadyLabel>
   <NewSuitorText>{PAWN1_nameDef and {PAWN2_nameDef} are courting each other. This might result in a relationship or not, but the truth of it is that there's little in the way or romantic or sexual tension. They're good for each other simply because it seems to make sense.</NewSuitorText>
   <NewSuitorLabel>New Suitors</NewSuitorLabel>
-  <NewFlameText>{PAWN1_nameDef and {PAWN2_nameDef} can't keep their hands off each other! Forget sweet-nothings and planning for the future... this pair has the kind of physical chemistry you fuel rockets with. If they can stop lovin' long enough to listen to each other, there might a real relationship here.</NewFlameText>
+  <NewFlameText>{PAWN1_nameDef and {PAWN2_nameDef} can't keep their hands off each other! Forget sweet-nothings and planning for the future... this pair has the kind of physical chemistry you fuel rockets with. If they can stop lovin' long enough to listen to each other, there might be a real relationship here.</NewFlameText>
   <NewFlameLabel>New Flames</NewFlameLabel>
   <NewDarlingText>{PAWN1_nameDef and {PAWN2_nameDef} both share the tenderest feelings for one another. They would be the best of friends - but it's clear there is more to them than friendship, yet they lack physical chemistry. </NewDarlingText>
   <NewDarlingLabel>New Darlings</NewDarlingLabel>

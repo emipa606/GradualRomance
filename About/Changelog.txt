@@ -1,5 +1,8 @@
 # Changelog for GradualRomance
 
+1.4.4 - Fixed typo
+
+
 1.4.3 - Added humanoid-check on attraction-calculations, thanks thailyn!
 
 
