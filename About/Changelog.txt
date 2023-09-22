@@ -1,5 +1,8 @@
 # Changelog for GradualRomance
 
+1.4.5 - Some code cleanup, by thailyn
+
+
 1.4.4 - Fixed typo
 
 

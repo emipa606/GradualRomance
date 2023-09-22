@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using Psychology;
+using RimWorld;
+using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Linq;
-using Psychology;
-using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -221,11 +221,11 @@ public class InteractionWorker_Flirt : InteractionWorker
 
         FlirtReactionDef flirtReaction;
         var successfulFlirtReactions = from reaction in DefDatabase<FlirtReactionDef>.AllDefsListForReading
-            where reaction.successful
-            select reaction;
+                                       where reaction.successful
+                                       select reaction;
         var unsuccessfulFlirtReactions = from reaction in DefDatabase<FlirtReactionDef>.AllDefsListForReading
-            where !reaction.successful
-            select reaction;
+                                         where !reaction.successful
+                                         select reaction;
         successfulFlirtReactions.TryRandomElementByWeight(
             x => CalculateFlirtReactionWeight(flirtStyle, x, initiator, recipient), out var successfulFlirt);
         unsuccessfulFlirtReactions.TryRandomElementByWeight(

@@ -24,4 +24,4 @@ public static class GRHasAnyLovePartnerPatch
 
 //Let's throw out even Psychology's formula!
 //Since this is causing a lot of redundant effort, it's probably a good idea to find a way to bypass Psychology and Vanilla calculation entirely.
-//For right now, this will do.
+//For right now, this will do. do.

@@ -1,5 +1,5 @@
-﻿using System.Linq;
-using RimWorld;
+﻿using RimWorld;
+using System.Linq;
 using Verse;
 
 namespace Gradual_Romance;
@@ -19,14 +19,14 @@ public class ThoughtWorker_GRWantToSleepWithSpouseOrLover : ThoughtWorker
         }
 
         var multiplePartners = (from r in p.relations.PotentiallyRelatedPawns
-            where RelationshipUtility.ShouldShareBed(p, r)
-            select r).Count() > 1;
+                                where RelationshipUtility.ShouldShareBed(p, r)
+                                select r).Count() > 1;
         bool partnerBedInRoom;
         if (p.ownership.OwnedBed != null)
         {
             partnerBedInRoom = (from t in p.ownership.OwnedBed.GetRoom().ContainedBeds
-                where t.OwnersForReading.Contains(directPawnRelation.otherPawn)
-                select t).Any();
+                                where t.OwnersForReading.Contains(directPawnRelation.otherPawn)
+                                select t).Any();
         }
         else
         {

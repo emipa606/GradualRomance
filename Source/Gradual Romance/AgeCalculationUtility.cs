@@ -8,16 +8,18 @@ public static class AgeCalculationUtility
     // A value that determines how much (0 = none, 1 = all) of the observed pawn's maturity is ignored/excused when
     // determining how "close" the two pawns maturities are.
     public const float pctAgeDeviation = 0.05f;
+
     // A value proportional to how much the maturity factor of an assessor is decreased/penalized when the assessor is
     // a child and younger than the observed.
     public const float youthPenalty = 2f;
+
     // A value proportional to how much the maturity factor of an assessor is decreased/penalized when the assessor is
     // an adult and older than the observed.
     public const float oldAgePenalty = 1.5f;
 
     // TODO: This is assuming certain properties about the maturity curve, such as a value of 3f being the max. This
     // should not be done, as the maturity curve is defined in XML.
-    public static readonly SimpleCurve recoveryTimeByMaturity = new()
+    public static readonly SimpleCurve recoveryTimeByMaturity = new SimpleCurve
     {
         new CurvePoint(0.8f, 1.5f),
         new CurvePoint(1f, 2f),
@@ -35,7 +37,7 @@ public static class AgeCalculationUtility
     // gender and age. Returns a value of 1 if a value can not be computed (e.g., for animal pawns).
     public static float GetMaturity(Pawn pawn)
     {
-        SimpleCurve maturityCurve = GradualRomanceMod.GetMaturityCurveFor(pawn);
+        var maturityCurve = GradualRomanceMod.GetMaturityCurveFor(pawn);
         // This is "present" for all ThingDef that inherit from defName="human". But attempts to get the maturity of,
         // say, animals would encounter a null SimpleCurve object.
         //
@@ -46,7 +48,9 @@ public static class AgeCalculationUtility
         // be to return an error state to the calling function (e.g., change this into a "TryGetMaturity"), and the
         // caller can decide what to do.
         if (maturityCurve is null)
+        {
             return 1f;
+        }
 
         return maturityCurve.Evaluate(pawn.ageTracker.AgeBiologicalYearsFloat);
     }

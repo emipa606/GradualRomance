@@ -127,7 +127,8 @@ public class GRPawnComp : ThingComp
             AttractionRecords.Add(other, new AttractionRecord(p, other));
         }
         else if (noUpdate == false &&
-            Find.TickManager.TicksGame - AttractionRecords[other].lastRefreshedGameTick > recalculateAttractionPerTick)
+                 Find.TickManager.TicksGame - AttractionRecords[other].lastRefreshedGameTick >
+                 recalculateAttractionPerTick)
         {
             AttractionRecords[other].Update(p, other);
         }

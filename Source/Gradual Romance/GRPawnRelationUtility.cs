@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using Psychology;
+﻿using Psychology;
 using RimWorld;
+using System.Collections.Generic;
+using System.Linq;
 using Verse;
 
 namespace Gradual_Romance;
@@ -449,9 +449,9 @@ internal class GRPawnRelationUtility
 
         IEnumerable<Pawn> allPawns = pawn.MapHeld.mapPawns.FreeColonists;
         var numOfFriends = (from friend in allPawns
-            where friend != pawn && friend.IsColonist && !friend.Dead && friend.relations.OpinionOf(pawn) >=
-                Pawn_RelationsTracker.FriendOpinionThreshold
-            select friend).Count();
+                            where friend != pawn && friend.IsColonist && !friend.Dead && friend.relations.OpinionOf(pawn) >=
+                                Pawn_RelationsTracker.FriendOpinionThreshold
+                            select friend).Count();
         return numOfFriends;
     }
 
@@ -529,8 +529,8 @@ internal class GRPawnRelationUtility
         }
 
         var candidateRelations = from relation in DefDatabase<PawnRelationDef>.AllDefsListForReading
-            where GetRelationLevel(relation) == targetLevel
-            select relation;
+                                 where GetRelationLevel(relation) == targetLevel
+                                 select relation;
         if (!candidateRelations.Any())
         {
             return;
