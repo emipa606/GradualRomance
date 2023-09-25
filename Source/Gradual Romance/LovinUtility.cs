@@ -1,6 +1,6 @@
-﻿using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using RimWorld;
 using Verse;
 
 namespace Gradual_Romance;
@@ -47,8 +47,8 @@ internal static class LovinUtility
         }
 
         var roomPawns = (from thing in room.ContainedAndAdjacentThings
-                         where thing is Pawn pawn1 && thing != pawn && thing != other && pawn1.NonHumanlikeOrWildMan()
-                         select thing) as IEnumerable<Pawn>;
+            where thing is Pawn pawn1 && thing != pawn && thing != other && pawn1.NonHumanlikeOrWildMan()
+            select thing) as IEnumerable<Pawn>;
         return !roomPawns!.Any();
     }
 }

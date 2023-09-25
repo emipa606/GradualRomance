@@ -1,8 +1,8 @@
-﻿using Psychology;
-using RimWorld;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Psychology;
+using RimWorld;
 using UnityEngine;
 using Verse;
 
@@ -48,8 +48,8 @@ public class InteractionWorker_GRBreakup : InteractionWorker
     private Thought RandomBreakupReason(Pawn initiator, Pawn recipient)
     {
         var list = (from m in initiator.needs.mood.thoughts.memories.Memories
-                    where m != null && m.otherPawn == recipient && m.CurStage is { baseOpinionOffset: < 0f }
-                    select m).ToList();
+            where m != null && m.otherPawn == recipient && m.CurStage is { baseOpinionOffset: < 0f }
+            select m).ToList();
         if (list.Count == 0)
         {
             return null;
@@ -57,8 +57,8 @@ public class InteractionWorker_GRBreakup : InteractionWorker
 
         var worstMemoryOpinionOffset = list.Max(m => -m.CurStage.baseOpinionOffset);
         (from m in list
-         where -m.CurStage.baseOpinionOffset >= worstMemoryOpinionOffset / 2f
-         select m).TryRandomElementByWeight(m => -m.CurStage.baseOpinionOffset, out var result);
+            where -m.CurStage.baseOpinionOffset >= worstMemoryOpinionOffset / 2f
+            select m).TryRandomElementByWeight(m => -m.CurStage.baseOpinionOffset, out var result);
         return result;
     }
 

@@ -12,7 +12,7 @@ public class AttractionCalculator_Hygiene : AttractionCalculator
     public override bool Check(Pawn observer, Pawn assessed)
     {
         return ModHooks.UsingDubsHygiene() &&
-            (assessed?.needs?.AllNeeds?.Any(x => x.def.defName == "Hygiene") ?? false);
+               (assessed?.needs?.AllNeeds?.Any(x => x.def.defName == "Hygiene") ?? false);
     }
 
     public override float Calculate(Pawn observer, Pawn assessed)
