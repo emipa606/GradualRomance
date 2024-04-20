@@ -6,10 +6,10 @@ namespace Gradual_Romance;
 public class AttractionRecord
 {
     private readonly Dictionary<AttractionFactorCategoryDef, float> categoryCalculations;
-    private readonly List<AttractionFactorDef> highFactors = new();
-    private readonly List<AttractionFactorDef> lowFactors = new();
-    private readonly List<AttractionFactorDef> veryHighFactors = new();
-    private readonly List<AttractionFactorDef> veryLowFactors = new();
+    private readonly List<AttractionFactorDef> highFactors = [];
+    private readonly List<AttractionFactorDef> lowFactors = [];
+    private readonly List<AttractionFactorDef> veryHighFactors = [];
+    private readonly List<AttractionFactorDef> veryLowFactors = [];
     public int lastRefreshedGameTick;
 
     public AttractionRecord(Pawn pawn, Pawn other)
@@ -85,10 +85,10 @@ public class AttractionRecord
         out List<AttractionFactorDef> lowFactors2, out List<AttractionFactorDef> highFactors2,
         out List<AttractionFactorDef> veryHighFactors2)
     {
-        veryLowFactors2 = new List<AttractionFactorDef>();
-        lowFactors2 = new List<AttractionFactorDef>();
-        highFactors2 = new List<AttractionFactorDef>();
-        veryHighFactors2 = new List<AttractionFactorDef>();
+        veryLowFactors2 = [];
+        lowFactors2 = [];
+        highFactors2 = [];
+        veryHighFactors2 = [];
         veryLowFactors2.AddRange(veryLowFactors);
         lowFactors2.AddRange(lowFactors);
         highFactors2.AddRange(highFactors);

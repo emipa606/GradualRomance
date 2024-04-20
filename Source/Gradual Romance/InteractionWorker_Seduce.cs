@@ -21,14 +21,14 @@ public class InteractionWorker_Seduce : InteractionWorker
 
     private const float FamiliarityFactor = 0.5f;
 
-    private List<AttractionFactorDef> highInitiatorReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> highInitiatorReasons = [];
     private float initiatorAttraction = 1f;
     private Pawn lastInitiator;
     private Pawn lastRecipient;
-    private List<AttractionFactorDef> lowInitiatorReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> lowInitiatorReasons = [];
 
-    private List<AttractionFactorDef> veryHighInitiatorReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> veryLowInitiatorReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> veryHighInitiatorReasons = [];
+    private List<AttractionFactorDef> veryLowInitiatorReasons = [];
 
 
     private void EmptyReasons()

@@ -9,16 +9,16 @@ namespace Gradual_Romance;
 
 public class InteractionWorker_GRRomanceAttempt : InteractionWorker
 {
-    private List<AttractionFactorDef> highInitiatorReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> highRecipientReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> highInitiatorReasons = [];
+    private List<AttractionFactorDef> highRecipientReasons = [];
     private Pawn lastInitiator;
     private Pawn lastRecipient;
-    private List<AttractionFactorDef> lowInitiatorReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> lowRecipientReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> veryHighInitiatorReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> veryHighRecipientReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> veryLowInitiatorReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> veryLowRecipientReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> lowInitiatorReasons = [];
+    private List<AttractionFactorDef> lowRecipientReasons = [];
+    private List<AttractionFactorDef> veryHighInitiatorReasons = [];
+    private List<AttractionFactorDef> veryHighRecipientReasons = [];
+    private List<AttractionFactorDef> veryLowInitiatorReasons = [];
+    private List<AttractionFactorDef> veryLowRecipientReasons = [];
 
     private void EmptyReasons()
     {
@@ -209,7 +209,7 @@ public class InteractionWorker_GRRomanceAttempt : InteractionWorker
 
     private void BreakLoverAndFianceRelations(Pawn pawn, out List<Pawn> oldLoversAndFiances)
     {
-        oldLoversAndFiances = new List<Pawn>();
+        oldLoversAndFiances = [];
         var relationsToBreak = RelationshipUtility.ListOfBreakupRelationships();
 
         foreach (var relation in relationsToBreak)

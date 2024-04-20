@@ -1,5 +1,8 @@
 # Changelog for GradualRomance
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.6 - Code cleanup and a nullcheck for DBH, via thailyn
 
 

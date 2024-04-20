@@ -9,7 +9,7 @@ public class FlirtReactionWorker_Laughter : FlirtReactionWorker
 {
     public override void GiveThoughts(Pawn initiator, Pawn recipient, out List<RulePackDef> yetMoreSentencePacks)
     {
-        yetMoreSentencePacks = new List<RulePackDef>();
+        yetMoreSentencePacks = [];
         var interpretChance = 1f;
         if (PsycheHelper.PsychologyEnabled(initiator))
         {

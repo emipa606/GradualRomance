@@ -27,24 +27,24 @@ public class InteractionWorker_Flirt : InteractionWorker
     private const float FamiliarityFactor = 0.5f;
 
     private static float pressureCache;
-    private readonly List<AttractionFactorDef> highRecipientReasons = new List<AttractionFactorDef>();
-    private readonly List<AttractionFactorDef> lowRecipientReasons = new List<AttractionFactorDef>();
-    private readonly List<AttractionFactorDef> veryHighRecipientReasons = new List<AttractionFactorDef>();
-    private readonly List<AttractionFactorDef> veryLowRecipientReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> highInitiatorReasons = new List<AttractionFactorDef>();
+    private readonly List<AttractionFactorDef> highRecipientReasons = [];
+    private readonly List<AttractionFactorDef> lowRecipientReasons = [];
+    private readonly List<AttractionFactorDef> veryHighRecipientReasons = [];
+    private readonly List<AttractionFactorDef> veryLowRecipientReasons = [];
+    private List<AttractionFactorDef> highInitiatorReasons = [];
     private float initiatorPhysicalAttraction;
     private float initiatorRomanticAttraction;
     private float initiatorSocialAttraction;
     private Pawn lastInitiator;
     private Pawn lastRecipient;
-    private List<AttractionFactorDef> lowInitiatorReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> lowInitiatorReasons = [];
     private float recipientCircumstances;
     private float recipientPhysicalAttraction;
     private float recipientRomanticAttraction;
     private float recipientSocialAttraction;
     private bool successImpossible;
-    private List<AttractionFactorDef> veryHighInitiatorReasons = new List<AttractionFactorDef>();
-    private List<AttractionFactorDef> veryLowInitiatorReasons = new List<AttractionFactorDef>();
+    private List<AttractionFactorDef> veryHighInitiatorReasons = [];
+    private List<AttractionFactorDef> veryLowInitiatorReasons = [];
 
 
     private void EmptyReasons()

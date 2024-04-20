@@ -25,7 +25,7 @@ public static class GRThoughtWorker_PrettyPatch
         }
         else
         {
-            var num = other.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
+            var num = other.story.traits.DegreeOfTrait(TraitDefOfGR.Beauty);
             switch (num)
             {
                 case 1:

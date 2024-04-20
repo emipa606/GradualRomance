@@ -6,6 +6,26 @@ namespace Gradual_Romance;
 
 public class FlirtStyleDef : Def
 {
+    /// <summary>
+    ///     Pawns with this trait will never use this flirt style.
+    /// </summary>
+    public readonly List<TraitDef> cancelingTraits = [];
+
+    /// <summary>
+    ///     Pawns low in these personality nodes are less likely to use this flirt style
+    /// </summary>
+    public readonly List<PersonalityNodeModifier> lessLikelyPersonalities = [];
+
+    /// <summary>
+    ///     Pawns high in these personality nodes are more likely to use this flirt style
+    /// </summary>
+    public readonly List<PersonalityNodeModifier> moreLikelyPersonalities = [];
+
+    /// <summary>
+    ///     Pawns with this trait are 1.5 times more likely to use this flirt style.
+    /// </summary>
+    public readonly List<TraitModifier> traitModifiers = [];
+
     public float acquaitanceFactor;
 
     /// <summary>
@@ -51,28 +71,13 @@ public class FlirtStyleDef : Def
     public float baseSweetheartChance;
 
     /// <summary>
-    ///     Pawns with this trait will never use this flirt style.
-    /// </summary>
-    public List<TraitDef> cancelingTraits = new List<TraitDef>();
-
-    /// <summary>
     ///     Socially incompetent pawns are much more likely to use this flirt style.
     /// </summary>
     public bool incompetent;
 
-    /// <summary>
-    ///     Pawns low in these personality nodes are less likely to use this flirt style
-    /// </summary>
-    public List<PersonalityNodeModifier> lessLikelyPersonalities = new List<PersonalityNodeModifier>();
-
     public float loveBuddyFactor;
     public float lovefriendFactor;
     public float loverFactor;
-
-    /// <summary>
-    ///     Pawns high in these personality nodes are more likely to use this flirt style
-    /// </summary>
-    public List<PersonalityNodeModifier> moreLikelyPersonalities = new List<PersonalityNodeModifier>();
 
     /// <summary>
     ///     Which rule pack the flirt style uses when flirting with a woman.
@@ -86,11 +91,6 @@ public class FlirtStyleDef : Def
 
     public float spouseFactor;
     public float sweetheartFactor;
-
-    /// <summary>
-    ///     Pawns with this trait are 1.5 times more likely to use this flirt style.
-    /// </summary>
-    public List<TraitModifier> traitModifiers = new List<TraitModifier>();
 
     public static FlirtStyleDef Named(string str)
     {

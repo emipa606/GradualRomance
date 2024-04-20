@@ -285,7 +285,7 @@ public class GradualRomanceMod : ModBase
             def.comps.Add(new GRPawnComp_Properties());
             if (def.modExtensions == null)
             {
-                def.modExtensions = new List<DefModExtension>();
+                def.modExtensions = [];
             }
 
             if (!def.HasModExtension<XenoRomanceExtension>())

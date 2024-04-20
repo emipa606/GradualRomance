@@ -5,8 +5,7 @@ using Verse;
 
 namespace Gradual_Romance.Harmony;
 
-[HarmonyPatch(typeof(Pawn_SexualityTracker))]
-[HarmonyPatch("RandKinsey")]
+[HarmonyPatch(typeof(Pawn_SexualityTracker), nameof(Pawn_SexualityTracker.RandKinsey))]
 public class RandKinsey_GRPatch
 {
     [HarmonyPrefix]

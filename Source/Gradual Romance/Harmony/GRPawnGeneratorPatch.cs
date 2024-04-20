@@ -10,9 +10,9 @@ public static class GRPawnGeneratorPatch
 {
     [HarmonyPriority(Priority.Low)]
     [HarmonyPostfix]
-    public static void GRPawnGenerator_AddBeautyTrait(ref Pawn pawn, PawnGenerationRequest request)
+    public static void GRPawnGenerator_AddBeautyTrait(ref Pawn pawn)
     {
-        if (pawn.story.traits.HasTrait(TraitDefOf.Beauty) || !GradualRomanceMod.rerollBeautyTraits)
+        if (pawn.story.traits.HasTrait(TraitDefOfGR.Beauty) || !GradualRomanceMod.rerollBeautyTraits)
         {
             return;
         }
@@ -20,7 +20,7 @@ public static class GRPawnGeneratorPatch
         var result = Mathf.Clamp(Mathf.RoundToInt(Rand.Gaussian(0, 1.5f)), -4, 4);
         if (result != 0)
         {
-            pawn.story.traits.GainTrait(new Trait(TraitDefOf.Beauty, result, true));
+            pawn.story.traits.GainTrait(new Trait(TraitDefOfGR.Beauty, result, true));
         }
     }
 }

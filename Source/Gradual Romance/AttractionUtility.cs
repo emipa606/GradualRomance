@@ -41,8 +41,8 @@ public static class AttractionUtility
     private const float MaleSkillEvaluationFactor = 0.5f;
     private const float MaleBeautyEvaluationFactor = 1.5f;
 
-    private static readonly SimpleCurve AgeDeviation = new SimpleCurve
-    {
+    private static readonly SimpleCurve AgeDeviation =
+    [
         new CurvePoint(14, 1f),
         new CurvePoint(16, 2f),
         new CurvePoint(18, 3f),
@@ -53,10 +53,10 @@ public static class AttractionUtility
         new CurvePoint(32, 8f),
         new CurvePoint(36, 9f),
         new CurvePoint(40, 10f)
-    };
+    ];
 
-    private static readonly SimpleCurve SkillAttractivenessCurve = new SimpleCurve
-    {
+    private static readonly SimpleCurve SkillAttractivenessCurve =
+    [
         new CurvePoint(0, 0.25f),
         new CurvePoint(2, 1f),
         new CurvePoint(4, 2f),
@@ -66,7 +66,7 @@ public static class AttractionUtility
         new CurvePoint(16, 32f),
         new CurvePoint(18, 64f),
         new CurvePoint(20, 128f)
-    };
+    ];
 
     // AGE TOOLS //
     public static bool IsAgeAppropriate(Pawn pawn)
@@ -87,7 +87,7 @@ public static class AttractionUtility
     /// KINSEY TOOLS ///
     /// 
     /// The Kinsey system doesn't really reflect attraction, but rather under what circumstances they will pursue homosexual/heterosexual relationships
-    /// Exclusively - will never consider relations outside of one gender
+    /// Exclusively - will never consider relations outside one gender
     /// Weakly - the pawn will interact informally with dispreffered sex pawns, and will never pursue formal relationships with them.
     /// Occasionally - the pawn interacts with dispreferred pawns freely, but only prefers formal relationships rarely.
     /// Bisexual - no limit to either male or female relationships.
@@ -650,10 +650,10 @@ public static class AttractionUtility
     {
         //Log.Message("Method start.");
         //Log.Message("Making null values.");
-        veryHighFactors = new List<AttractionFactorDef>();
-        highFactors = new List<AttractionFactorDef>();
-        lowFactors = new List<AttractionFactorDef>();
-        veryLowFactors = new List<AttractionFactorDef>();
+        veryHighFactors = [];
+        highFactors = [];
+        lowFactors = [];
+        veryLowFactors = [];
         reasonForInstantFailure = null;
         //Log.Message("Retrieving factor defs.");
         var allFactors = from def in DefDatabase<AttractionFactorDef>.AllDefsListForReading
@@ -737,10 +737,10 @@ public static class AttractionUtility
         out List<AttractionFactorDef> lowFactors, out List<AttractionFactorDef> highFactors,
         out List<AttractionFactorDef> veryHighFactors, out AttractionFactorDef reasonForInstantFailure)
     {
-        veryLowFactors = new List<AttractionFactorDef>();
-        lowFactors = new List<AttractionFactorDef>();
-        highFactors = new List<AttractionFactorDef>();
-        veryHighFactors = new List<AttractionFactorDef>();
+        veryLowFactors = [];
+        lowFactors = [];
+        highFactors = [];
+        veryHighFactors = [];
         reasonForInstantFailure = null;
 
         if (observer.RaceProps?.Humanlike == false || assessed.RaceProps?.Humanlike == false)
@@ -943,12 +943,7 @@ public static class AttractionUtility
         if (initiator.story.traits.HasTrait(TraitDefOf.Psychopath))
         {
             //But socially incompetent will still embarrass themselves
-            if (IsSociallyIncompetent(initiator))
-            {
-                return 1f;
-            }
-
-            return 0.05f;
+            return IsSociallyIncompetent(initiator) ? 1f : 0.05f;
         }
         //Lechers are used to hitting on people.
 

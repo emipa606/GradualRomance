@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace Gradual_Romance;
 
@@ -18,14 +17,14 @@ public class AttractionCalculator_Body : AttractionCalculator
             bodyFactor *= 1.2f;
         }
 
-        if (assessed.story.traits.HasTrait(TraitDefOf.Tough))
+        if (assessed.story.traits.HasTrait(TraitDefOfGR.Tough))
         {
             bodyFactor *= 1.2f;
         }
 
-        if (assessed.story.traits.HasTrait(TraitDefOf.SpeedOffset))
+        if (assessed.story.traits.HasTrait(TraitDefOfGR.SpeedOffset))
         {
-            var x = assessed.story.traits.DegreeOfTrait(TraitDefOf.SpeedOffset);
+            var x = assessed.story.traits.DegreeOfTrait(TraitDefOfGR.SpeedOffset);
             switch (x)
             {
                 case -1:

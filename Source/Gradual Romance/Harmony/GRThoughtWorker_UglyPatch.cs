@@ -22,7 +22,7 @@ public static class GRThoughtWorker_UglyPatch
 
         else
         {
-            var num = other.story.traits.DegreeOfTrait(TraitDefOf.Beauty);
+            var num = other.story.traits.DegreeOfTrait(TraitDefOfGR.Beauty);
             switch (num)
             {
                 case -1:

@@ -14,7 +14,7 @@ public class AttractionCalculator_Depravity : AttractionCalculator
     public override float Calculate(Pawn observer, Pawn assessed)
     {
         var depravityFactor = 1f;
-        if (assessed.story.traits.HasTrait(TraitDefOf.Cannibal))
+        if (assessed.story.traits.HasTrait(TraitDefOfGR.Cannibal))
         {
             depravityFactor *= 0.8f;
         }

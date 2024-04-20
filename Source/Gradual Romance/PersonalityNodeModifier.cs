@@ -4,8 +4,8 @@ namespace Gradual_Romance;
 
 public class PersonalityNodeModifier
 {
-    public float modifier = 1f;
-    public PersonalityNodeDef personalityNode;
+    public readonly float modifier = 1f;
 
-    public bool reverse = false;
+    public readonly bool reverse = false;
+    public PersonalityNodeDef personalityNode;
 }

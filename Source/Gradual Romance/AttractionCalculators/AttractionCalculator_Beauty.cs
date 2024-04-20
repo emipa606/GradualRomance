@@ -1,5 +1,4 @@
-﻿using RimWorld;
-using Verse;
+﻿using Verse;
 
 namespace Gradual_Romance;
 
@@ -15,7 +14,7 @@ public class AttractionCalculator_Beauty : AttractionCalculator
     public override float Calculate(Pawn observer, Pawn assessed)
     {
         float beautyFactor;
-        var beauty = assessed.RaceProps.Humanlike ? assessed.story.traits.DegreeOfTrait(TraitDefOf.Beauty) : 0;
+        var beauty = assessed.RaceProps.Humanlike ? assessed.story.traits.DegreeOfTrait(TraitDefOfGR.Beauty) : 0;
 
 
         switch (beauty)

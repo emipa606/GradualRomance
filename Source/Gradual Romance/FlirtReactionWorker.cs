@@ -9,7 +9,7 @@ public class FlirtReactionWorker
 
     public virtual void GiveThoughts(Pawn initiator, Pawn recipient, out List<RulePackDef> yetMoreSentencePacks)
     {
-        yetMoreSentencePacks = new List<RulePackDef>();
+        yetMoreSentencePacks = [];
         if (reaction.successful)
         {
             var thoughtToGive = reaction.givesTension.RandomElement();

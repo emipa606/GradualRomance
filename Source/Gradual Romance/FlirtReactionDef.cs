@@ -7,23 +7,23 @@ namespace Gradual_Romance;
 
 public class FlirtReactionDef : Def
 {
+    public readonly List<ThoughtDef> givesTension = [];
+    public readonly List<PersonalityNodeModifier> personalityModifiers = [];
+    public readonly float sweetheartModifier = 1f;
+    public readonly List<TraitModifier> traitModifiers = [];
     private readonly Type workerClass = typeof(FlirtReactionWorker);
     public float awkwardReaction;
     public float baseChance;
     public RulePackDef femaleRulePack;
-    public List<ThoughtDef> givesTension = new List<ThoughtDef>();
     public float logicalReaction;
 
     public RulePackDef maleRulePack;
     public float obscureReaction;
-    public List<PersonalityNodeModifier> personalityModifiers = new List<PersonalityNodeModifier>();
     public bool provokesJealousy;
     public float riskyReaction;
     public float romanticReaction;
     public float sexyReaction;
     public bool successful;
-    public float sweetheartModifier = 1f;
-    public List<TraitModifier> traitModifiers = new List<TraitModifier>();
 
     [Unsaved] private FlirtReactionWorker workerInt;
 

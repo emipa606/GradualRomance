@@ -5,8 +5,7 @@ using Verse;
 
 namespace Gradual_Romance.Harmony;
 
-[HarmonyPatch(typeof(Pawn_SexualityTracker))]
-[HarmonyPatch("AdjustedSexDrive", MethodType.Getter)]
+[HarmonyPatch(typeof(Pawn_SexualityTracker), nameof(Pawn_SexualityTracker.AdjustedSexDrive), MethodType.Getter)]
 public class AdjustedSexDrive_GRPatch
 {
     [HarmonyPostfix]

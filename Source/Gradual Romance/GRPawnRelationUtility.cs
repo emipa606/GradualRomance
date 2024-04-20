@@ -206,12 +206,7 @@ internal class GRPawnRelationUtility
             }
         }
 
-        if (pawnSO != null || otherSO != null)
-        {
-            return true;
-        }
-
-        return false;
+        return pawnSO != null || otherSO != null;
     }
 
     private static PawnRelationDef CurrentRomanceStage(Pawn pawn, Pawn other)

@@ -33,7 +33,7 @@ internal static class LovinUtility
 
     public static bool RoomIsPrivateFor(Room room, Pawn pawn, Pawn other)
     {
-        if (room.Role == RoomRoleDefOf.RecRoom || room.Role == RoomRoleDefOf.DiningRoom)
+        if (room.Role == RoomDefOfGR.RecRoom || room.Role == RoomDefOfGR.DiningRoom)
         {
             return false;
         }

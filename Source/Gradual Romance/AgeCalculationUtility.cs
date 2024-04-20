@@ -19,14 +19,14 @@ public static class AgeCalculationUtility
 
     // TODO: This is assuming certain properties about the maturity curve, such as a value of 3f being the max. This
     // should not be done, as the maturity curve is defined in XML.
-    public static readonly SimpleCurve recoveryTimeByMaturity = new SimpleCurve
-    {
+    public static readonly SimpleCurve recoveryTimeByMaturity =
+    [
         new CurvePoint(0.8f, 1.5f),
         new CurvePoint(1f, 2f),
         new CurvePoint(1.5f, 4f),
         new CurvePoint(2f, 12f),
         new CurvePoint(3f, 36f)
-    };
+    ];
 
     public static float MaturityDeviation(float maturity)
     {
@@ -47,12 +47,7 @@ public static class AgeCalculationUtility
         // assumption about what the maturity value for "reproductive age" is. Possibly an ever better solution would
         // be to return an error state to the calling function (e.g., change this into a "TryGetMaturity"), and the
         // caller can decide what to do.
-        if (maturityCurve is null)
-        {
-            return 1f;
-        }
-
-        return maturityCurve.Evaluate(pawn.ageTracker.AgeBiologicalYearsFloat);
+        return maturityCurve?.Evaluate(pawn.ageTracker.AgeBiologicalYearsFloat) ?? 1f;
     }
 
     // Calculates a float value in the range [0, 1], whose value is larger when the maturity (re: biological age)

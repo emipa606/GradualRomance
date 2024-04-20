@@ -18,4 +18,8 @@ public static class TraitDefOfGR
     public static TraitDef Jealous;
 
     public static TraitDef Seductive;
+    public static TraitDef Beauty;
+    public static TraitDef Tough;
+    public static TraitDef SpeedOffset;
+    public static TraitDef Cannibal;
 }

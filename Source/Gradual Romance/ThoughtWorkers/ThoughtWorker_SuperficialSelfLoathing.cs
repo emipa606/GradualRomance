@@ -12,6 +12,6 @@ public class ThoughtWorker_SuperficialSelfLoathing : ThoughtWorker
             return ThoughtState.ActiveAtStage(0);
         }
 
-        return pawn.story.traits.DegreeOfTrait(TraitDefOf.Beauty) < -1 ? ThoughtState.ActiveAtStage(0) : false;
+        return pawn.story.traits.DegreeOfTrait(TraitDefOfGR.Beauty) < -1 ? ThoughtState.ActiveAtStage(0) : false;
     }
 }

@@ -235,12 +235,7 @@ public static class BreakupUtility
             return false;
         }
 
-        if (recipientRelationship != null && !observer.story.traits.HasTrait(TraitDefOfGR.Jealous))
-        {
-            return false;
-        }
-
-        return true;
+        return recipientRelationship == null || observer.story.traits.HasTrait(TraitDefOfGR.Jealous);
     }
 
     public static bool ShouldImplicitlyEndInformalRelationship(Pawn pawn, Pawn other, PawnRelationDef relation)
