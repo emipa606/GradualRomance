@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: annoying voice -->
+  <AnnoyingVoiceSuperficial.stages.annoying_voice.label>annoying voice</AnnoyingVoiceSuperficial.stages.annoying_voice.label>
+  <!-- EN: creepy breathing -->
+  <CreepyBreathingSuperficial.stages.creepy_breathing.label>creepy breathing</CreepyBreathingSuperficial.stages.creepy_breathing.label>
+  <!-- EN: disfigured -->
+  <DisfiguredSuperficial.stages.disfigured.label>disfigured</DisfiguredSuperficial.stages.disfigured.label>
+  <!-- EN: feeling neglected -->
+  <FeelingNeglected.stages.feeling_neglected.label>feeling neglected</FeelingNeglected.stages.feeling_neglected.label>
+  <!-- EN: My lover pays no attention to me. -->
+  <FeelingNeglected.stages.feeling_neglected.description>My lover pays no attention to me.</FeelingNeglected.stages.feeling_neglected.description>
+  <!-- EN: homosexual -->
+  <Homophobic.stages.homosexual.label>homosexual</Homophobic.stages.homosexual.label>
+  <!-- EN: attractive -->
+  <PrettySuperficial.stages.attractive.label>attractive</PrettySuperficial.stages.attractive.label>
+  <!-- EN: comely -->
+  <PrettySuperficial.stages.comely.label>comely</PrettySuperficial.stages.comely.label>
+  <!-- EN: beautiful -->
+  <PrettySuperficial.stages.beautiful.label>beautiful</PrettySuperficial.stages.beautiful.label>
+  <!-- EN: ethereal beauty -->
+  <PrettySuperficial.stages.ethereal_beauty.label>ethereal beauty</PrettySuperficial.stages.ethereal_beauty.label>
+  <!-- EN: unattractive -->
+  <UglySuperficial.stages.unattractive.label>unattractive</UglySuperficial.stages.unattractive.label>
+  <!-- EN: homely -->
+  <UglySuperficial.stages.homely.label>homely</UglySuperficial.stages.homely.label>
+  <!-- EN: ugly -->
+  <UglySuperficial.stages.ugly.label>ugly</UglySuperficial.stages.ugly.label>
+  <!-- EN: staggeringly ugly -->
+  <UglySuperficial.stages.staggeringly_ugly.label>staggeringly ugly</UglySuperficial.stages.staggeringly_ugly.label>
+</LanguageData>

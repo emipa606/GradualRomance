@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!---
   
@@ -42,7 +42,7 @@
     <defName>Intrigued_Beauty</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was captivated by [RECIPIENT_possessive] beauty.</li>
+        <li>sent->[INITIATOR_pronoun] was captivated by [RECIPIENT_possessive] beauty.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -50,7 +50,7 @@
     <defName>ReactionPositive_Beauty</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was taken by [INITIATOR_possessive] beauty.</li>
+        <li>sent->[RECIPIENT_pronoun] was taken by [INITIATOR_possessive] beauty.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -58,7 +58,7 @@
     <defName>ReactionNegative_Beauty</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] ugliness.</li>
+        <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] ugliness.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -79,7 +79,7 @@
     <defName>Intrigued_AgeDifference</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was excited to interact with someone [INTIATOR_recipient] own age.</li>
+        <li>sent->[INITIATOR_pronoun] was excited to interact with someone [INTIATOR_recipient] own age.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -87,7 +87,7 @@
     <defName>ReactionPositive_AgeDifference</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] like that [INITIATOR_pronoun] was [RECIPIENT_possessive] own age.</li>
+        <li>sent->[RECIPIENT_pronoun] like that [INITIATOR_pronoun] was [RECIPIENT_possessive] own age.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -95,7 +95,7 @@
     <defName>ReactionNegative_AgeDifference</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] thought their age difference was too great.</li>
+        <li>sent->[RECIPIENT_pronoun] thought their age difference was too great.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -116,7 +116,7 @@
     <defName>Intrigued_Youth</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was intrigued by [RECIPIENT_possessive] youthful charm.</li>
+        <li>sent->[INITIATOR_pronoun] was intrigued by [RECIPIENT_possessive] youthful charm.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -124,7 +124,7 @@
     <defName>ReactionPositive_Youth</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was charmed by [INITIATOR_possessive] youth.</li>
+        <li>sent->[RECIPIENT_pronoun] was charmed by [INITIATOR_possessive] youth.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -132,7 +132,7 @@
     <defName>ReactionNegative_Youth</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] found [INITIATOR_objective] immature.</li>
+        <li>sent->[RECIPIENT_pronoun] found [INITIATOR_objective] immature.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -153,7 +153,7 @@
     <defName>Intrigued_OldAge</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was pulled in by [RECIPIENT_possessive] maturity.</li>
+        <li>sent->[INITIATOR_pronoun] was pulled in by [RECIPIENT_possessive] maturity.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -161,7 +161,7 @@
     <defName>ReactionPositive_OldAge</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was mature and dignified.</li>
+        <li>sent->[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was mature and dignified.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -169,7 +169,7 @@
     <defName>ReactionNegative_OldAge</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was too old.</li>
+        <li>sent->[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was too old.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -210,7 +210,7 @@
     <defName>Intrigued_Ability</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] admired [RECIPIENT_possessive] power and ability.</li>
+        <li>sent->[INITIATOR_pronoun] admired [RECIPIENT_possessive] power and ability.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -218,7 +218,7 @@
     <defName>ReactionPositive_Ability</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] admired [INITIATOR_possessive] powerful and ability.</li>
+        <li>sent->[RECIPIENT_pronoun] admired [INITIATOR_possessive] powerful and ability.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -226,7 +226,7 @@
     <defName>ReactionNegative_Ability</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was unimpressed by [INITIATOR_possessive] weakness.</li>
+        <li>sent->[RECIPIENT_pronoun] was unimpressed by [INITIATOR_possessive] weakness.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -267,7 +267,7 @@
     <defName>Intrigued_Scars</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] found [RECIPIENT_possessive] scars mysterious and beautiful.</li>
+        <li>sent->[INITIATOR_pronoun] found [RECIPIENT_possessive] scars mysterious and beautiful.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -275,7 +275,7 @@
     <defName>ReactionPositive_Scars</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] found [INITIATOR_possessive] scars mysterious and beautiful.</li>
+        <li>sent->[RECIPIENT_pronoun] found [INITIATOR_possessive] scars mysterious and beautiful.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -283,7 +283,7 @@
     <defName>ReactionNegative_Scars</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] hideous scars.</li>
+        <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] hideous scars.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -319,7 +319,7 @@
     <defName>Intrigued_Incest</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was one of the few with pure, clean blood.</li>
+        <li>sent->[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was one of the few with pure, clean blood.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -327,7 +327,7 @@
     <defName>ReactionPositive_Incest</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] commiserated with [INITIATOR_possessive] pure blood.</li>
+        <li>sent->[RECIPIENT_pronoun] commiserated with [INITIATOR_possessive] pure blood.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -335,7 +335,7 @@
     <defName>ReactionNegative_Incest</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] couldn't believe [INITIATOR_nameDef] would hit on a blood relative.</li>
+        <li>sent->[RECIPIENT_pronoun] couldn't believe [INITIATOR_nameDef] would hit on a blood relative.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -371,7 +371,7 @@
     <defName>Intrigued_Body</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] couldn't take [INITIATOR_possessive] eyes off [RECIPIENT_possessive] body.</li>
+        <li>sent->[INITIATOR_pronoun] couldn't take [INITIATOR_possessive] eyes off [RECIPIENT_possessive] body.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -379,7 +379,7 @@
     <defName>ReactionPositive_Body</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was mostly intrigued by [INITIATOR_possessive] sexy body.</li>
+        <li>sent->[RECIPIENT_pronoun] was mostly intrigued by [INITIATOR_possessive] sexy body.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -387,7 +387,7 @@
     <defName>ReactionNegative_Body</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] unattractive body.</li>
+        <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] unattractive body.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -408,7 +408,7 @@
     <defName>Intrigued_Xeno</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] loved that [RECIPIENT_pronoun] was a mysterious alien.</li>
+        <li>sent->[INITIATOR_pronoun] loved that [RECIPIENT_pronoun] was a mysterious alien.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -416,7 +416,7 @@
     <defName>ReactionPositive_Xeno</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was curious about [INTIATOR_possessive] alieness.</li>
+        <li>sent->[RECIPIENT_pronoun] was curious about [INTIATOR_possessive] alieness.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -424,7 +424,7 @@
     <defName>ReactionNegative_Xeno</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] wouldn't consider an advance by such an alien.</li>
+        <li>sent->[RECIPIENT_pronoun] wouldn't consider an advance by such an alien.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -452,7 +452,7 @@
     <defName>Intrigued_Cybernetics</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] couldn't stop staring at [RECIPIENT_possessive] admirable technology.</li>
+        <li>sent->[INITIATOR_pronoun] couldn't stop staring at [RECIPIENT_possessive] admirable technology.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -460,7 +460,7 @@
     <defName>ReactionPositive_Cybernetics</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] admired [INITIATOR_nameDef]'s tech.</li>
+        <li>sent->[RECIPIENT_pronoun] admired [INITIATOR_nameDef]'s tech.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -468,7 +468,7 @@
     <defName>ReactionNegative_Cybernetics</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] considered [INITIATOR_nameDef] a cyborg abomination!</li>
+        <li>sent->[RECIPIENT_pronoun] considered [INITIATOR_nameDef] a cyborg abomination!</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -489,7 +489,7 @@
     <defName>Intrigued_Maleness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] really just wanted a man.</li>
+        <li>sent->[INITIATOR_pronoun] really just wanted a man.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -497,7 +497,7 @@
     <defName>ReactionPositive_Maleness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a man.</li>
+        <li>sent->[RECIPIENT_pronoun] was desperate for a man.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -505,7 +505,7 @@
     <defName>ReactionNegative_Maleness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] wouldn't consider being with a man.</li>
+        <li>sent->[RECIPIENT_pronoun] wouldn't consider being with a man.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -526,7 +526,7 @@
     <defName>Intrigued_Femaleness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] really just wanted a woman.</li>
+        <li>sent->[INITIATOR_pronoun] really just wanted a woman.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -534,7 +534,7 @@
     <defName>ReactionPositive_Femaleness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a woman.</li>
+        <li>sent->[RECIPIENT_pronoun] was desperate for a woman.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -542,7 +542,7 @@
     <defName>ReactionNegative_Femaleness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] wouldn't consider being with a woman.</li>
+        <li>sent->[RECIPIENT_pronoun] wouldn't consider being with a woman.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -573,7 +573,7 @@
     <defName>Intrigued_Skill</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was impressed by [RECIPIENT_possessive] skill and aptitude.</li>
+        <li>sent->[INITIATOR_pronoun] was impressed by [RECIPIENT_possessive] skill and aptitude.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -581,7 +581,7 @@
     <defName>ReactionPositive_Skill</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] liked that [INITIATOR_nameDef] was so skillful.</li>
+        <li>sent->[RECIPIENT_pronoun] liked that [INITIATOR_nameDef] was so skillful.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -589,7 +589,7 @@
     <defName>ReactionNegative_Skill</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] wasn't impressed by [INITIATOR_nameDef]'s lack of marketable skills.</li>
+        <li>sent->[RECIPIENT_pronoun] wasn't impressed by [INITIATOR_nameDef]'s lack of marketable skills.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -633,7 +633,7 @@
     <defName>Intrigued_Popularity</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was very popular.</li>
+        <li>sent->[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was very popular.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -641,7 +641,7 @@
     <defName>ReactionPositive_Popularity</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] liked [INITIATOR_possessive] popularity.</li>
+        <li>sent->[RECIPIENT_pronoun] liked [INITIATOR_possessive] popularity.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -649,7 +649,7 @@
     <defName>ReactionNegative_Popularity</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] couldn't possibly get intimate with someone so unpopular.</li>
+        <li>sent->[RECIPIENT_pronoun] couldn't possibly get intimate with someone so unpopular.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -690,7 +690,7 @@
     <defName>Intrigued_Wealth</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was after [RECIPIENT_possessive] wealth.</li>
+        <li>sent->[INITIATOR_pronoun] was after [RECIPIENT_possessive] wealth.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -698,7 +698,7 @@
     <defName>ReactionPositive_Wealth</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] considered carefully [INITIATOR_possessive] wealth before responding.</li>
+        <li>sent->[RECIPIENT_pronoun] considered carefully [INITIATOR_possessive] wealth before responding.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -706,7 +706,7 @@
     <defName>ReactionNegative_Wealth</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] didn't have time for paupers.</li>
+        <li>sent->[RECIPIENT_pronoun] didn't have time for paupers.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -736,7 +736,7 @@
     <defName>Intrigued_Opinion</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was moved by [INITIATOR_possessive] deep feelings for [INITIATOR_objective].</li>
+        <li>sent->[INITIATOR_pronoun] was moved by [INITIATOR_possessive] deep feelings for [INITIATOR_objective].</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -744,7 +744,7 @@
     <defName>ReactionPositive_Opinion</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had deep feelings for [INITIATOR_objective], and responded accordingly.</li>
+        <li>sent->[RECIPIENT_pronoun] had deep feelings for [INITIATOR_objective], and responded accordingly.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -752,7 +752,7 @@
     <defName>ReactionNegative_Opinion</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had little regard for [INITIATOR_objective].</li>
+        <li>sent->[RECIPIENT_pronoun] had little regard for [INITIATOR_objective].</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -801,7 +801,7 @@
     <defName>Intrigued_Depravity</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] thought [RECIPIENT_pronoun] was a badass.</li>
+        <li>sent->[INITIATOR_pronoun] thought [RECIPIENT_pronoun] was a badass.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -809,7 +809,7 @@
     <defName>ReactionPositive_Depravity</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had a weakness for bad guys.</li>
+        <li>sent->[RECIPIENT_pronoun] had a weakness for bad guys.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -817,7 +817,7 @@
     <defName>ReactionNegative_Depravity</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so depraved.</li>
+        <li>sent->[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so depraved.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -869,7 +869,7 @@
     <defName>Intrigued_Morality</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] admired [RECIPIENT_possessive] moral fortitude and courage.</li>
+        <li>sent->[INITIATOR_pronoun] admired [RECIPIENT_possessive] moral fortitude and courage.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -877,7 +877,7 @@
     <defName>ReactionPositive_Morality</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had a weakness for good guys.</li>
+        <li>sent->[RECIPIENT_pronoun] had a weakness for good guys.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -885,7 +885,7 @@
     <defName>ReactionNegative_Morality</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so weak and sentimental.</li>
+        <li>sent->[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so weak and sentimental.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -927,7 +927,7 @@
     <defName>Intrigued_AffairReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] mostly wanted to cheat on [INITIATOR_possessive] significant other.</li>
+        <li>sent->[INITIATOR_pronoun] mostly wanted to cheat on [INITIATOR_possessive] significant other.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -935,7 +935,7 @@
     <defName>ReactionPositive_AffairReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] took this as an opportunity to spite [RECIPIENT_possessive] significant other.</li>
+        <li>sent->[RECIPIENT_pronoun] took this as an opportunity to spite [RECIPIENT_possessive] significant other.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -943,7 +943,7 @@
     <defName>ReactionNegative_AffairReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] wasn't about to throw away [RECIPIENT_possessive] current relationship.</li>
+        <li>sent->[RECIPIENT_pronoun] wasn't about to throw away [RECIPIENT_possessive] current relationship.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -964,7 +964,7 @@
     <defName>Intrigued_Options</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was driven to desperation by the lack of eligible partners.</li>
+        <li>sent->[INITIATOR_pronoun] was driven to desperation by the lack of eligible partners.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -972,7 +972,7 @@
     <defName>ReactionPositive_Options</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] knew [RECIPIENT_pronoun] had few choices.</li>
+        <li>sent->[RECIPIENT_pronoun] knew [RECIPIENT_pronoun] had few choices.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -980,7 +980,7 @@
     <defName>ReactionNegative_Options</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had better options.</li>
+        <li>sent->[RECIPIENT_pronoun] had better options.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1018,7 +1018,7 @@
     <defName>Intrigued_Polygamist</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was curious about [RECIPIENT_possessive] polygamist lifestyle.</li>
+        <li>sent->[INITIATOR_pronoun] was curious about [RECIPIENT_possessive] polygamist lifestyle.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1026,7 +1026,7 @@
     <defName>ReactionPositive_Polygamist</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was curious about [INITIATOR_possessive] polygamist lifestyle.</li>
+        <li>sent->[RECIPIENT_pronoun] was curious about [INITIATOR_possessive] polygamist lifestyle.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1034,7 +1034,7 @@
     <defName>ReactionNegative_Polygamist</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] didn't want to join [INITIATOR_possessive] harem.</li>
+        <li>sent->[RECIPIENT_pronoun] didn't want to join [INITIATOR_possessive] harem.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1055,7 +1055,7 @@
     <defName>Intrigued_SexDrive</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was compelled by [INITIATOR_possessive] intense sex drive.</li>
+        <li>sent->[INITIATOR_pronoun] was compelled by [INITIATOR_possessive] intense sex drive.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1063,7 +1063,7 @@
     <defName>ReactionPositive_SexDrive</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] basically wanted to have sex with someone... anyone.</li>
+        <li>sent->[RECIPIENT_pronoun] basically wanted to have sex with someone... anyone.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1071,7 +1071,7 @@
     <defName>ReactionNegative_SexDrive</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] didn't really feel the need to get close to anyone.</li>
+        <li>sent->[RECIPIENT_pronoun] didn't really feel the need to get close to anyone.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1092,7 +1092,7 @@
     <defName>Intrigued_RomanticDrive</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was desperate for a connection and a partner.</li>
+        <li>sent->[INITIATOR_pronoun] was desperate for a connection and a partner.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1100,7 +1100,7 @@
     <defName>ReactionPositive_RomanticDrive</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a connection and a partner.</li>
+        <li>sent->[RECIPIENT_pronoun] was desperate for a connection and a partner.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1108,7 +1108,7 @@
     <defName>ReactionNegative_RomanticDrive</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] wasn't ready for any messy romantic entanglements.</li>
+        <li>sent->[RECIPIENT_pronoun] wasn't ready for any messy romantic entanglements.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1129,7 +1129,7 @@
     <defName>Intrigued_MaleRelationshipReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was desperate for a connection with a man.</li>
+        <li>sent->[INITIATOR_pronoun] was desperate for a connection with a man.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1137,7 +1137,7 @@
     <defName>ReactionPositive_MaleRelationshipReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a connection with a man.</li>
+        <li>sent->[RECIPIENT_pronoun] was desperate for a connection with a man.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1145,7 +1145,7 @@
     <defName>ReactionNegative_MaleRelationshipReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had little desire to be romantic with a man.</li>
+        <li>sent->[RECIPIENT_pronoun] had little desire to be romantic with a man.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1166,7 +1166,7 @@
     <defName>Intrigued_FemaleRelationshipReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] was desperate for a connection with a woman.</li>
+        <li>sent->[INITIATOR_pronoun] was desperate for a connection with a woman.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1174,7 +1174,7 @@
     <defName>ReactionPositive_FemaleRelationshipReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was desperate for a connection with a woman.</li>
+        <li>sent->[RECIPIENT_pronoun] was desperate for a connection with a woman.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1182,7 +1182,7 @@
     <defName>ReactionNegative_FemaleRelationshipReluctance</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had little desire to be romantic with a woman.</li>
+        <li>sent->[RECIPIENT_pronoun] had little desire to be romantic with a woman.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1203,7 +1203,7 @@
     <defName>Intrigued_TooManyRelationships</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] really wanted a few more commitments.</li>
+        <li>sent->[INITIATOR_pronoun] really wanted a few more commitments.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1211,7 +1211,7 @@
     <defName>ReactionPositive_TooManyRelationships</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] really wanted a few more commitments.</li>
+        <li>sent->[RECIPIENT_pronoun] really wanted a few more commitments.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1219,7 +1219,7 @@
     <defName>ReactionNegative_TooManyRelationships</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was involved with too many people to add one more.</li>
+        <li>sent->[RECIPIENT_pronoun] was involved with too many people to add one more.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1275,7 +1275,7 @@
     <defName>Intrigued_Foreigness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] wanted to get to know this strange foreigner better.</li>
+        <li>sent->[INITIATOR_pronoun] wanted to get to know this strange foreigner better.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1283,7 +1283,7 @@
     <defName>ReactionPositive_Foreigness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was drawn by [INITIATOR_possessive] foreign ways.</li>
+        <li>sent->[RECIPIENT_pronoun] was drawn by [INITIATOR_possessive] foreign ways.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1291,7 +1291,7 @@
     <defName>ReactionNegative_Foreigness</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] would never accept an advance from a foreigner.</li>
+        <li>sent->[RECIPIENT_pronoun] would never accept an advance from a foreigner.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1339,7 +1339,7 @@
     <defName>Intrigued_Hygiene</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] breathed in deeply [RECIPIENT_possessive] wonderful musk.</li>
+        <li>sent->[INITIATOR_pronoun] breathed in deeply [RECIPIENT_possessive] wonderful musk.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1347,7 +1347,7 @@
     <defName>ReactionPositive_Hygiene</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] could barely think with all that musk.</li>
+        <li>sent->[RECIPIENT_pronoun] could barely think with all that musk.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1355,7 +1355,7 @@
     <defName>ReactionNegative_Hygiene</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] was shocked by [INITIATOR_possessive] lack of hygiene.</li>
+        <li>sent->[RECIPIENT_pronoun] was shocked by [INITIATOR_possessive] lack of hygiene.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1377,7 +1377,7 @@
     <defName>Intrigued_Voice</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] just wanted to hear [RECIPIENT_possessive] rich, warm voice.</li>
+        <li>sent->[INITIATOR_pronoun] just wanted to hear [RECIPIENT_possessive] rich, warm voice.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1385,7 +1385,7 @@
     <defName>ReactionPositive_Voice</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had to obey [INITIATOR_possessive] musical voice.</li>
+        <li>sent->[RECIPIENT_pronoun] had to obey [INITIATOR_possessive] musical voice.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1393,7 +1393,7 @@
     <defName>ReactionNegative_Voice</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] couldn't listen to [INITIATOR_possessive] annoying voice any longer.</li>
+        <li>sent->[RECIPIENT_pronoun] couldn't listen to [INITIATOR_possessive] annoying voice any longer.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1415,7 +1415,7 @@
     <defName>Intrigued_Breathing</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] basked in [RECIPIENT_possessive] powerful breath.</li>
+        <li>sent->[INITIATOR_pronoun] basked in [RECIPIENT_possessive] powerful breath.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1423,7 +1423,7 @@
     <defName>ReactionPositive_Breathing</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] basked in [INTITIATOR_possessive] powerful breath.</li>
+        <li>sent->[RECIPIENT_pronoun] basked in [INTITIATOR_possessive] powerful breath.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -1431,7 +1431,7 @@
     <defName>ReactionNegative_Breathing</defName>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[RECIPIENT_pronoun] had shivers down [RECIPIENT_possessive] spine listening to [INITIATOR_possessive] breath.</li>
+        <li>sent->[RECIPIENT_pronoun] had shivers down [RECIPIENT_possessive] spine listening to [INITIATOR_possessive] breath.</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

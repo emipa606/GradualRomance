@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>sent->[INITIATOR_nameDef] [was_embarrassed].</li>
+    <li>was_embarrassed->realized [INITIATOR_pronoun] had made an ass of [INITIATOR_objective]self</li>
+    <li>was_embarrassed->went beet red and shrank away</li>
+    <li>was_embarrassed->covered [INITIATOR_possessive] face in embarrassment</li>
+    <li>was_embarrassed->immediately realized how stupid [INITIATOR_pronoun] sounded</li>
+  -->
+  <Sentence_FeltShame.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_nameDef] [was_embarrassed].</li>
+    <li>was_embarrassed->realized [INITIATOR_pronoun] had made an ass of [INITIATOR_objective]self</li>
+    <li>was_embarrassed->went beet red and shrank away</li>
+    <li>was_embarrassed->covered [INITIATOR_possessive] face in embarrassment</li>
+    <li>was_embarrassed->immediately realized how stupid [INITIATOR_pronoun] sounded</li>
+  </Sentence_FeltShame.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->In response, [RECIPIENT_nameDef] [harrassed] [INITIATOR_possessive] [crudefemalebodypart].</li>
+    <li>harrassed->pinched</li>
+    <li>harrassed->stroked</li>
+    <li>harrassed->slapped</li>
+    <li>harrassed->groped</li>
+  -->
+  <Sentence_FlirtReactionAggressiveFemale.rulePack.rulesStrings>
+    <li>sent->In response, [RECIPIENT_nameDef] [harrassed] [INITIATOR_possessive] [crudefemalebodypart].</li>
+    <li>harrassed->pinched</li>
+    <li>harrassed->stroked</li>
+    <li>harrassed->slapped</li>
+    <li>harrassed->groped</li>
+  </Sentence_FlirtReactionAggressiveFemale.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->In response, [RECIPIENT_nameDef] [harrassed] [INITIATOR_possessive] [crudemalebodypart].</li>
+    <li>harrassed->pinched</li>
+    <li>harrassed->stroked</li>
+    <li>harrassed->slapped</li>
+    <li>harrassed->groped</li>
+  -->
+  <Sentence_FlirtReactionAggressiveMale.rulePack.rulesStrings>
+    <li>sent->In response, [RECIPIENT_nameDef] [harrassed] [INITIATOR_possessive] [crudemalebodypart].</li>
+    <li>harrassed->pinched</li>
+    <li>harrassed->stroked</li>
+    <li>harrassed->slapped</li>
+    <li>harrassed->groped</li>
+  </Sentence_FlirtReactionAggressiveMale.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef], [angry], [called] a [insultfemale] in response.</li>
+    <li>sent->[RECIPIENT_nameDef], [angry], told [INITIATOR_objective] to [piss_off].</li>
+    <li>called->called [INITIATOR_objective]</li>
+    <li>called->hissed at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>called->barked at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>angry->shaking with anger</li>
+    <li>angry->red with fury</li>
+    <li>angry->pissed</li>
+    <li>angry->extremely annoyed</li>
+    <li>piss_off->go away</li>
+    <li>piss_off->leave [RECIPIENT_objective] alone</li>
+    <li>piss_off->take a hike</li>
+  -->
+  <Sentence_FlirtReactionAngryFemale.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef], [angry], [called] a [insultfemale] in response.</li>
+    <li>sent->[RECIPIENT_nameDef], [angry], told [INITIATOR_objective] to [piss_off].</li>
+    <li>called->called [INITIATOR_objective]</li>
+    <li>called->hissed at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>called->barked at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>angry->shaking with anger</li>
+    <li>angry->red with fury</li>
+    <li>angry->pissed</li>
+    <li>angry->extremely annoyed</li>
+    <li>piss_off->go away</li>
+    <li>piss_off->leave [RECIPIENT_objective] alone</li>
+    <li>piss_off->take a hike</li>
+  </Sentence_FlirtReactionAngryFemale.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef], [angry], [called] a [insultmale] in response.</li>
+    <li>sent->[RECIPIENT_nameDef], [angry], told [INITIATOR_objective] to [piss_off].</li>
+    <li>called->called [INITIATOR_objective]</li>
+    <li>called->hissed at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>called->barked at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>angry->shaking with anger</li>
+    <li>angry->red with fury</li>
+    <li>angry->pissed</li>
+    <li>angry->extremely annoyed</li>
+    <li>piss_off->go away</li>
+    <li>piss_off->leave [RECIPIENT_objective] alone</li>
+    <li>piss_off->take a hike</li>
+  -->
+  <Sentence_FlirtReactionAngryMale.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef], [angry], [called] a [insultmale] in response.</li>
+    <li>sent->[RECIPIENT_nameDef], [angry], told [INITIATOR_objective] to [piss_off].</li>
+    <li>called->called [INITIATOR_objective]</li>
+    <li>called->hissed at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>called->barked at [INITIATOR_nameDef], calling [INITIATOR_objective]</li>
+    <li>angry->shaking with anger</li>
+    <li>angry->red with fury</li>
+    <li>angry->pissed</li>
+    <li>angry->extremely annoyed</li>
+    <li>piss_off->go away</li>
+    <li>piss_off->leave [RECIPIENT_objective] alone</li>
+    <li>piss_off->take a hike</li>
+  </Sentence_FlirtReactionAngryMale.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] [smiled], [looking_charmed].</li>
+    <li>smiled->smiled</li>
+    <li>smiled->brightened</li>
+    <li>smiled->beamed</li>
+    <li>smiled->flushed</li>
+    <li>looking_charmed->looking charmed</li>
+    <li>looking_charmed->quite taken</li>
+    <li>looking_charmed->liking the attention</li>
+    <li>looking_charmed->enjoying [INITIATOR_nameDef]'s presence</li>
+  -->
+  <Sentence_FlirtReactionCharmed.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] [smiled], [looking_charmed].</li>
+    <li>smiled->smiled</li>
+    <li>smiled->brightened</li>
+    <li>smiled->beamed</li>
+    <li>smiled->flushed</li>
+    <li>looking_charmed->looking charmed</li>
+    <li>looking_charmed->quite taken</li>
+    <li>looking_charmed->liking the attention</li>
+    <li>looking_charmed->enjoying [INITIATOR_nameDef]'s presence</li>
+  </Sentence_FlirtReactionCharmed.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] found [INITIATOR_objective] [compelling].</li>
+    <li>sent->[RECIPIENT_nameDef] [listened_closely].</li>
+    <li>compelling->compelling</li>
+    <li>compelling->agreeable</li>
+    <li>compelling->interesting</li>
+    <li>listened_closely->listened closely</li>
+    <li>listened_closely->looked thoughtful</li>
+    <li>listened_closely->seemed persuaded</li>
+  -->
+  <Sentence_FlirtReactionConvinced.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] found [INITIATOR_objective] [compelling].</li>
+    <li>sent->[RECIPIENT_nameDef] [listened_closely].</li>
+    <li>compelling->compelling</li>
+    <li>compelling->agreeable</li>
+    <li>compelling->interesting</li>
+    <li>listened_closely->listened closely</li>
+    <li>listened_closely->looked thoughtful</li>
+    <li>listened_closely->seemed persuaded</li>
+  </Sentence_FlirtReactionConvinced.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef], [in_response], [complimented] [INITIATOR_nameDef]'s [crudefemalebodypart].</li>
+    <li>in_response->in response</li>
+    <li>in_response->smirking</li>
+    <li>in_response->winking</li>
+    <li>in_response->blowing a kiss</li>
+    <li>in_response->wiggling an eyebrow</li>
+    <li>complimented->made a comment about</li>
+    <li>complimented->complimented</li>
+    <li>complimented->praised</li>
+  -->
+  <Sentence_FlirtReactionCrudeFemale.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef], [in_response], [complimented] [INITIATOR_nameDef]'s [crudefemalebodypart].</li>
+    <li>in_response->in response</li>
+    <li>in_response->smirking</li>
+    <li>in_response->winking</li>
+    <li>in_response->blowing a kiss</li>
+    <li>in_response->wiggling an eyebrow</li>
+    <li>complimented->made a comment about</li>
+    <li>complimented->complimented</li>
+    <li>complimented->praised</li>
+  </Sentence_FlirtReactionCrudeFemale.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef], [in_response], [complimented] [INITIATOR_nameDef]'s [crudemalebodypart].</li>
+    <li>in_response->in response</li>
+    <li>in_response->smirking</li>
+    <li>in_response->winking</li>
+    <li>in_response->blowing a kiss</li>
+    <li>in_response->wiggling an eyebrow</li>
+    <li>complimented->made a comment about</li>
+    <li>complimented->complimented</li>
+    <li>complimented->praised</li>
+  -->
+  <Sentence_FlirtReactionCrudeMale.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef], [in_response], [complimented] [INITIATOR_nameDef]'s [crudemalebodypart].</li>
+    <li>in_response->in response</li>
+    <li>in_response->smirking</li>
+    <li>in_response->winking</li>
+    <li>in_response->blowing a kiss</li>
+    <li>in_response->wiggling an eyebrow</li>
+    <li>complimented->made a comment about</li>
+    <li>complimented->complimented</li>
+    <li>complimented->praised</li>
+  </Sentence_FlirtReactionCrudeMale.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] [embarrassed] for [INITIATOR_objective] that [RECIPIENT_pronoun] [reaction].</li>
+    <li>embarrassed->was so embarrassed</li>
+    <li>embarrassed->felt so sorry for</li>
+    <li>reaction->couldn't say anything</li>
+    <li>reaction->turned red</li>
+    <li>reaction->turned away</li>
+    <li>reaction->was rendered speechless</li>
+  -->
+  <Sentence_FlirtReactionEmbarrassed.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] [embarrassed] for [INITIATOR_objective] that [RECIPIENT_pronoun] [reaction].</li>
+    <li>embarrassed->was so embarrassed</li>
+    <li>embarrassed->felt so sorry for</li>
+    <li>reaction->couldn't say anything</li>
+    <li>reaction->turned red</li>
+    <li>reaction->turned away</li>
+    <li>reaction->was rendered speechless</li>
+  </Sentence_FlirtReactionEmbarrassed.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] [flipped_out]!</li>
+    <li>flipped_out->went berserk</li>
+    <li>flipped_out->flew into a rage</li>
+    <li>flipped_out->went nuts</li>
+    <li>flipped_out->screamed unbelievable curses at [RECIPIENT_nameDef]</li>
+  -->
+  <Sentence_FlirtReactionEnraged.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] [flipped_out]!</li>
+    <li>flipped_out->went berserk</li>
+    <li>flipped_out->flew into a rage</li>
+    <li>flipped_out->went nuts</li>
+    <li>flipped_out->screamed unbelievable curses at [RECIPIENT_nameDef]</li>
+  </Sentence_FlirtReactionEnraged.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->The attempt went over [RECIPIENT_nameDef]'s head.</li>
+    <li>sent->[RECIPIENT_nameDef] [didnt_notice].</li>
+    <li>didnt_notice->didn't realize [INITIATOR_pronoun] was trying to flirt with [RECIPIENT_objective]</li>
+    <li>didnt_notice->was ignorant of [INITIATOR_possessive] advance</li>
+  -->
+  <Sentence_FlirtReactionIgnorant.rulePack.rulesStrings>
+    <li>sent->The attempt went over [RECIPIENT_nameDef]'s head.</li>
+    <li>sent->[RECIPIENT_nameDef] [didnt_notice].</li>
+    <li>didnt_notice->didn't realize [INITIATOR_pronoun] was trying to flirt with [RECIPIENT_objective]</li>
+    <li>didnt_notice->was ignorant of [INITIATOR_possessive] advance</li>
+  </Sentence_FlirtReactionIgnorant.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] [impressed_by] [INITIATOR_possessive] [boldness].</li>
+    <li>impressed_by->was turned on by</li>
+    <li>impressed_by->was impressed by</li>
+    <li>impressed_by->kinda loved</li>
+    <li>impressed_by->respected</li>
+    <li>impressed_by->smiled at</li>
+    <li>impressed_by->blushed at</li>
+    <li>boldness->boldness</li>
+    <li>boldness->confidence</li>
+    <li>boldness->chutzpah</li>
+    <li>boldness->moxie</li>
+    <li>boldness->cockiness</li>
+  -->
+  <Sentence_FlirtReactionImpressed.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] [impressed_by] [INITIATOR_possessive] [boldness].</li>
+    <li>impressed_by->was turned on by</li>
+    <li>impressed_by->was impressed by</li>
+    <li>impressed_by->kinda loved</li>
+    <li>impressed_by->respected</li>
+    <li>impressed_by->smiled at</li>
+    <li>impressed_by->blushed at</li>
+    <li>boldness->boldness</li>
+    <li>boldness->confidence</li>
+    <li>boldness->chutzpah</li>
+    <li>boldness->moxie</li>
+    <li>boldness->cockiness</li>
+  </Sentence_FlirtReactionImpressed.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] [laughed_at] [INITIATOR_possessive] [pathetic] [attempt].</li>
+    <li>laughed_at->laughed at</li>
+    <li>laughed_at->burst out laughing at</li>
+    <li>laughed_at->mocked cruelly</li>
+    <li>laughed_at->laughed dismissively at</li>
+    <li>laughed_at->made fun of</li>
+    <li>pathetic->pathetic</li>
+    <li>pathetic->hopeless</li>
+    <li>pathetic->embarrassing</li>
+    <li>pathetic->humilating</li>
+    <li>pathetic->weak</li>
+    <li>attempt->attempt</li>
+    <li>attempt->advance</li>
+    <li>attempt->courtship</li>
+    <li>attempt->flirt</li>
+  -->
+  <Sentence_FlirtReactionLaughter.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] [laughed_at] [INITIATOR_possessive] [pathetic] [attempt].</li>
+    <li>laughed_at->laughed at</li>
+    <li>laughed_at->burst out laughing at</li>
+    <li>laughed_at->mocked cruelly</li>
+    <li>laughed_at->laughed dismissively at</li>
+    <li>laughed_at->made fun of</li>
+    <li>pathetic->pathetic</li>
+    <li>pathetic->hopeless</li>
+    <li>pathetic->embarrassing</li>
+    <li>pathetic->humilating</li>
+    <li>pathetic->weak</li>
+    <li>attempt->attempt</li>
+    <li>attempt->advance</li>
+    <li>attempt->courtship</li>
+    <li>attempt->flirt</li>
+  </Sentence_FlirtReactionLaughter.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] [neutral_response].</li>
+    <li>neutral_response->paid no attention</li>
+    <li>neutral_response->was unimpressed</li>
+    <li>neutral_response->didn't react</li>
+    <li>neutral_response->gave a superficial response</li>
+    <li>neutral_response->did nothing</li>
+  -->
+  <Sentence_FlirtReactionNeutral.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] [neutral_response].</li>
+    <li>neutral_response->paid no attention</li>
+    <li>neutral_response->was unimpressed</li>
+    <li>neutral_response->didn't react</li>
+    <li>neutral_response->gave a superficial response</li>
+    <li>neutral_response->did nothing</li>
+  </Sentence_FlirtReactionNeutral.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] [explained] [RECIPIENT_pronoun] [not_interested].</li>
+    <li>explained->apologized and said [RECIPIENT_pronoun] wasn't interested</li>
+    <li>explained->explained</li>
+    <li>explained->told [INITIATOR_objective] at length</li>
+    <li>not_interested->wasn't interested</li>
+    <li>not_interested->wasn't ready for a relationship</li>
+    <li>not_interested->had someone else [RECIPIENT_pronoun] interested in</li>
+  -->
+  <Sentence_FlirtReactionPolite.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] [explained] [RECIPIENT_pronoun] [not_interested].</li>
+    <li>explained->apologized and said [RECIPIENT_pronoun] wasn't interested</li>
+    <li>explained->explained</li>
+    <li>explained->told [INITIATOR_objective] at length</li>
+    <li>not_interested->wasn't interested</li>
+    <li>not_interested->wasn't ready for a relationship</li>
+    <li>not_interested->had someone else [RECIPIENT_pronoun] interested in</li>
+  </Sentence_FlirtReactionPolite.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->In response, [RECIPIENT_nameDef] [told] [INITIATOR_objective] [RECIPIENT_possessive] [feelings] for [INITIATOR_objective].</li>
+    <li>told->told</li>
+    <li>told->admitted to</li>
+    <li>told->declared to</li>
+    <li>told->announced to</li>
+    <li>feelings->feelings</li>
+    <li>feelings->affections</li>
+    <li>feelings->love</li>
+    <li>feelings->emotions</li>
+  -->
+  <Sentence_FlirtReactionRomantic.rulePack.rulesStrings>
+    <li>sent->In response, [RECIPIENT_nameDef] [told] [INITIATOR_objective] [RECIPIENT_possessive] [feelings] for [INITIATOR_objective].</li>
+    <li>told->told</li>
+    <li>told->admitted to</li>
+    <li>told->declared to</li>
+    <li>told->announced to</li>
+    <li>feelings->feelings</li>
+    <li>feelings->affections</li>
+    <li>feelings->love</li>
+    <li>feelings->emotions</li>
+  </Sentence_FlirtReactionRomantic.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] could barely get a word out [RECIPIENT_pronoun] was so shy!</li>
+  -->
+  <Sentence_FlirtReactionShy.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] could barely get a word out [RECIPIENT_pronoun] was so shy!</li>
+  </Sentence_FlirtReactionShy.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] made a flattering, seductive comment in response.</li>
+  -->
+  <Sentence_FlirtReactionSuave.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] made a flattering, seductive comment in response.</li>
+  </Sentence_FlirtReactionSuave.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] winked in response.</li>
+  -->
+  <Sentence_FlirtReactionSubtle.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] winked in response.</li>
+  </Sentence_FlirtReactionSubtle.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] teased [INITIATOR_nameDef] affectionately in response.</li>
+  -->
+  <Sentence_FlirtReactionTease.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] teased [INITIATOR_nameDef] affectionately in response.</li>
+  </Sentence_FlirtReactionTease.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_nameDef] [believed_failure].</li>
+    <li>believed_failure->was discouraged by [RECIPIENT_possessive] silence</li>
+    <li>believed_failure->was sure that [RECIPIENT_pronoun] didn't like it</li>
+    <li>believed_failure->believed [RECIPIENT_pronoun] was giving the cold shoulder</li>
+    <li>believed_failure->definitely thinks [RECIPIENT_nameDef] dislikes [INITIATOR_objective]</li>
+  -->
+  <Sentence_InterpretFlirtNegatively.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_nameDef] [believed_failure].</li>
+    <li>believed_failure->was discouraged by [RECIPIENT_possessive] silence</li>
+    <li>believed_failure->was sure that [RECIPIENT_pronoun] didn't like it</li>
+    <li>believed_failure->believed [RECIPIENT_pronoun] was giving the cold shoulder</li>
+    <li>believed_failure->definitely thinks [RECIPIENT_nameDef] dislikes [INITIATOR_objective]</li>
+  </Sentence_InterpretFlirtNegatively.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_nameDef] [believed_successful].</li>
+    <li>believed_successful->took this to mean [RECIPIENT_pronoun] [likes] [INITIATOR_objective]</li>
+    <li>believed_successful->took this as encouraging</li>
+    <li>believed_successful->believed [RECIPIENT_pronoun] was flirting back</li>
+    <li>believed_successful->definitely thinks [RECIPIENT_nameDef] [likes] [INITIATOR_objective]</li>
+    <li>likes->loves</li>
+    <li>likes->likes</li>
+    <li>likes->appreciates</li>
+    <li>likes->has the hots for</li>
+    <li>likes->has a crush on</li>
+  -->
+  <Sentence_InterpretFlirtPositively.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_nameDef] [believed_successful].</li>
+    <li>believed_successful->took this to mean [RECIPIENT_pronoun] [likes] [INITIATOR_objective]</li>
+    <li>believed_successful->took this as encouraging</li>
+    <li>believed_successful->believed [RECIPIENT_pronoun] was flirting back</li>
+    <li>believed_successful->definitely thinks [RECIPIENT_nameDef] [likes] [INITIATOR_objective]</li>
+    <li>likes->loves</li>
+    <li>likes->likes</li>
+    <li>likes->appreciates</li>
+    <li>likes->has the hots for</li>
+    <li>likes->has a crush on</li>
+  </Sentence_InterpretFlirtPositively.rulePack.rulesStrings>
+</LanguageData>

@@ -2,5 +2,17 @@
   "Continued": true,
   "CanAdd": "1",
   "CanRemove": "1",
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 245951,
+  "LinesOfXML": 195763,
+  "CodeBaseSize": 89,
+  "LastXmlCleaning": "2025-08-01T15:29:05.3178616+02:00",
+  "SocialImageSet": true,
+  "SearchTags": [
+    " interactions",
+    " overhaul"
+  ]
 }

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: ability -->
+  <Ability.label>ability</Ability.label>
+  <!-- EN: {PAWN2_possessive} health and ability -->
+  <Ability.reasonHigh>{PAWN2_possessive} health and ability</Ability.reasonHigh>
+  <!-- EN: {PAWN2_possessive} disability -->
+  <Ability.reasonLow>{PAWN2_possessive} disability</Ability.reasonLow>
+  <!-- EN: {PAWN2_possessive} superhuman abilities -->
+  <Ability.reasonVeryHigh>{PAWN2_possessive} superhuman abilities</Ability.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} crippledness -->
+  <Ability.reasonVeryLow>{PAWN2_possessive} crippledness</Ability.reasonVeryLow>
+  <!-- EN: affair reluctance -->
+  <AffairReluctance.label>affair reluctance</AffairReluctance.label>
+  <!-- EN: {PAWN1_possessive} desire to commit adultery -->
+  <AffairReluctance.reasonHigh>{PAWN1_possessive} desire to commit adultery</AffairReluctance.reasonHigh>
+  <!-- EN: {PAWN1_possessive} reluctance to commit adultery -->
+  <AffairReluctance.reasonLow>{PAWN1_possessive} reluctance to commit adultery</AffairReluctance.reasonLow>
+  <!-- EN: {PAWN1_possessive} drive to commit adultery -->
+  <AffairReluctance.reasonVeryHigh>{PAWN1_possessive} drive to commit adultery</AffairReluctance.reasonVeryHigh>
+  <!-- EN: {PAWN1_possessive} aversion to commit adultery -->
+  <AffairReluctance.reasonVeryLow>{PAWN1_possessive} aversion to commit adultery</AffairReluctance.reasonVeryLow>
+  <!-- EN: age difference -->
+  <AgeDifference.label>age difference</AgeDifference.label>
+  <!-- EN: the proximity in age -->
+  <AgeDifference.reasonHigh>the proximity in age</AgeDifference.reasonHigh>
+  <!-- EN: the difference in age -->
+  <AgeDifference.reasonLow>the difference in age</AgeDifference.reasonLow>
+  <!-- EN: the proximity in age -->
+  <AgeDifference.reasonVeryHigh>the proximity in age</AgeDifference.reasonVeryHigh>
+  <!-- EN: the huge difference in age -->
+  <AgeDifference.reasonVeryLow>the huge difference in age</AgeDifference.reasonVeryLow>
+  <!-- EN: beauty -->
+  <Beauty.label>beauty</Beauty.label>
+  <!-- EN: {PAWN2_possessive} beauty -->
+  <Beauty.reasonHigh>{PAWN2_possessive} beauty</Beauty.reasonHigh>
+  <!-- EN: {PAWN2_possessive} ugliness -->
+  <Beauty.reasonLow>{PAWN2_possessive} ugliness</Beauty.reasonLow>
+  <!-- EN: {PAWN2_possessive} stunning beauty -->
+  <Beauty.reasonVeryHigh>{PAWN2_possessive} stunning beauty</Beauty.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} hideousness -->
+  <Beauty.reasonVeryLow>{PAWN2_possessive} hideousness</Beauty.reasonVeryLow>
+  <!-- EN: body -->
+  <Body.label>body</Body.label>
+  <!-- EN: {PAWN2_possessive} nice body -->
+  <Body.reasonHigh>{PAWN2_possessive} nice body</Body.reasonHigh>
+  <!-- EN: {PAWN2_possessive} unattractive body -->
+  <Body.reasonLow>{PAWN2_possessive} unattractive body</Body.reasonLow>
+  <!-- EN: {PAWN2_possessive} gorgeous body -->
+  <Body.reasonVeryHigh>{PAWN2_possessive} gorgeous body</Body.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} grotesque body -->
+  <Body.reasonVeryLow>{PAWN2_possessive} grotesque body</Body.reasonVeryLow>
+  <!-- EN: breathing -->
+  <Breathing.label>breathing</Breathing.label>
+  <!-- EN: {PAWN1_possessive} hale breath -->
+  <Breathing.reasonHigh>{PAWN1_possessive} hale breath</Breathing.reasonHigh>
+  <!-- EN: {PAWN1_possessive} creepy breathing -->
+  <Breathing.reasonLow>{PAWN1_possessive} creepy breathing</Breathing.reasonLow>
+  <!-- EN: {PAWN1_possessive} hearty breath -->
+  <Breathing.reasonVeryHigh>{PAWN1_possessive} hearty breath</Breathing.reasonVeryHigh>
+  <!-- EN: {PAWN1_possessive} atrocious breathing -->
+  <Breathing.reasonVeryLow>{PAWN1_possessive} atrocious breathing</Breathing.reasonVeryLow>
+  <!-- EN: cybernetics -->
+  <Cybernetics.label>cybernetics</Cybernetics.label>
+  <!-- EN: {PAWN2_possessive} cybernetics -->
+  <Cybernetics.reasonHigh>{PAWN2_possessive} cybernetics</Cybernetics.reasonHigh>
+  <!-- EN: {PAWN2_possessive} cybernetics -->
+  <Cybernetics.reasonLow>{PAWN2_possessive} cybernetics</Cybernetics.reasonLow>
+  <!-- EN: {PAWN2_possessive} transcendent cybernetics -->
+  <Cybernetics.reasonVeryHigh>{PAWN2_possessive} transcendent cybernetics</Cybernetics.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} abominable cybernetics -->
+  <Cybernetics.reasonVeryLow>{PAWN2_possessive} abominable cybernetics</Cybernetics.reasonVeryLow>
+  <!-- EN: depravity -->
+  <Depravity.label>depravity</Depravity.label>
+  <!-- EN: {PAWN2_possessive} willingness to force {PAWN2_possessive} will on others -->
+  <Depravity.reasonHigh>{PAWN2_possessive} willingness to force {PAWN2_possessive} will on others</Depravity.reasonHigh>
+  <!-- EN: {PAWN2_possessive} cruelty and depravity -->
+  <Depravity.reasonLow>{PAWN2_possessive} cruelty and depravity</Depravity.reasonLow>
+  <!-- EN: {PAWN2_possessive} strength to force {PAWN2_possessive} will -->
+  <Depravity.reasonVeryHigh>{PAWN2_possessive} strength to force {PAWN2_possessive} will</Depravity.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} unparalleled depravity -->
+  <Depravity.reasonVeryLow>{PAWN2_possessive} unparalleled depravity</Depravity.reasonVeryLow>
+  <!-- EN: femaleness -->
+  <Femaleness.label>femaleness</Femaleness.label>
+  <!-- EN: that she is a woman -->
+  <Femaleness.reasonHigh>that she is a woman</Femaleness.reasonHigh>
+  <!-- EN: that she is a woman -->
+  <Femaleness.reasonLow>that she is a woman</Femaleness.reasonLow>
+  <!-- EN: that she is a woman -->
+  <Femaleness.reasonVeryHigh>that she is a woman</Femaleness.reasonVeryHigh>
+  <!-- EN: that she is a woman -->
+  <Femaleness.reasonVeryLow>that she is a woman</Femaleness.reasonVeryLow>
+  <!-- EN: reluctance to start a relationship with a woman -->
+  <FemaleRelationshipReluctance.label>reluctance to start a relationship with a woman</FemaleRelationshipReluctance.label>
+  <!-- EN: {PAWN1_nameDef}'s desire to have a relationship with a woman -->
+  <FemaleRelationshipReluctance.reasonHigh>{PAWN1_nameDef}'s desire to have a relationship with a woman</FemaleRelationshipReluctance.reasonHigh>
+  <!-- EN: {PAWN1_nameDef}'s reluctance to have a relationship with a woman -->
+  <FemaleRelationshipReluctance.reasonLow>{PAWN1_nameDef}'s reluctance to have a relationship with a woman</FemaleRelationshipReluctance.reasonLow>
+  <!-- EN: {PAWN1_nameDef}'s need to have a relationship with a woman -->
+  <FemaleRelationshipReluctance.reasonVeryHigh>{PAWN1_nameDef}'s need to have a relationship with a woman</FemaleRelationshipReluctance.reasonVeryHigh>
+  <!-- EN: {PAWN1_nameDef}'s extreme reluctance to have a relationship with a woman -->
+  <FemaleRelationshipReluctance.reasonVeryLow>{PAWN1_nameDef}'s extreme reluctance to have a relationship with a woman</FemaleRelationshipReluctance.reasonVeryLow>
+  <!-- EN: foreigness -->
+  <Foreigness.label>foreigness</Foreigness.label>
+  <!-- EN: that {PAWN1_nameDef} is a mysterious foreigner -->
+  <Foreigness.reasonHigh>that {PAWN1_nameDef} is a mysterious foreigner</Foreigness.reasonHigh>
+  <!-- EN: that {PAWN1_nameDef} is a foreigner -->
+  <Foreigness.reasonLow>that {PAWN1_nameDef} is a foreigner</Foreigness.reasonLow>
+  <!-- EN: that {PAWN1_nameDef} is an exotic foreigner -->
+  <Foreigness.reasonVeryHigh>that {PAWN1_nameDef} is an exotic foreigner</Foreigness.reasonVeryHigh>
+  <!-- EN: that {PAWN1_nameDef} is a dirty foreigner -->
+  <Foreigness.reasonVeryLow>that {PAWN1_nameDef} is a dirty foreigner</Foreigness.reasonVeryLow>
+  <!-- EN: hygiene -->
+  <Hygiene.label>hygiene</Hygiene.label>
+  <!-- EN: {PAWN1_possessive} lovely musk -->
+  <Hygiene.reasonHigh>{PAWN1_possessive} lovely musk</Hygiene.reasonHigh>
+  <!-- EN: {PAWN1_possessive} filthiness -->
+  <Hygiene.reasonLow>{PAWN1_possessive} filthiness</Hygiene.reasonLow>
+  <!-- EN: {PAWN1_possessive} intoxicating musk -->
+  <Hygiene.reasonVeryHigh>{PAWN1_possessive} intoxicating musk</Hygiene.reasonVeryHigh>
+  <!-- EN: {PAWN1_nameDef}'s wretched state of filthiness -->
+  <Hygiene.reasonVeryLow>{PAWN1_nameDef}'s wretched state of filthiness</Hygiene.reasonVeryLow>
+  <!-- EN: incest -->
+  <Incest.label>incest</Incest.label>
+  <!-- EN: {PAWN2_possessive} pure blood -->
+  <Incest.reasonHigh>{PAWN2_possessive} pure blood</Incest.reasonHigh>
+  <!-- EN: {PAWN2_possessive} blood relation to {PAWN1_objective} -->
+  <Incest.reasonLow>{PAWN2_possessive} blood relation to {PAWN1_objective}</Incest.reasonLow>
+  <!-- EN: {PAWN2_possessive} purest blood -->
+  <Incest.reasonVeryHigh>{PAWN2_possessive} purest blood</Incest.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} blood relation to {PAWN1_objective} -->
+  <Incest.reasonVeryLow>{PAWN2_possessive} blood relation to {PAWN1_objective}</Incest.reasonVeryLow>
+  <!-- EN: maleness -->
+  <Maleness.label>maleness</Maleness.label>
+  <!-- EN: that he is a man -->
+  <Maleness.reasonHigh>that he is a man</Maleness.reasonHigh>
+  <!-- EN: that he is a man -->
+  <Maleness.reasonLow>that he is a man</Maleness.reasonLow>
+  <!-- EN: that he is a man -->
+  <Maleness.reasonVeryHigh>that he is a man</Maleness.reasonVeryHigh>
+  <!-- EN: that he is a man -->
+  <Maleness.reasonVeryLow>that he is a man</Maleness.reasonVeryLow>
+  <!-- EN: reluctance to start a relationship with a man -->
+  <MaleRelationshipReluctance.label>reluctance to start a relationship with a man</MaleRelationshipReluctance.label>
+  <!-- EN: {PAWN1_nameDef}'s desire to have a relationship with a man -->
+  <MaleRelationshipReluctance.reasonHigh>{PAWN1_nameDef}'s desire to have a relationship with a man</MaleRelationshipReluctance.reasonHigh>
+  <!-- EN: {PAWN1_nameDef}'s reluctance to have a relationship with a man -->
+  <MaleRelationshipReluctance.reasonLow>{PAWN1_nameDef}'s reluctance to have a relationship with a man</MaleRelationshipReluctance.reasonLow>
+  <!-- EN: {PAWN1_nameDef}'s need to have a relationship with a man -->
+  <MaleRelationshipReluctance.reasonVeryHigh>{PAWN1_nameDef}'s need to have a relationship with a man</MaleRelationshipReluctance.reasonVeryHigh>
+  <!-- EN: {PAWN1_nameDef}'s extreme reluctance to have a relationship with a man -->
+  <MaleRelationshipReluctance.reasonVeryLow>{PAWN1_nameDef}'s extreme reluctance to have a relationship with a man</MaleRelationshipReluctance.reasonVeryLow>
+  <!-- EN: morality -->
+  <Morality.label>morality</Morality.label>
+  <!-- EN: {PAWN2_possessive} kindness and character -->
+  <Morality.reasonHigh>{PAWN2_possessive} kindness and character</Morality.reasonHigh>
+  <!-- EN: {PAWN2_possessive} lack of will -->
+  <Morality.reasonLow>{PAWN2_possessive} lack of will</Morality.reasonLow>
+  <!-- EN: {PAWN2_possessive} radiant kindness and strength of character -->
+  <Morality.reasonVeryHigh>{PAWN2_possessive} radiant kindness and strength of character</Morality.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} contemptible weakness and lack of will -->
+  <Morality.reasonVeryLow>{PAWN2_possessive} contemptible weakness and lack of will</Morality.reasonVeryLow>
+  <!-- EN: old age -->
+  <OldAge.label>old age</OldAge.label>
+  <!-- EN: {PAWN2_possessive} maturity -->
+  <OldAge.reasonHigh>{PAWN2_possessive} maturity</OldAge.reasonHigh>
+  <!-- EN: {PAWN2_possessive} old age -->
+  <OldAge.reasonLow>{PAWN2_possessive} old age</OldAge.reasonLow>
+  <!-- EN: {PAWN2_possessive} stately maturity -->
+  <OldAge.reasonVeryHigh>{PAWN2_possessive} stately maturity</OldAge.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} decreptitude -->
+  <OldAge.reasonVeryLow>{PAWN2_possessive} decreptitude</OldAge.reasonVeryLow>
+  <!-- EN: opinion -->
+  <Opinion.label>opinion</Opinion.label>
+  <!-- EN: {PAWN1_nameDef}'s feelings for {PAWN2_objective} -->
+  <Opinion.reasonHigh>{PAWN1_nameDef}'s feelings for {PAWN2_objective}</Opinion.reasonHigh>
+  <!-- EN: {PAWN1_nameDef}'s lack of feelings for {PAWN2_objective} -->
+  <Opinion.reasonLow>{PAWN1_nameDef}'s lack of feelings for {PAWN2_objective}</Opinion.reasonLow>
+  <!-- EN: {PAWN1_nameDef}'s intense feelings for {PAWN2_objective} -->
+  <Opinion.reasonVeryHigh>{PAWN1_nameDef}'s intense feelings for {PAWN2_objective}</Opinion.reasonVeryHigh>
+  <!-- EN: {PAWN1_nameDef}'s personal distaste for {PAWN2_objective} -->
+  <Opinion.reasonVeryLow>{PAWN1_nameDef}'s personal distaste for {PAWN2_objective}</Opinion.reasonVeryLow>
+  <!-- EN: availability of other partners -->
+  <Options.label>availability of other partners</Options.label>
+  <!-- EN: the lack of other options -->
+  <Options.reasonHigh>the lack of other options</Options.reasonHigh>
+  <!-- EN: the availability of better options -->
+  <Options.reasonLow>the availability of better options</Options.reasonLow>
+  <!-- EN: the near total absence of other options -->
+  <Options.reasonVeryHigh>the near total absence of other options</Options.reasonVeryHigh>
+  <!-- EN: the abundance of better options -->
+  <Options.reasonVeryLow>the abundance of better options</Options.reasonVeryLow>
+  <!-- EN: attitude toward polygamy -->
+  <Polygamist.label>attitude toward polygamy</Polygamist.label>
+  <!-- EN: that {PAWN2_pronoun} is a fellow polygamist -->
+  <Polygamist.reasonHigh>that {PAWN2_pronoun} is a fellow polygamist</Polygamist.reasonHigh>
+  <!-- EN: that {PAWN2_pronoun} is a polygamist -->
+  <Polygamist.reasonLow>that {PAWN2_pronoun} is a polygamist</Polygamist.reasonLow>
+  <!-- EN: that {PAWN2_pronoun} is a fellow polygamist -->
+  <Polygamist.reasonVeryHigh>that {PAWN2_pronoun} is a fellow polygamist</Polygamist.reasonVeryHigh>
+  <!-- EN: that {PAWN2_pronoun} is a filthy polygamist -->
+  <Polygamist.reasonVeryLow>that {PAWN2_pronoun} is a filthy polygamist</Polygamist.reasonVeryLow>
+  <!-- EN: popularity -->
+  <Popularity.label>popularity</Popularity.label>
+  <!-- EN: {PAWN2_possessive} popularity -->
+  <Popularity.reasonHigh>{PAWN2_possessive} popularity</Popularity.reasonHigh>
+  <!-- EN: {PAWN2_possessive} unpopularity -->
+  <Popularity.reasonLow>{PAWN2_possessive} unpopularity</Popularity.reasonLow>
+  <!-- EN: {PAWN2_possessive} wild popularity -->
+  <Popularity.reasonVeryHigh>{PAWN2_possessive} wild popularity</Popularity.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} infamy -->
+  <Popularity.reasonVeryLow>{PAWN2_possessive} infamy</Popularity.reasonVeryLow>
+  <!-- EN: romantic drive -->
+  <RomanticDrive.label>romantic drive</RomanticDrive.label>
+  <!-- EN: {PAWN1_nameDef}'s strong need for commitment -->
+  <RomanticDrive.reasonHigh>{PAWN1_nameDef}'s strong need for commitment</RomanticDrive.reasonHigh>
+  <!-- EN: {PAWN1_nameDef}'s reluctance for commitment -->
+  <RomanticDrive.reasonLow>{PAWN1_nameDef}'s reluctance for commitment</RomanticDrive.reasonLow>
+  <!-- EN: {PAWN1_nameDef}'s intense need for commitment -->
+  <RomanticDrive.reasonVeryHigh>{PAWN1_nameDef}'s intense need for commitment</RomanticDrive.reasonVeryHigh>
+  <!-- EN: {PAWN1_nameDef}'s aversion to commitment -->
+  <RomanticDrive.reasonVeryLow>{PAWN1_nameDef}'s aversion to commitment</RomanticDrive.reasonVeryLow>
+  <!-- EN: scars -->
+  <Scars.label>scars</Scars.label>
+  <!-- EN: {PAWN2_possessive} cool scars -->
+  <Scars.reasonHigh>{PAWN2_possessive} cool scars</Scars.reasonHigh>
+  <!-- EN: {PAWN2_possessive} scars -->
+  <Scars.reasonLow>{PAWN2_possessive} scars</Scars.reasonLow>
+  <!-- EN: {PAWN2_possessive} sexy scars -->
+  <Scars.reasonVeryHigh>{PAWN2_possessive} sexy scars</Scars.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} disfiguring scars -->
+  <Scars.reasonVeryLow>{PAWN2_possessive} disfiguring scars</Scars.reasonVeryLow>
+  <!-- EN: sex drive -->
+  <SexDrive.label>sex drive</SexDrive.label>
+  <!-- EN: {PAWN1_nameDef}'s strong sex drive -->
+  <SexDrive.reasonHigh>{PAWN1_nameDef}'s strong sex drive</SexDrive.reasonHigh>
+  <!-- EN: {PAWN1_nameDef}'s weak sex drive -->
+  <SexDrive.reasonLow>{PAWN1_nameDef}'s weak sex drive</SexDrive.reasonLow>
+  <!-- EN: {PAWN1_nameDef}'s overactive sex drive -->
+  <SexDrive.reasonVeryHigh>{PAWN1_nameDef}'s overactive sex drive</SexDrive.reasonVeryHigh>
+  <!-- EN: {PAWN1_nameDef}'s near nonexistant sex drive -->
+  <SexDrive.reasonVeryLow>{PAWN1_nameDef}'s near nonexistant sex drive</SexDrive.reasonVeryLow>
+  <!-- EN: skill -->
+  <Skill.label>skill</Skill.label>
+  <!-- EN: {PAWN2_possessive} aptitude -->
+  <Skill.reasonHigh>{PAWN2_possessive} aptitude</Skill.reasonHigh>
+  <!-- EN: {PAWN2_possessive} ineptitude -->
+  <Skill.reasonLow>{PAWN2_possessive} ineptitude</Skill.reasonLow>
+  <!-- EN: {PAWN2_possessive} incredible aptitude -->
+  <Skill.reasonVeryHigh>{PAWN2_possessive} incredible aptitude</Skill.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} clumsy ineptness -->
+  <Skill.reasonVeryLow>{PAWN2_possessive} clumsy ineptness</Skill.reasonVeryLow>
+  <!-- EN: the limit to how many relationships someone can maintain -->
+  <TooManyRelationships.label>the limit to how many relationships someone can maintain</TooManyRelationships.label>
+  <!-- EN: that {PAWN1_nameDef} has few commitments -->
+  <TooManyRelationships.reasonHigh>that {PAWN1_nameDef} has few commitments</TooManyRelationships.reasonHigh>
+  <!-- EN: that {PAWN1_nameDef} is juggling too many relationships -->
+  <TooManyRelationships.reasonLow>that {PAWN1_nameDef} is juggling too many relationships</TooManyRelationships.reasonLow>
+  <!-- EN: that {PAWN1_nameDef} has few commitments -->
+  <TooManyRelationships.reasonVeryHigh>that {PAWN1_nameDef} has few commitments</TooManyRelationships.reasonVeryHigh>
+  <!-- EN: that {PAWN1_nameDef} is overburdened with relationships -->
+  <TooManyRelationships.reasonVeryLow>that {PAWN1_nameDef} is overburdened with relationships</TooManyRelationships.reasonVeryLow>
+  <!-- EN: voice -->
+  <Voice.label>voice</Voice.label>
+  <!-- EN: {PAWN1_possessive} sing-song voice -->
+  <Voice.reasonHigh>{PAWN1_possessive} sing-song voice</Voice.reasonHigh>
+  <!-- EN: {PAWN1_possessive} annoying voice -->
+  <Voice.reasonLow>{PAWN1_possessive} annoying voice</Voice.reasonLow>
+  <!-- EN: {PAWN1_possessive} angelic voice -->
+  <Voice.reasonVeryHigh>{PAWN1_possessive} angelic voice</Voice.reasonVeryHigh>
+  <!-- EN: {PAWN1_possessive} grating voice -->
+  <Voice.reasonVeryLow>{PAWN1_possessive} grating voice</Voice.reasonVeryLow>
+  <!-- EN: wealth -->
+  <Wealth.label>wealth</Wealth.label>
+  <!-- EN: {PAWN2_possessive} wealth -->
+  <Wealth.reasonHigh>{PAWN2_possessive} wealth</Wealth.reasonHigh>
+  <!-- EN: {PAWN2_possessive} mediocre finances -->
+  <Wealth.reasonLow>{PAWN2_possessive} mediocre finances</Wealth.reasonLow>
+  <!-- EN: {PAWN2_possessive} fabulous wealth -->
+  <Wealth.reasonVeryHigh>{PAWN2_possessive} fabulous wealth</Wealth.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} poverty -->
+  <Wealth.reasonVeryLow>{PAWN2_possessive} poverty</Wealth.reasonVeryLow>
+  <!-- EN: xeno -->
+  <Xeno.label>xeno</Xeno.label>
+  <!-- EN: {PAWN2_possessive} alienness -->
+  <Xeno.reasonHigh>{PAWN2_possessive} alienness</Xeno.reasonHigh>
+  <!-- EN: {PAWN2_possessive} alienness -->
+  <Xeno.reasonLow>{PAWN2_possessive} alienness</Xeno.reasonLow>
+  <!-- EN: {PAWN2_possessive} exotic alienness -->
+  <Xeno.reasonVeryHigh>{PAWN2_possessive} exotic alienness</Xeno.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} repulsive alienness -->
+  <Xeno.reasonVeryLow>{PAWN2_possessive} repulsive alienness</Xeno.reasonVeryLow>
+  <!-- EN: youth -->
+  <Youth.label>youth</Youth.label>
+  <!-- EN: {PAWN2_possessive} youth -->
+  <Youth.reasonHigh>{PAWN2_possessive} youth</Youth.reasonHigh>
+  <!-- EN: {PAWN2_possessive} immaturity -->
+  <Youth.reasonLow>{PAWN2_possessive} immaturity</Youth.reasonLow>
+  <!-- EN: {PAWN2_possessive} youth -->
+  <Youth.reasonVeryHigh>{PAWN2_possessive} youth</Youth.reasonVeryHigh>
+  <!-- EN: {PAWN2_possessive} immaturity -->
+  <Youth.reasonVeryLow>{PAWN2_possessive} immaturity</Youth.reasonVeryLow>
+</LanguageData>

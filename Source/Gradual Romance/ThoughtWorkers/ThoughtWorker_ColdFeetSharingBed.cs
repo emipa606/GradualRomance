@@ -15,7 +15,7 @@ public class ThoughtWorker_ColdFeetSharingBed : ThoughtWorker
 
         var bedPartners = from partner in pawn.ownership.OwnedBed.OwnersForReading
             where partner != pawn && RelationshipUtility.MostAdvancedRelationshipBetween(pawn, partner) != null &&
-                  RelationshipUtility.ShouldShareBed(pawn, partner) == false
+                  !RelationshipUtility.ShouldShareBed(pawn, partner)
             select partner;
         return !bedPartners.Any() ? ThoughtState.Inactive : ThoughtState.ActiveAtStage(0);
     }

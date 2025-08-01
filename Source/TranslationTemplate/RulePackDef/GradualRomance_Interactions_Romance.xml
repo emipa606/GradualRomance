@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] seemed responsive to [INITIATOR_nameDef].</li>
+    <li>sent->[RECIPIENT_nameDef] flirted back with [INITIATOR_nameDef].</li>
+    <li>sent->[RECIPIENT_nameDef] smiled at [INITIATOR_nameDef]'s flirt.</li>
+    <li>sent->[RECIPIENT_nameDef] returned [INITIATOR_nameDef]'s flirt.</li>
+  -->
+  <Sentence_FlirtAttemptAccepted.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] seemed responsive to [INITIATOR_nameDef].</li>
+    <li>sent->[RECIPIENT_nameDef] flirted back with [INITIATOR_nameDef].</li>
+    <li>sent->[RECIPIENT_nameDef] smiled at [INITIATOR_nameDef]'s flirt.</li>
+    <li>sent->[RECIPIENT_nameDef] returned [INITIATOR_nameDef]'s flirt.</li>
+  </Sentence_FlirtAttemptAccepted.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] didn't understand what [INITIATOR_nameDef] was saying.</li>
+    <li>sent->[RECIPIENT_nameDef] was oblivious.</li>
+    <li>sent->It went over [RECIPIENT_nameDef]'s head.</li>
+    <li>sent->[RECIPIENT_nameDef] responded politely, unaware of [INITIATOR_nameDef]'s attentions.</li>
+  -->
+  <Sentence_FlirtAttemptOblivious.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] didn't understand what [INITIATOR_nameDef] was saying.</li>
+    <li>sent->[RECIPIENT_nameDef] was oblivious.</li>
+    <li>sent->It went over [RECIPIENT_nameDef]'s head.</li>
+    <li>sent->[RECIPIENT_nameDef] responded politely, unaware of [INITIATOR_nameDef]'s attentions.</li>
+  </Sentence_FlirtAttemptOblivious.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] wasn't responsive.</li>
+    <li>sent->[RECIPIENT_nameDef] didn't respond.</li>
+    <li>sent->[RECIPIENT_nameDef] ignored [INITIATOR_nameDef].</li>
+    <li>sent->[RECIPIENT_nameDef] gave a minimal response.</li>
+    <li>sent->[RECIPIENT_nameDef] turned [INITIATOR_objective] down.</li>
+  -->
+  <Sentence_FlirtAttemptRejectedNeutral.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] wasn't responsive.</li>
+    <li>sent->[RECIPIENT_nameDef] didn't respond.</li>
+    <li>sent->[RECIPIENT_nameDef] ignored [INITIATOR_nameDef].</li>
+    <li>sent->[RECIPIENT_nameDef] gave a minimal response.</li>
+    <li>sent->[RECIPIENT_nameDef] turned [INITIATOR_objective] down.</li>
+  </Sentence_FlirtAttemptRejectedNeutral.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] responded with irritation.</li>
+    <li>sent->[RECIPIENT_nameDef] told [INITIATOR_nameDef] not to talk to [RECIPIENT_objective] again.</li>
+    <li>sent->[RECIPIENT_nameDef] interrupted [INITIATOR_nameDef] abruptly and declared [RECIPIENT_objective] wasn't interested.</li>
+  -->
+  <Sentence_FlirtAttemptRejectedOffended.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] responded with irritation.</li>
+    <li>sent->[RECIPIENT_nameDef] told [INITIATOR_nameDef] not to talk to [RECIPIENT_objective] again.</li>
+    <li>sent->[RECIPIENT_nameDef] interrupted [INITIATOR_nameDef] abruptly and declared [RECIPIENT_objective] wasn't interested.</li>
+  </Sentence_FlirtAttemptRejectedOffended.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_nameDef] muttered something noncommittal.</li>
+    <li>sent->[RECIPIENT_nameDef] politely said [RECIPIENT_pronoun] wasn't interested.</li>
+    <li>sent->[RECIPIENT_nameDef] listened patiently but said nothing.</li>
+    <li>sent->[RECIPIENT_nameDef] worded a very long, very complicated, very polite rejection.</li>
+    <li>sent->[RECIPIENT_nameDef] pretended [RECIPIENT_pronoun] didn't understand.</li>
+  -->
+  <Sentence_FlirtAttemptRejectedPolite.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_nameDef] muttered something noncommittal.</li>
+    <li>sent->[RECIPIENT_nameDef] politely said [RECIPIENT_pronoun] wasn't interested.</li>
+    <li>sent->[RECIPIENT_nameDef] listened patiently but said nothing.</li>
+    <li>sent->[RECIPIENT_nameDef] worded a very long, very complicated, very polite rejection.</li>
+    <li>sent->[RECIPIENT_nameDef] pretended [RECIPIENT_pronoun] didn't understand.</li>
+  </Sentence_FlirtAttemptRejectedPolite.rulePack.rulesStrings>
+</LanguageData>

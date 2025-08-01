@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: caught flirting with someone else -->
+  <CaughtFlirting.stages.caught_flirting_with_someone_else.label>caught flirting with someone else</CaughtFlirting.stages.caught_flirting_with_someone_else.label>
+  <!-- EN: tried flirting with my lover -->
+  <CaughtFlirtingWithLover.stages.tried_flirting_with_my_lover.label>tried flirting with my lover</CaughtFlirtingWithLover.stages.tried_flirting_with_my_lover.label>
+  <!-- EN: caught flirting with my lover -->
+  <CaughtFlirtingWithLover.stages.caught_flirting_with_my_lover.label>caught flirting with my lover</CaughtFlirtingWithLover.stages.caught_flirting_with_my_lover.label>
+  <!-- EN: cheated on by {0} -->
+  <CheatedOnMeHighOpinion.stages.cheated_on_by.label>cheated on by {0}</CheatedOnMeHighOpinion.stages.cheated_on_by.label>
+  <!-- EN: cheated on by {0} -->
+  <CheatedOnMeMoodHighOpinion.stages.cheated_on_by.label>cheated on by {0}</CheatedOnMeMoodHighOpinion.stages.cheated_on_by.label>
+  <!-- EN: I was cuckolded, but with someone I quite like. -->
+  <CheatedOnMeMoodHighOpinion.stages.cheated_on_by.description>I was cuckolded, but with someone I quite like.</CheatedOnMeMoodHighOpinion.stages.cheated_on_by.description>
+  <!-- EN: fooling around with someone else. -->
+  <CheatedOnMePolygamist.stages.fooling_around_with_someone_else.label>fooling around with someone else.</CheatedOnMePolygamist.stages.fooling_around_with_someone_else.label>
+  <!-- EN: My partner was fooling around with someone else. But what else would I have expected? They are a polygamist. -->
+  <CheatedOnMePolygamist.stages.fooling_around_with_someone_else.description>My partner was fooling around with someone else. But what else would I have expected? They are a polygamist.</CheatedOnMePolygamist.stages.fooling_around_with_someone_else.description>
+  <!-- EN: tolerated cheating -->
+  <CheatedOnMeTolerated.stages.tolerated_cheating.label>tolerated cheating</CheatedOnMeTolerated.stages.tolerated_cheating.label>
+  <!-- EN: tolerated cheating on by {0} -->
+  <CheatedOnMeToleratedMood.stages.tolerated_cheating_on_by.label>tolerated cheating on by {0}</CheatedOnMeToleratedMood.stages.tolerated_cheating_on_by.label>
+  <!-- EN: I don't like it, but it's not worth risking our relationship. -->
+  <CheatedOnMeToleratedMood.stages.tolerated_cheating_on_by.description>I don't like it, but it's not worth risking our relationship.</CheatedOnMeToleratedMood.stages.tolerated_cheating_on_by.description>
+  <!-- EN: firmly rejected -->
+  <FirmlyRejected.stages.firmly_rejected.label>firmly rejected</FirmlyRejected.stages.firmly_rejected.label>
+  <!-- EN: logical tension -->
+  <LogicalTension.stages.logical_tension.label>logical tension</LogicalTension.stages.logical_tension.label>
+  <!-- EN: my lover's lover -->
+  <LoversLover.stages.my_lovers_lover.label>my lover's lover</LoversLover.stages.my_lovers_lover.label>
+  <!-- EN: expressed disinterest -->
+  <RomanticDisinterest.stages.expressed_disinterest.label>expressed disinterest</RomanticDisinterest.stages.expressed_disinterest.label>
+  <!-- EN: They aren't particularly interested in me. Disappointing. -->
+  <RomanticDisinterest.stages.expressed_disinterest.description>They aren't particularly interested in me. Disappointing.</RomanticDisinterest.stages.expressed_disinterest.description>
+  <!-- EN: expressed interest -->
+  <RomanticInterest.stages.expressed_interest.label>expressed interest</RomanticInterest.stages.expressed_interest.label>
+  <!-- EN: They seem interested in me! Is this a budding romance? -->
+  <RomanticInterest.stages.expressed_interest.description>They seem interested in me! Is this a budding romance?</RomanticInterest.stages.expressed_interest.description>
+  <!-- EN: romantic tension -->
+  <RomanticTension.stages.romantic_tension.label>romantic tension</RomanticTension.stages.romantic_tension.label>
+  <!-- EN: sexual tension -->
+  <SexualTension.stages.sexual_tension.label>sexual tension</SexualTension.stages.sexual_tension.label>
+</LanguageData>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: ask to move in -->
+  <AskToMoveIn.label>ask to move in</AskToMoveIn.label>
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] to move in with [INITIATOR_objective].</li>
+  -->
+  <AskToMoveIn.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] asked [RECIPIENT_nameDef] to move in with [INITIATOR_objective].</li>
+  </AskToMoveIn.logRulesInitiator.rulesStrings>
+  <!-- EN: flirt -->
+  <Flirt.label>flirt</Flirt.label>
+  <!-- EN:
+    <li>r_logentry->[INITIATOR_nameDef] tried to flirt with [RECIPIENT_nameDef].</li>
+  -->
+  <Flirt.logRulesInitiator.rulesStrings>
+    <li>r_logentry->[INITIATOR_nameDef] tried to flirt with [RECIPIENT_nameDef].</li>
+  </Flirt.logRulesInitiator.rulesStrings>
+</LanguageData>

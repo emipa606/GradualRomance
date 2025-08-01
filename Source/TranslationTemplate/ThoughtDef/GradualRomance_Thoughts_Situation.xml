@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cold feet from sharing bed -->
+  <ColdFeetSharingBed.stages.cold_feet_from_sharing_bed.label>cold feet from sharing bed</ColdFeetSharingBed.stages.cold_feet_from_sharing_bed.label>
+  <!-- EN: Things are moving WAY too fast! This relationship isn't strong enough to share a bed. -->
+  <ColdFeetSharingBed.stages.cold_feet_from_sharing_bed.description>Things are moving WAY too fast! This relationship isn't strong enough to share a bed.</ColdFeetSharingBed.stages.cold_feet_from_sharing_bed.description>
+  <!-- EN: self-loathing from homophobia -->
+  <SelfLoathingHomophobic.stages.selfloathing_from_homophobia.label>self-loathing from homophobia</SelfLoathingHomophobic.stages.selfloathing_from_homophobia.label>
+  <!-- EN: I can't control my perverted, homosexual thoughts! -->
+  <SelfLoathingHomophobic.stages.selfloathing_from_homophobia.description>I can't control my perverted, homosexual thoughts!</SelfLoathingHomophobic.stages.selfloathing_from_homophobia.description>
+  <!-- EN: self-loathing from ugliness -->
+  <SelfLoathingSuperficial.stages.selfloathing_from_ugliness.label>self-loathing from ugliness</SelfLoathingSuperficial.stages.selfloathing_from_ugliness.label>
+  <!-- EN: I'm HIDEOUS! -->
+  <SelfLoathingSuperficial.stages.selfloathing_from_ugliness.description>I'm HIDEOUS!</SelfLoathingSuperficial.stages.selfloathing_from_ugliness.description>
+</LanguageData>

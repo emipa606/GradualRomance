@@ -1,46 +1,46 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
     <defName>GRGlobal</defName>
     <rulePack>
       <rulesStrings>
-        <li>crudefemalebodypart-&gt;tits</li>
-        <li>crudefemalebodypart-&gt;breasts</li>
-        <li>crudefemalebodypart-&gt;ass</li>
-        <li>crudefemalebodypart-&gt;legs</li>
-        <li>crudefemalebodypart-&gt;thighs</li>
-        <li>crudefemalebodypart-&gt;hips</li>
-        <li>crudemalebodypart-&gt;abs</li>
-        <li>crudemalebodypart-&gt;chest</li>
-        <li>crudemalebodypart-&gt;crotch</li>
-        <li>crudemalebodypart-&gt;package</li>
-        <li>crudemalebodypart-&gt;ass</li>
-        <li>crudemalebodypart-&gt;glutes</li>
-        <li>crudemalebodypart-&gt;biceps</li>
-        <li>insultfemale-&gt;bitch</li>
-        <li>insultfemale-&gt;witch</li>
-        <li>insultfemale-&gt;slut</li>
-        <li>insultfemale-&gt;harlot</li>
-        <li>insultfemale-&gt;battleaxe</li>
-        <li>insultfemale-&gt;shrew</li>
-        <li>insultfemale-&gt;prude</li>
-        <li>insultfemale-&gt;hag</li>
-        <li>insultfemale-&gt;tramp</li>
-        <li>insultfemale-&gt;bint</li>
-        <li>insultfemale-&gt;trollop</li>
-        <li>insultmale-&gt;cock</li>
-        <li>insultmale-&gt;dick</li>
-        <li>insultmale-&gt;wanker</li>
-        <li>insultmale-&gt;douche</li>
-        <li>insultmale-&gt;douchebag</li>
-        <li>insultmale-&gt;pansy</li>
-        <li>insultmale-&gt;ponce</li>
-        <li>insultmale-&gt;pussy</li>
-        <li>insultmale-&gt;bitch</li>
-        <li>insultmale-&gt;dog</li>
-        <li>lovelybodypart-&gt;eyes</li>
-        <li>lovelybodypart-&gt;hair</li>
-        <li>lovelybodypart-&gt;smile</li>
+        <li>crudefemalebodypart->tits</li>
+        <li>crudefemalebodypart->breasts</li>
+        <li>crudefemalebodypart->ass</li>
+        <li>crudefemalebodypart->legs</li>
+        <li>crudefemalebodypart->thighs</li>
+        <li>crudefemalebodypart->hips</li>
+        <li>crudemalebodypart->abs</li>
+        <li>crudemalebodypart->chest</li>
+        <li>crudemalebodypart->crotch</li>
+        <li>crudemalebodypart->package</li>
+        <li>crudemalebodypart->ass</li>
+        <li>crudemalebodypart->glutes</li>
+        <li>crudemalebodypart->biceps</li>
+        <li>insultfemale->bitch</li>
+        <li>insultfemale->witch</li>
+        <li>insultfemale->slut</li>
+        <li>insultfemale->harlot</li>
+        <li>insultfemale->battleaxe</li>
+        <li>insultfemale->shrew</li>
+        <li>insultfemale->prude</li>
+        <li>insultfemale->hag</li>
+        <li>insultfemale->tramp</li>
+        <li>insultfemale->bint</li>
+        <li>insultfemale->trollop</li>
+        <li>insultmale->cock</li>
+        <li>insultmale->dick</li>
+        <li>insultmale->wanker</li>
+        <li>insultmale->douche</li>
+        <li>insultmale->douchebag</li>
+        <li>insultmale->pansy</li>
+        <li>insultmale->ponce</li>
+        <li>insultmale->pussy</li>
+        <li>insultmale->bitch</li>
+        <li>insultmale->dog</li>
+        <li>lovelybodypart->eyes</li>
+        <li>lovelybodypart->hair</li>
+        <li>lovelybodypart->smile</li>
       </rulesStrings>
       <!--
     <rulesRaw>

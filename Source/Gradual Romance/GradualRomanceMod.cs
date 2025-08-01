@@ -111,17 +111,13 @@ public class GradualRomanceMod : ModBase
     }
     */
 
-    private static readonly Dictionary<ThingDef, SimpleCurve> maleSexDriveCurves =
-        new Dictionary<ThingDef, SimpleCurve>();
+    private static readonly Dictionary<ThingDef, SimpleCurve> maleSexDriveCurves = new();
 
-    private static readonly Dictionary<ThingDef, SimpleCurve> femaleSexDriveCurves =
-        new Dictionary<ThingDef, SimpleCurve>();
+    private static readonly Dictionary<ThingDef, SimpleCurve> femaleSexDriveCurves = new();
 
-    private static readonly Dictionary<ThingDef, SimpleCurve> maleMaturityCurves =
-        new Dictionary<ThingDef, SimpleCurve>();
+    private static readonly Dictionary<ThingDef, SimpleCurve> maleMaturityCurves = new();
 
-    private static readonly Dictionary<ThingDef, SimpleCurve> femaleMaturityCurves =
-        new Dictionary<ThingDef, SimpleCurve>();
+    private static readonly Dictionary<ThingDef, SimpleCurve> femaleMaturityCurves = new();
 
     private SettingHandle<AttractionCalculationSetting> settingAttractionCalculation;
     private SettingHandle<KinseyDescriptor> settingAverageKinseyFemale;
@@ -283,10 +279,7 @@ public class GradualRomanceMod : ModBase
             }
 
             def.comps.Add(new GRPawnComp_Properties());
-            if (def.modExtensions == null)
-            {
-                def.modExtensions = [];
-            }
+            def.modExtensions ??= [];
 
             if (!def.HasModExtension<XenoRomanceExtension>())
             {

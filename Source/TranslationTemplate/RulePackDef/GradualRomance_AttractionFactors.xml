@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] admired [RECIPIENT_possessive] power and ability.</li>
+  -->
+  <Intrigued_Ability.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] admired [RECIPIENT_possessive] power and ability.</li>
+  </Intrigued_Ability.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] mostly wanted to cheat on [INITIATOR_possessive] significant other.</li>
+  -->
+  <Intrigued_AffairReluctance.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] mostly wanted to cheat on [INITIATOR_possessive] significant other.</li>
+  </Intrigued_AffairReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was excited to interact with someone [INTIATOR_recipient] own age.</li>
+  -->
+  <Intrigued_AgeDifference.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was excited to interact with someone [INTIATOR_recipient] own age.</li>
+  </Intrigued_AgeDifference.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was captivated by [RECIPIENT_possessive] beauty.</li>
+  -->
+  <Intrigued_Beauty.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was captivated by [RECIPIENT_possessive] beauty.</li>
+  </Intrigued_Beauty.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] couldn't take [INITIATOR_possessive] eyes off [RECIPIENT_possessive] body.</li>
+  -->
+  <Intrigued_Body.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] couldn't take [INITIATOR_possessive] eyes off [RECIPIENT_possessive] body.</li>
+  </Intrigued_Body.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] basked in [RECIPIENT_possessive] powerful breath.</li>
+  -->
+  <Intrigued_Breathing.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] basked in [RECIPIENT_possessive] powerful breath.</li>
+  </Intrigued_Breathing.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] couldn't stop staring at [RECIPIENT_possessive] admirable technology.</li>
+  -->
+  <Intrigued_Cybernetics.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] couldn't stop staring at [RECIPIENT_possessive] admirable technology.</li>
+  </Intrigued_Cybernetics.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] thought [RECIPIENT_pronoun] was a badass.</li>
+  -->
+  <Intrigued_Depravity.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] thought [RECIPIENT_pronoun] was a badass.</li>
+  </Intrigued_Depravity.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] really just wanted a woman.</li>
+  -->
+  <Intrigued_Femaleness.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] really just wanted a woman.</li>
+  </Intrigued_Femaleness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was desperate for a connection with a woman.</li>
+  -->
+  <Intrigued_FemaleRelationshipReluctance.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was desperate for a connection with a woman.</li>
+  </Intrigued_FemaleRelationshipReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] wanted to get to know this strange foreigner better.</li>
+  -->
+  <Intrigued_Foreigness.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] wanted to get to know this strange foreigner better.</li>
+  </Intrigued_Foreigness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] breathed in deeply [RECIPIENT_possessive] wonderful musk.</li>
+  -->
+  <Intrigued_Hygiene.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] breathed in deeply [RECIPIENT_possessive] wonderful musk.</li>
+  </Intrigued_Hygiene.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was one of the few with pure, clean blood.</li>
+  -->
+  <Intrigued_Incest.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was one of the few with pure, clean blood.</li>
+  </Intrigued_Incest.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] really just wanted a man.</li>
+  -->
+  <Intrigued_Maleness.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] really just wanted a man.</li>
+  </Intrigued_Maleness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was desperate for a connection with a man.</li>
+  -->
+  <Intrigued_MaleRelationshipReluctance.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was desperate for a connection with a man.</li>
+  </Intrigued_MaleRelationshipReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] admired [RECIPIENT_possessive] moral fortitude and courage.</li>
+  -->
+  <Intrigued_Morality.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] admired [RECIPIENT_possessive] moral fortitude and courage.</li>
+  </Intrigued_Morality.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was pulled in by [RECIPIENT_possessive] maturity.</li>
+  -->
+  <Intrigued_OldAge.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was pulled in by [RECIPIENT_possessive] maturity.</li>
+  </Intrigued_OldAge.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was moved by [INITIATOR_possessive] deep feelings for [INITIATOR_objective].</li>
+  -->
+  <Intrigued_Opinion.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was moved by [INITIATOR_possessive] deep feelings for [INITIATOR_objective].</li>
+  </Intrigued_Opinion.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was driven to desperation by the lack of eligible partners.</li>
+  -->
+  <Intrigued_Options.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was driven to desperation by the lack of eligible partners.</li>
+  </Intrigued_Options.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was curious about [RECIPIENT_possessive] polygamist lifestyle.</li>
+  -->
+  <Intrigued_Polygamist.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was curious about [RECIPIENT_possessive] polygamist lifestyle.</li>
+  </Intrigued_Polygamist.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was very popular.</li>
+  -->
+  <Intrigued_Popularity.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] knew that [RECIPIENT_pronoun] was very popular.</li>
+  </Intrigued_Popularity.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was desperate for a connection and a partner.</li>
+  -->
+  <Intrigued_RomanticDrive.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was desperate for a connection and a partner.</li>
+  </Intrigued_RomanticDrive.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] found [RECIPIENT_possessive] scars mysterious and beautiful.</li>
+  -->
+  <Intrigued_Scars.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] found [RECIPIENT_possessive] scars mysterious and beautiful.</li>
+  </Intrigued_Scars.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was compelled by [INITIATOR_possessive] intense sex drive.</li>
+  -->
+  <Intrigued_SexDrive.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was compelled by [INITIATOR_possessive] intense sex drive.</li>
+  </Intrigued_SexDrive.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was impressed by [RECIPIENT_possessive] skill and aptitude.</li>
+  -->
+  <Intrigued_Skill.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was impressed by [RECIPIENT_possessive] skill and aptitude.</li>
+  </Intrigued_Skill.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] really wanted a few more commitments.</li>
+  -->
+  <Intrigued_TooManyRelationships.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] really wanted a few more commitments.</li>
+  </Intrigued_TooManyRelationships.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] just wanted to hear [RECIPIENT_possessive] rich, warm voice.</li>
+  -->
+  <Intrigued_Voice.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] just wanted to hear [RECIPIENT_possessive] rich, warm voice.</li>
+  </Intrigued_Voice.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was after [RECIPIENT_possessive] wealth.</li>
+  -->
+  <Intrigued_Wealth.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was after [RECIPIENT_possessive] wealth.</li>
+  </Intrigued_Wealth.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] loved that [RECIPIENT_pronoun] was a mysterious alien.</li>
+  -->
+  <Intrigued_Xeno.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] loved that [RECIPIENT_pronoun] was a mysterious alien.</li>
+  </Intrigued_Xeno.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[INITIATOR_pronoun] was intrigued by [RECIPIENT_possessive] youthful charm.</li>
+  -->
+  <Intrigued_Youth.rulePack.rulesStrings>
+    <li>sent->[INITIATOR_pronoun] was intrigued by [RECIPIENT_possessive] youthful charm.</li>
+  </Intrigued_Youth.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was unimpressed by [INITIATOR_possessive] weakness.</li>
+  -->
+  <ReactionNegative_Ability.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was unimpressed by [INITIATOR_possessive] weakness.</li>
+  </ReactionNegative_Ability.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] wasn't about to throw away [RECIPIENT_possessive] current relationship.</li>
+  -->
+  <ReactionNegative_AffairReluctance.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] wasn't about to throw away [RECIPIENT_possessive] current relationship.</li>
+  </ReactionNegative_AffairReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] thought their age difference was too great.</li>
+  -->
+  <ReactionNegative_AgeDifference.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] thought their age difference was too great.</li>
+  </ReactionNegative_AgeDifference.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] ugliness.</li>
+  -->
+  <ReactionNegative_Beauty.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] ugliness.</li>
+  </ReactionNegative_Beauty.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] unattractive body.</li>
+  -->
+  <ReactionNegative_Body.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] unattractive body.</li>
+  </ReactionNegative_Body.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had shivers down [RECIPIENT_possessive] spine listening to [INITIATOR_possessive] breath.</li>
+  -->
+  <ReactionNegative_Breathing.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had shivers down [RECIPIENT_possessive] spine listening to [INITIATOR_possessive] breath.</li>
+  </ReactionNegative_Breathing.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] considered [INITIATOR_nameDef] a cyborg abomination!</li>
+  -->
+  <ReactionNegative_Cybernetics.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] considered [INITIATOR_nameDef] a cyborg abomination!</li>
+  </ReactionNegative_Cybernetics.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so depraved.</li>
+  -->
+  <ReactionNegative_Depravity.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so depraved.</li>
+  </ReactionNegative_Depravity.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] wouldn't consider being with a woman.</li>
+  -->
+  <ReactionNegative_Femaleness.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] wouldn't consider being with a woman.</li>
+  </ReactionNegative_Femaleness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had little desire to be romantic with a woman.</li>
+  -->
+  <ReactionNegative_FemaleRelationshipReluctance.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had little desire to be romantic with a woman.</li>
+  </ReactionNegative_FemaleRelationshipReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] would never accept an advance from a foreigner.</li>
+  -->
+  <ReactionNegative_Foreigness.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] would never accept an advance from a foreigner.</li>
+  </ReactionNegative_Foreigness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was shocked by [INITIATOR_possessive] lack of hygiene.</li>
+  -->
+  <ReactionNegative_Hygiene.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was shocked by [INITIATOR_possessive] lack of hygiene.</li>
+  </ReactionNegative_Hygiene.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] couldn't believe [INITIATOR_nameDef] would hit on a blood relative.</li>
+  -->
+  <ReactionNegative_Incest.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] couldn't believe [INITIATOR_nameDef] would hit on a blood relative.</li>
+  </ReactionNegative_Incest.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] wouldn't consider being with a man.</li>
+  -->
+  <ReactionNegative_Maleness.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] wouldn't consider being with a man.</li>
+  </ReactionNegative_Maleness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had little desire to be romantic with a man.</li>
+  -->
+  <ReactionNegative_MaleRelationshipReluctance.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had little desire to be romantic with a man.</li>
+  </ReactionNegative_MaleRelationshipReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so weak and sentimental.</li>
+  -->
+  <ReactionNegative_Morality.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] would never associate [RECIPIENT_objective]self with someone so weak and sentimental.</li>
+  </ReactionNegative_Morality.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was too old.</li>
+  -->
+  <ReactionNegative_OldAge.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was too old.</li>
+  </ReactionNegative_OldAge.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had little regard for [INITIATOR_objective].</li>
+  -->
+  <ReactionNegative_Opinion.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had little regard for [INITIATOR_objective].</li>
+  </ReactionNegative_Opinion.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had better options.</li>
+  -->
+  <ReactionNegative_Options.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had better options.</li>
+  </ReactionNegative_Options.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] didn't want to join [INITIATOR_possessive] harem.</li>
+  -->
+  <ReactionNegative_Polygamist.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] didn't want to join [INITIATOR_possessive] harem.</li>
+  </ReactionNegative_Polygamist.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] couldn't possibly get intimate with someone so unpopular.</li>
+  -->
+  <ReactionNegative_Popularity.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] couldn't possibly get intimate with someone so unpopular.</li>
+  </ReactionNegative_Popularity.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] wasn't ready for any messy romantic entanglements.</li>
+  -->
+  <ReactionNegative_RomanticDrive.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] wasn't ready for any messy romantic entanglements.</li>
+  </ReactionNegative_RomanticDrive.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] hideous scars.</li>
+  -->
+  <ReactionNegative_Scars.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was repelled by [INITIATOR_possessive] hideous scars.</li>
+  </ReactionNegative_Scars.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] didn't really feel the need to get close to anyone.</li>
+  -->
+  <ReactionNegative_SexDrive.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] didn't really feel the need to get close to anyone.</li>
+  </ReactionNegative_SexDrive.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] wasn't impressed by [INITIATOR_nameDef]'s lack of marketable skills.</li>
+  -->
+  <ReactionNegative_Skill.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] wasn't impressed by [INITIATOR_nameDef]'s lack of marketable skills.</li>
+  </ReactionNegative_Skill.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was involved with too many people to add one more.</li>
+  -->
+  <ReactionNegative_TooManyRelationships.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was involved with too many people to add one more.</li>
+  </ReactionNegative_TooManyRelationships.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] couldn't listen to [INITIATOR_possessive] annoying voice any longer.</li>
+  -->
+  <ReactionNegative_Voice.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] couldn't listen to [INITIATOR_possessive] annoying voice any longer.</li>
+  </ReactionNegative_Voice.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] didn't have time for paupers.</li>
+  -->
+  <ReactionNegative_Wealth.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] didn't have time for paupers.</li>
+  </ReactionNegative_Wealth.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] wouldn't consider an advance by such an alien.</li>
+  -->
+  <ReactionNegative_Xeno.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] wouldn't consider an advance by such an alien.</li>
+  </ReactionNegative_Xeno.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] found [INITIATOR_objective] immature.</li>
+  -->
+  <ReactionNegative_Youth.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] found [INITIATOR_objective] immature.</li>
+  </ReactionNegative_Youth.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] admired [INITIATOR_possessive] powerful and ability.</li>
+  -->
+  <ReactionPositive_Ability.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] admired [INITIATOR_possessive] powerful and ability.</li>
+  </ReactionPositive_Ability.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] took this as an opportunity to spite [RECIPIENT_possessive] significant other.</li>
+  -->
+  <ReactionPositive_AffairReluctance.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] took this as an opportunity to spite [RECIPIENT_possessive] significant other.</li>
+  </ReactionPositive_AffairReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] like that [INITIATOR_pronoun] was [RECIPIENT_possessive] own age.</li>
+  -->
+  <ReactionPositive_AgeDifference.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] like that [INITIATOR_pronoun] was [RECIPIENT_possessive] own age.</li>
+  </ReactionPositive_AgeDifference.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was taken by [INITIATOR_possessive] beauty.</li>
+  -->
+  <ReactionPositive_Beauty.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was taken by [INITIATOR_possessive] beauty.</li>
+  </ReactionPositive_Beauty.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was mostly intrigued by [INITIATOR_possessive] sexy body.</li>
+  -->
+  <ReactionPositive_Body.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was mostly intrigued by [INITIATOR_possessive] sexy body.</li>
+  </ReactionPositive_Body.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] basked in [INTITIATOR_possessive] powerful breath.</li>
+  -->
+  <ReactionPositive_Breathing.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] basked in [INTITIATOR_possessive] powerful breath.</li>
+  </ReactionPositive_Breathing.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] admired [INITIATOR_nameDef]'s tech.</li>
+  -->
+  <ReactionPositive_Cybernetics.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] admired [INITIATOR_nameDef]'s tech.</li>
+  </ReactionPositive_Cybernetics.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had a weakness for bad guys.</li>
+  -->
+  <ReactionPositive_Depravity.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had a weakness for bad guys.</li>
+  </ReactionPositive_Depravity.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was desperate for a woman.</li>
+  -->
+  <ReactionPositive_Femaleness.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was desperate for a woman.</li>
+  </ReactionPositive_Femaleness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was desperate for a connection with a woman.</li>
+  -->
+  <ReactionPositive_FemaleRelationshipReluctance.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was desperate for a connection with a woman.</li>
+  </ReactionPositive_FemaleRelationshipReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was drawn by [INITIATOR_possessive] foreign ways.</li>
+  -->
+  <ReactionPositive_Foreigness.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was drawn by [INITIATOR_possessive] foreign ways.</li>
+  </ReactionPositive_Foreigness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] could barely think with all that musk.</li>
+  -->
+  <ReactionPositive_Hygiene.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] could barely think with all that musk.</li>
+  </ReactionPositive_Hygiene.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] commiserated with [INITIATOR_possessive] pure blood.</li>
+  -->
+  <ReactionPositive_Incest.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] commiserated with [INITIATOR_possessive] pure blood.</li>
+  </ReactionPositive_Incest.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was desperate for a man.</li>
+  -->
+  <ReactionPositive_Maleness.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was desperate for a man.</li>
+  </ReactionPositive_Maleness.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was desperate for a connection with a man.</li>
+  -->
+  <ReactionPositive_MaleRelationshipReluctance.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was desperate for a connection with a man.</li>
+  </ReactionPositive_MaleRelationshipReluctance.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had a weakness for good guys.</li>
+  -->
+  <ReactionPositive_Morality.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had a weakness for good guys.</li>
+  </ReactionPositive_Morality.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was mature and dignified.</li>
+  -->
+  <ReactionPositive_OldAge.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] thought [INITIATOR_pronoun] was mature and dignified.</li>
+  </ReactionPositive_OldAge.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had deep feelings for [INITIATOR_objective], and responded accordingly.</li>
+  -->
+  <ReactionPositive_Opinion.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had deep feelings for [INITIATOR_objective], and responded accordingly.</li>
+  </ReactionPositive_Opinion.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] knew [RECIPIENT_pronoun] had few choices.</li>
+  -->
+  <ReactionPositive_Options.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] knew [RECIPIENT_pronoun] had few choices.</li>
+  </ReactionPositive_Options.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was curious about [INITIATOR_possessive] polygamist lifestyle.</li>
+  -->
+  <ReactionPositive_Polygamist.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was curious about [INITIATOR_possessive] polygamist lifestyle.</li>
+  </ReactionPositive_Polygamist.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] liked [INITIATOR_possessive] popularity.</li>
+  -->
+  <ReactionPositive_Popularity.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] liked [INITIATOR_possessive] popularity.</li>
+  </ReactionPositive_Popularity.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was desperate for a connection and a partner.</li>
+  -->
+  <ReactionPositive_RomanticDrive.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was desperate for a connection and a partner.</li>
+  </ReactionPositive_RomanticDrive.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] found [INITIATOR_possessive] scars mysterious and beautiful.</li>
+  -->
+  <ReactionPositive_Scars.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] found [INITIATOR_possessive] scars mysterious and beautiful.</li>
+  </ReactionPositive_Scars.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] basically wanted to have sex with someone... anyone.</li>
+  -->
+  <ReactionPositive_SexDrive.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] basically wanted to have sex with someone... anyone.</li>
+  </ReactionPositive_SexDrive.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] liked that [INITIATOR_nameDef] was so skillful.</li>
+  -->
+  <ReactionPositive_Skill.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] liked that [INITIATOR_nameDef] was so skillful.</li>
+  </ReactionPositive_Skill.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] really wanted a few more commitments.</li>
+  -->
+  <ReactionPositive_TooManyRelationships.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] really wanted a few more commitments.</li>
+  </ReactionPositive_TooManyRelationships.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] had to obey [INITIATOR_possessive] musical voice.</li>
+  -->
+  <ReactionPositive_Voice.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] had to obey [INITIATOR_possessive] musical voice.</li>
+  </ReactionPositive_Voice.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] considered carefully [INITIATOR_possessive] wealth before responding.</li>
+  -->
+  <ReactionPositive_Wealth.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] considered carefully [INITIATOR_possessive] wealth before responding.</li>
+  </ReactionPositive_Wealth.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was curious about [INTIATOR_possessive] alieness.</li>
+  -->
+  <ReactionPositive_Xeno.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was curious about [INTIATOR_possessive] alieness.</li>
+  </ReactionPositive_Xeno.rulePack.rulesStrings>
+  <!-- EN:
+    <li>sent->[RECIPIENT_pronoun] was charmed by [INITIATOR_possessive] youth.</li>
+  -->
+  <ReactionPositive_Youth.rulePack.rulesStrings>
+    <li>sent->[RECIPIENT_pronoun] was charmed by [INITIATOR_possessive] youth.</li>
+  </ReactionPositive_Youth.rulePack.rulesStrings>
+</LanguageData>

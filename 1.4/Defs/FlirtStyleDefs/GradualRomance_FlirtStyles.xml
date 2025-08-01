@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <Gradual_Romance.FlirtStyleDef>
     <defName>Aggressive</defName>
@@ -576,11 +576,11 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [harassed] [RECIPIENT_possessive] [crudefemalebodypart].</li>
-        <li>harrassed-&gt;pinched</li>
-        <li>harrassed-&gt;stroked</li>
-        <li>harrassed-&gt;slapped</li>
-        <li>harrassed-&gt;groped</li>
+        <li>sent->[INITIATOR_pronoun] [harassed] [RECIPIENT_possessive] [crudefemalebodypart].</li>
+        <li>harrassed->pinched</li>
+        <li>harrassed->stroked</li>
+        <li>harrassed->slapped</li>
+        <li>harrassed->groped</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -591,11 +591,11 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [harrassed] [RECIPIENT_possessive] [crudemalebodypart].</li>
-        <li>harrassed-&gt;pinched</li>
-        <li>harrassed-&gt;stroked</li>
-        <li>harrassed-&gt;slapped</li>
-        <li>harrassed-&gt;groped</li>
+        <li>sent->[INITIATOR_pronoun] [harrassed] [RECIPIENT_possessive] [crudemalebodypart].</li>
+        <li>harrassed->pinched</li>
+        <li>harrassed->stroked</li>
+        <li>harrassed->slapped</li>
+        <li>harrassed->groped</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -606,14 +606,14 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [demanded] why [whyohwhy].</li>
-        <li>demanded-&gt;demanded</li>
-        <li>demanded-&gt;ranted, asking</li>
-        <li>demanded-&gt;interrogated [RECIPIENT_objective]</li>
-        <li>demanded-&gt;cornered [RECIPIENT_objective], asking</li>
-        <li>whyohwhy-&gt;[RECIPIENT_pronoun] kept ignoring [INITIATOR_objective]</li>
-        <li>whyohwhy-&gt;[RECIPIENT_pronoun] wouldn't even look at [INITIATOR_objective]</li>
-        <li>whyohwhy-&gt;[RECIPIENT_pronoun] is acting like such a [insultfemale]</li>
+        <li>sent->[INITIATOR_pronoun] [demanded] why [whyohwhy].</li>
+        <li>demanded->demanded</li>
+        <li>demanded->ranted, asking</li>
+        <li>demanded->interrogated [RECIPIENT_objective]</li>
+        <li>demanded->cornered [RECIPIENT_objective], asking</li>
+        <li>whyohwhy->[RECIPIENT_pronoun] kept ignoring [INITIATOR_objective]</li>
+        <li>whyohwhy->[RECIPIENT_pronoun] wouldn't even look at [INITIATOR_objective]</li>
+        <li>whyohwhy->[RECIPIENT_pronoun] is acting like such a [insultfemale]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -624,14 +624,14 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [demanded] why [whyohwhy].</li>
-        <li>demanded-&gt;demanded</li>
-        <li>demanded-&gt;ranted, asking</li>
-        <li>demanded-&gt;interrogated [RECIPIENT_objective]</li>
-        <li>demanded-&gt;cornered [RECIPIENT_objective], asking</li>
-        <li>whyohwhy-&gt;[RECIPIENT_pronoun] kept ignoring [INITIATOR_objective]</li>
-        <li>whyohwhy-&gt;[RECIPIENT_pronoun] wouldn't even look at [INITIATOR_objective]</li>
-        <li>whyohwhy-&gt;[RECIPIENT_pronoun] was acting like such a [insultmale]</li>
+        <li>sent->[INITIATOR_pronoun] [demanded] why [whyohwhy].</li>
+        <li>demanded->demanded</li>
+        <li>demanded->ranted, asking</li>
+        <li>demanded->interrogated [RECIPIENT_objective]</li>
+        <li>demanded->cornered [RECIPIENT_objective], asking</li>
+        <li>whyohwhy->[RECIPIENT_pronoun] kept ignoring [INITIATOR_objective]</li>
+        <li>whyohwhy->[RECIPIENT_pronoun] wouldn't even look at [INITIATOR_objective]</li>
+        <li>whyohwhy->[RECIPIENT_pronoun] was acting like such a [insultmale]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -642,13 +642,13 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] tried to compliment [RECIPIENT_possessive] [PersonalCharacteristics] but ended up accidentally insulting [RECIPIENT_objective] instead.</li>
-        <li>sent-&gt;[INITIATOR_pronoun] [stammered] a pickup line that sounded a lot better in [INITIATOR_possessive] head.</li>
-        <li>sent-&gt;[INITIATOR_pronoun] [stammered] a joke about [INITIATOR_possessive] [crudefemalebodypart].</li>
-        <li>stammered-&gt;stammered</li>
-        <li>stammered-&gt;stuttered</li>
-        <li>stammered-&gt;muttered</li>
-        <li>stammered-&gt;whispered</li>
+        <li>sent->[INITIATOR_pronoun] tried to compliment [RECIPIENT_possessive] [PersonalCharacteristics] but ended up accidentally insulting [RECIPIENT_objective] instead.</li>
+        <li>sent->[INITIATOR_pronoun] [stammered] a pickup line that sounded a lot better in [INITIATOR_possessive] head.</li>
+        <li>sent->[INITIATOR_pronoun] [stammered] a joke about [INITIATOR_possessive] [crudefemalebodypart].</li>
+        <li>stammered->stammered</li>
+        <li>stammered->stuttered</li>
+        <li>stammered->muttered</li>
+        <li>stammered->whispered</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -659,13 +659,13 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] tried to compliment [RECIPIENT_possessive] [PersonalCharacteristics] but ended up accidentally insulting [RECIPIENT_objective] instead.</li>
-        <li>sent-&gt;[INITIATOR_pronoun] [stammered] a pickup line that sounded a lot better in [INITIATOR_possessive] head.</li>
-        <li>sent-&gt;[INITIATOR_pronoun] [stammered] a joke about [INITIATOR_possessive] [crudemalebodypart].</li>
-        <li>stammered-&gt;stammered</li>
-        <li>stammered-&gt;stuttered</li>
-        <li>stammered-&gt;muttered</li>
-        <li>stammered-&gt;whispered</li>
+        <li>sent->[INITIATOR_pronoun] tried to compliment [RECIPIENT_possessive] [PersonalCharacteristics] but ended up accidentally insulting [RECIPIENT_objective] instead.</li>
+        <li>sent->[INITIATOR_pronoun] [stammered] a pickup line that sounded a lot better in [INITIATOR_possessive] head.</li>
+        <li>sent->[INITIATOR_pronoun] [stammered] a joke about [INITIATOR_possessive] [crudemalebodypart].</li>
+        <li>stammered->stammered</li>
+        <li>stammered->stuttered</li>
+        <li>stammered->muttered</li>
+        <li>stammered->whispered</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -676,19 +676,19 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [postured] and [begged] for [RECIPIENT_pronoun] [love].</li>
-        <li>postured-&gt;got on [INITIATOR_possessive] knees</li>
-        <li>postured-&gt;knelt</li>
-        <li>postured-&gt;bowed</li>
-        <li>postured-&gt;knelt before [RECIPIENT_objective]</li>
-        <li>begged-&gt;begged</li>
-        <li>begged-&gt;weeped</li>
-        <li>begged-&gt;pleaded</li>
-        <li>begged-&gt;whined</li>
-        <li>love-&gt;love</li>
-        <li>love-&gt;affections</li>
-        <li>love-&gt;feelings</li>
-        <li>love-&gt;favor</li>
+        <li>sent->[INITIATOR_pronoun] [postured] and [begged] for [RECIPIENT_pronoun] [love].</li>
+        <li>postured->got on [INITIATOR_possessive] knees</li>
+        <li>postured->knelt</li>
+        <li>postured->bowed</li>
+        <li>postured->knelt before [RECIPIENT_objective]</li>
+        <li>begged->begged</li>
+        <li>begged->weeped</li>
+        <li>begged->pleaded</li>
+        <li>begged->whined</li>
+        <li>love->love</li>
+        <li>love->affections</li>
+        <li>love->feelings</li>
+        <li>love->favor</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -699,16 +699,16 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] whistled at [RECIPIENT_possessive] [crudefemalebodypart].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] [comment] [RECIPIENT_possessive] [sexy] [crudefemalebodypart].</li>
-        <li>comment-&gt;remarked on</li>
-        <li>comment-&gt;commented about</li>
-        <li>comment-&gt;joked about</li>
-        <li>sexy-&gt;sexy</li>
-        <li>sexy-&gt;hot</li>
-        <li>sexy-&gt;beautiful</li>
-        <li>sexy-&gt;smoking</li>
-        <li>sexy-&gt;fit</li>
+        <li>sent->[INITIATOR_pronoun] whistled at [RECIPIENT_possessive] [crudefemalebodypart].</li>
+        <li>sent->[INITIATOR_pronoun] [comment] [RECIPIENT_possessive] [sexy] [crudefemalebodypart].</li>
+        <li>comment->remarked on</li>
+        <li>comment->commented about</li>
+        <li>comment->joked about</li>
+        <li>sexy->sexy</li>
+        <li>sexy->hot</li>
+        <li>sexy->beautiful</li>
+        <li>sexy->smoking</li>
+        <li>sexy->fit</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -719,16 +719,16 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] whistled at [RECIPIENT_possessive] [crudemalebodypart].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] [comment] [RECIPIENT_possessive] [sexy] [crudemalebodypart].</li>
-        <li>comment-&gt;remarked on</li>
-        <li>comment-&gt;commented about</li>
-        <li>comment-&gt;joked about</li>
-        <li>sexy-&gt;sexy</li>
-        <li>sexy-&gt;hot</li>
-        <li>sexy-&gt;beautiful</li>
-        <li>sexy-&gt;smoking</li>
-        <li>sexy-&gt;fit</li>
+        <li>sent->[INITIATOR_pronoun] whistled at [RECIPIENT_possessive] [crudemalebodypart].</li>
+        <li>sent->[INITIATOR_pronoun] [comment] [RECIPIENT_possessive] [sexy] [crudemalebodypart].</li>
+        <li>comment->remarked on</li>
+        <li>comment->commented about</li>
+        <li>comment->joked about</li>
+        <li>sexy->sexy</li>
+        <li>sexy->hot</li>
+        <li>sexy->beautiful</li>
+        <li>sexy->smoking</li>
+        <li>sexy->fit</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -739,16 +739,16 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [stammered] [INITIATOR_possessive] [confession] for [RECIPIENT_objective].</li>
-        <li>stammered-&gt;stammered</li>
-        <li>stammered-&gt;stuttered</li>
-        <li>stammered-&gt;raved about</li>
-        <li>stammered-&gt;confessed breathlessly</li>
-        <li>stammered-&gt;meandered endlessly</li>
-        <li>stammered-&gt;declared</li>
-        <li>confession-&gt;eternal devotion</li>
-        <li>confession-&gt;love</li>
-        <li>confession-&gt;feelings</li>
+        <li>sent->[INITIATOR_pronoun] [stammered] [INITIATOR_possessive] [confession] for [RECIPIENT_objective].</li>
+        <li>stammered->stammered</li>
+        <li>stammered->stuttered</li>
+        <li>stammered->raved about</li>
+        <li>stammered->confessed breathlessly</li>
+        <li>stammered->meandered endlessly</li>
+        <li>stammered->declared</li>
+        <li>confession->eternal devotion</li>
+        <li>confession->love</li>
+        <li>confession->feelings</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -759,15 +759,15 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] offered [assistance].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] asked if [needed_anything].</li>
-        <li>assistance-&gt;to help with any chores that [RECIPIENT_pronoun] might have</li>
-        <li>assistance-&gt;[INITIATOR_possessive] assistance to [RECIPIENT_pronoun]</li>
-        <li>assistance-&gt;to lend [INITIATOR_possessive] hand if [RECIPIENT_pronoun] needed any help</li>
-        <li>assistance-&gt;to give any help that [RECIPIENT_pronoun] required</li>
-        <li>needed_anything-&gt;[RECIPIENT_pronoun] needed anything</li>
-        <li>needed_anything-&gt;there was anything [INTIATOR_pronoun] could do for [RECIPIENT_objective]</li>
-        <li>needed_anything-&gt;[RECIPIENT_pronoun] was getting along and whether [RECIPIENT_pronoun] needed anything</li>
+        <li>sent->[INITIATOR_pronoun] offered [assistance].</li>
+        <li>sent->[INITIATOR_pronoun] asked if [needed_anything].</li>
+        <li>assistance->to help with any chores that [RECIPIENT_pronoun] might have</li>
+        <li>assistance->[INITIATOR_possessive] assistance to [RECIPIENT_pronoun]</li>
+        <li>assistance->to lend [INITIATOR_possessive] hand if [RECIPIENT_pronoun] needed any help</li>
+        <li>assistance->to give any help that [RECIPIENT_pronoun] required</li>
+        <li>needed_anything->[RECIPIENT_pronoun] needed anything</li>
+        <li>needed_anything->there was anything [INTIATOR_pronoun] could do for [RECIPIENT_objective]</li>
+        <li>needed_anything->[RECIPIENT_pronoun] was getting along and whether [RECIPIENT_pronoun] needed anything</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -778,15 +778,15 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [argued] why [course_of_action].</li>
-        <li>argued-&gt;lectured at length</li>
-        <li>argued-&gt;laid out a list of points</li>
-        <li>argued-&gt;reasoned</li>
-        <li>argued-&gt;explained</li>
-        <li>course_of_action-&gt;they are perfect together</li>
-        <li>course_of_action-&gt;they should be together</li>
-        <li>course_of_action-&gt;they should start dating</li>
-        <li>course_of_action-&gt;[RECIPIENT_pronoun] is the best person for [INITIATOR_objective]</li>
+        <li>sent->[INITIATOR_pronoun] [argued] why [course_of_action].</li>
+        <li>argued->lectured at length</li>
+        <li>argued->laid out a list of points</li>
+        <li>argued->reasoned</li>
+        <li>argued->explained</li>
+        <li>course_of_action->they are perfect together</li>
+        <li>course_of_action->they should be together</li>
+        <li>course_of_action->they should start dating</li>
+        <li>course_of_action->[RECIPIENT_pronoun] is the best person for [INITIATOR_objective]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -797,11 +797,11 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [romantic_gesture] [RECIPIENT_objective].</li>
-        <li>romantic_gesture-&gt;whispered sweet nothings to</li>
-        <li>romantic_gesture-&gt;confessed tender feelings toward</li>
-        <li>romantic_gesture-&gt;told how much [INITIATOR_pronoun] loved</li>
-        <li>romantic_gesture-&gt;recited poetry to</li>
+        <li>sent->[INITIATOR_pronoun] [romantic_gesture] [RECIPIENT_objective].</li>
+        <li>romantic_gesture->whispered sweet nothings to</li>
+        <li>romantic_gesture->confessed tender feelings toward</li>
+        <li>romantic_gesture->told how much [INITIATOR_pronoun] loved</li>
+        <li>romantic_gesture->recited poetry to</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -812,13 +812,13 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [stammered] something about [RECIPIENT_nameDef]'s [PersonalCharacteristics].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] was so nervous that [INITIATOR_pronoun] could barely say a word.</li>
-        <li>sent-&gt;[INITIATOR_pronoun] botched [INITIATOR_possessive] rehearsed lines and [stammered] incoherently instead.</li>
-        <li>stammered-&gt;stammered</li>
-        <li>stammered-&gt;stuttered</li>
-        <li>stammered-&gt;muttered</li>
-        <li>stammered-&gt;whispered</li>
+        <li>sent->[INITIATOR_pronoun] [stammered] something about [RECIPIENT_nameDef]'s [PersonalCharacteristics].</li>
+        <li>sent->[INITIATOR_pronoun] was so nervous that [INITIATOR_pronoun] could barely say a word.</li>
+        <li>sent->[INITIATOR_pronoun] botched [INITIATOR_possessive] rehearsed lines and [stammered] incoherently instead.</li>
+        <li>stammered->stammered</li>
+        <li>stammered->stuttered</li>
+        <li>stammered->muttered</li>
+        <li>stammered->whispered</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -829,11 +829,11 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] made a flattering joke about [RECIPIENT_possessive] [lovelybodypart].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] made eyes at [RECIPIENT_objective].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] winked at [RECIPIENT_objective].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] tried [INITIATOR_possessive] best pickup line.</li>
-        <li>sent-&gt;[INITIATOR_pronoun] made flattering comments about [RECIPIENT_possessive] [PersonalCharacteristics].</li>
+        <li>sent->[INITIATOR_pronoun] made a flattering joke about [RECIPIENT_possessive] [lovelybodypart].</li>
+        <li>sent->[INITIATOR_pronoun] made eyes at [RECIPIENT_objective].</li>
+        <li>sent->[INITIATOR_pronoun] winked at [RECIPIENT_objective].</li>
+        <li>sent->[INITIATOR_pronoun] tried [INITIATOR_possessive] best pickup line.</li>
+        <li>sent->[INITIATOR_pronoun] made flattering comments about [RECIPIENT_possessive] [PersonalCharacteristics].</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -844,10 +844,10 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] made a subtle comment about [RECIPIENT_possessive] [lovelybodypart].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] flashed eyes at [RECIPIENT_objective].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] smiled at [RECIPIENT_objective].</li>
-        <li>sent-&gt;[INITIATOR_pronoun] complimented [RECIPIENT_possessive] [PersonalCharacteristics].</li>
+        <li>sent->[INITIATOR_pronoun] made a subtle comment about [RECIPIENT_possessive] [lovelybodypart].</li>
+        <li>sent->[INITIATOR_pronoun] flashed eyes at [RECIPIENT_objective].</li>
+        <li>sent->[INITIATOR_pronoun] smiled at [RECIPIENT_objective].</li>
+        <li>sent->[INITIATOR_pronoun] complimented [RECIPIENT_possessive] [PersonalCharacteristics].</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
@@ -858,16 +858,16 @@
     </include>
     <rulePack>
       <rulesStrings>
-        <li>sent-&gt;[INITIATOR_pronoun] [touched] [RECIPIENT_possessive] [part].</li>
-        <li>touched-&gt;touched</li>
-        <li>touched-&gt;'accidentally' grazed</li>
-        <li>touched-&gt;brushed up against</li>
-        <li>part-&gt;hand</li>
-        <li>part-&gt;hair</li>
-        <li>part-&gt;stomach</li>
-        <li>part-&gt;arm</li>
-        <li>part-&gt;leg</li>
-        <li>part-&gt;shoulder</li>
+        <li>sent->[INITIATOR_pronoun] [touched] [RECIPIENT_possessive] [part].</li>
+        <li>touched->touched</li>
+        <li>touched->'accidentally' grazed</li>
+        <li>touched->brushed up against</li>
+        <li>part->hand</li>
+        <li>part->hair</li>
+        <li>part->stomach</li>
+        <li>part->arm</li>
+        <li>part->leg</li>
+        <li>part->shoulder</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

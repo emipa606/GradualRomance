@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: darling -->
+  <Darling.label>darling</Darling.label>
+  <!-- EN: ex-boyfriend -->
+  <ExLovefriend.label>ex-boyfriend</ExLovefriend.label>
+  <!-- EN: ex-girlfriend -->
+  <ExLovefriend.labelFemale>ex-girlfriend</ExLovefriend.labelFemale>
+  <!-- EN: flame -->
+  <Flame.label>flame</Flame.label>
+  <!-- EN: lovebuddy -->
+  <Lovebuddy.label>lovebuddy</Lovebuddy.label>
+  <!-- EN: boyfriend -->
+  <Lovefriend.label>boyfriend</Lovefriend.label>
+  <!-- EN: girlfriend -->
+  <Lovefriend.labelFemale>girlfriend</Lovefriend.labelFemale>
+  <!-- EN: paramour -->
+  <Paramour.label>paramour</Paramour.label>
+  <!-- EN: steady -->
+  <Steady.label>steady</Steady.label>
+  <!-- EN: suitor -->
+  <Suitor.label>suitor</Suitor.label>
+  <!-- EN: sweetheart -->
+  <Sweetheart.label>sweetheart</Sweetheart.label>
+</LanguageData>
